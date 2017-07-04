@@ -1,0 +1,148 @@
+.dynamic-banner {
+  width: 100%;
+  height: 190px;
+}
+.dynamic-banner img {
+  width: inherit;
+  height: inherit;
+}
+.compre {
+  width: 1180px;
+  margin: 20px auto 0 auto;
+  border: 1px solid #ddd;
+  padding: 30px 30px 14px 30px;
+}
+.compre .compre-item {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.compre .compre-item i {
+  color: #129992;
+}
+.compre .compre-item span {
+  display: inline-block;
+  margin-left: 26px;
+  padding: 2px;
+  cursor: pointer;
+}
+.compre .compre-item span.active {
+  background: #129992;
+  color: #fff;
+}
+.choose-ltitle {
+  width: 1180px;
+  margin: 10px auto;
+  height: 40px;
+  background: #f5f5f5;
+  line-height: 40px;
+  border: 1px solid #e2e2e2;
+}
+.choose-ltitle .choose-lright {
+  width: 118px;
+  text-align: center;
+  float: right;
+  border-left: 1px solid #e2e2e2;
+  position: relative;
+}
+.choose-ltitle .choose-lright em {
+  position: absolute;
+  width: 6px;
+  height: 10px;
+  top: 50%;
+  margin-top: -5px;
+}
+.choose-ltitle .choose-lright em.c_left {
+  background: url(../images/choose-left.png) no-repeat;
+  left: 16px;
+}
+.choose-ltitle .choose-lright em.c_right {
+  background: url(../images/choose-right.png) no-repeat;
+  right: 16px;
+}
+.choose-ltitle .choose-sort span {
+  display: inline-block;
+  width: 84px;
+  height: 37px;
+  font-size: 14px;
+  color: #1b1b1b;
+  text-align: center;
+  cursor: pointer;
+}
+.choose-ltitle .choose-sort span.active {
+  background: #fff;
+  color: #129992;
+  border-right: 1px solid #e2e2e2;
+}
+.library-cont {
+  width: 1180px;
+  margin: 0 auto;
+}
+.library-cont ul {
+  margin-right: -12px;
+  margin-bottom: -12px;
+}
+.library-cont ul li {
+  width: 286px;
+  height: 288px;
+  border: 1px solid #ddd;
+  float: left;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+.library-cont ul li a {
+  display: block;
+  text-align: center;
+}
+.library-cont ul li a img {
+  width: 256px;
+  height: 170px;
+  margin-top: 16px;
+}
+.library-cont ul li a h2 {
+  text-align: left;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 0 14px;
+}
+.library-cont ul li a p {
+  text-align: left;
+  padding: 18px 14px 0 14px;
+}
+.library-cont ul li a p em {
+  font-size: 12px;
+  color: #878787;
+}
+.library-cont ul li a p span {
+  font-size: 18px;
+  color: #ffa346;
+  float: right;
+}
+.library-cont ul li a p span del {
+  font-size: 14px;
+  color: #878787;
+}
+.page-1 {
+  width: 100%;
+  text-align: center;
+  padding-top: 48px;
+}
+.page-1 a {
+  display: inline-block;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc7c6;
+}
+.page-1 a.but {
+  background: url(../images/but.png) 50px center no-repeat;
+}
+.page-1 a.but span {
+  padding-right: 6px;
+}
+.page-1 a.tv {
+  background: #129992;
+  color: #fff;
+}
+
+/*# sourceMappingURL=library.css.map */

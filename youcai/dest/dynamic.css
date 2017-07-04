@@ -1,0 +1,195 @@
+.dynamic-banner {
+  width: 100%;
+  height: 190px;
+}
+.dynamic-banner img {
+  width: inherit;
+  height: inherit;
+}
+.course {
+  width: 1180px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.information {
+  width: 300px;
+  float: right;
+}
+.information .inf-title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-indent: 10px;
+  background: #f5f5f5;
+  border-left: 4px solid #129992;
+}
+.information .inf-img {
+  width: inherit;
+  height: 228px;
+  margin-top: 20px;
+  position: relative;
+}
+.information .inf-img .allImgs {
+  width: inherit;
+  height: 200px;
+}
+.information .inf-img .allImgs .swiper-container.swiper-container7 {
+  width: inherit;
+  height: inherit;
+}
+.information .inf-img .allImgs .swiper-container.swiper-container7 img {
+  width: 300px;
+  height: 200px;
+}
+.information .inf-img .swiper-pagination7 {
+  width: 100%;
+}
+.information .inf-img .swiper-pagination7 .swiper-pagination-bullet {
+  margin-left: 12px;
+  background: #88ccc8;
+  opacity: 1;
+}
+.information .inf-img .swiper-pagination7 .swiper-pagination-bullet-active {
+  background: #129992;
+}
+.information .inf-news {
+  width: 100%;
+}
+.information .inf-news ul li {
+  padding: 0 20px  0 12px;
+  height: 40px;
+  background: url(../images/tuoyuan1.png) 12px center no-repeat;
+}
+.information .inf-news ul li a {
+  display: block;
+  text-indent: 20px;
+  font-size: 14px;
+  line-height: 40px;
+  color: #1b1b1b;
+}
+.information .inf-introimg {
+  width: inherit;
+  padding-top: 40px;
+}
+.information .inf-introimg p {
+  width: inherit;
+  overflow: hidden;
+}
+.information .inf-introimg p.inf-img1 img {
+  width: 300px;
+  height: 310px;
+}
+.information .inf-introimg p.inf-img2 img {
+  width: 300px;
+  height: 135px;
+}
+.information .inf-introimg p.inf-img3 img {
+  width: 300px;
+  height: 128px;
+}
+.course-left {
+  margin-right: 342px;
+}
+.course-left .course-title {
+  width: 100%;
+  height: 40px;
+  background: #f5f5f5;
+}
+.course-left .course-title ul {
+  height: inherit;
+}
+.course-left .course-title li {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  text-align: center;
+  color: #1b1b1b;
+  cursor: pointer;
+}
+.course-left .course-title li.selected {
+  background: #129992;
+  color: #fff;
+}
+.course-left .course-cont {
+  width: 100%;
+}
+.course-left .course-cont .course-item {
+  display: none;
+}
+.course-left .course-cont .course-item.selected {
+  display: block;
+}
+.course-left .course-cont .course-item ul.jieshao {
+  width: 100%;
+}
+.course-left .course-cont .course-item ul.jieshao li {
+  padding: 20px 20px 20px 0;
+  position: relative;
+}
+.course-left .course-cont .course-item ul.jieshao li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: url(../images/line-bottom.png) repeat-x;
+}
+.course-left .course-cont .course-item ul.jieshao li a {
+  display: block;
+  width: 100%;
+  height: 130px;
+}
+.course-left .course-cont .course-item ul.jieshao li a .item-right {
+  width: 542px;
+  float: right;
+}
+.course-left .course-cont .course-item ul.jieshao li a .item-right h2 {
+  font-size: 20px;
+  color: #1b1b1b;
+  font-weight: normal;
+  padding-bottom: 22px;
+}
+.course-left .course-cont .course-item ul.jieshao li a .item-right span {
+  font-size: 14px;
+  color: #878787;
+  display: block;
+  padding-bottom: 18px;
+}
+.course-left .course-cont .course-item ul.jieshao li a .item-right p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+}
+.course-left .course-cont .course-item ul.jieshao li a .item-right p i {
+  color: #f89200;
+}
+.course-left .course-cont .course-item ul.jieshao li a img {
+  height: inherit;
+  width: 236px;
+}
+.course-left .course-cont .course-item .page-1 {
+  width: 100%;
+  text-align: center;
+  padding-top: 48px;
+}
+.course-left .course-cont .course-item .page-1 a {
+  display: inline-block;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc7c6;
+}
+.course-left .course-cont .course-item .page-1 a.but {
+  background: url(../images/but.png) 50px center no-repeat;
+}
+.course-left .course-cont .course-item .page-1 a.but span {
+  padding-right: 6px;
+}
+.course-left .course-cont .course-item .page-1 a.tv {
+  background: #129992;
+  color: #fff;
+}
+
+/*# sourceMappingURL=dynamic.css.map */

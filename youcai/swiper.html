@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.svon.org/libs/swiper/swiper-3.4.2.min.css">
+    <script type="text/javascript" src="https://cdn.svon.org/libs/swiper/swiper-3.4.2.min.js"></script>
+</head>
+<style>
+    .grade-container {
+        width: 1200px;
+    }
+    .school-container {
+        position: relative;
+        overflow: hidden;
+    }
+    .school-menu {
+        width: 200px;
+        height: 100%;
+        background: red;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 100;
+    }
+    .school-slide {
+        display: flex;
+    }
+    .album-container {
+        width: 1000px;
+    }
+    .album-menu {
+        width: 200px;
+        height: 300px;
+        background: red;
+    }
+</style>
+<body>
+    <div class="grade-container swiper-container">
+        <div class="grade-wrapper swiper-wrapper">
+            <div class="grade-slide swiper-slide">
+                <div class="school-container swiper-container">
+                    <div class="school-wrapper swiper-wrapper">
+                        <div class="school-slide swiper-slide">
+                            <div class="album-container swiper-container">
+                                <div class="album-wrapper swiper-wrapper">
+                                    <div class="album-slide swiper-slide">
+                                        <img src="images/banner.png" alt="">
+                                    </div>
+                                   <div class="album-slide swiper-slide">
+                                        <img src="https://cdn.svon.org/modules/project/time/images/bj_djcc.jpgg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="album-menu">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="school-menu"></div>
+                </div>
+            </div>
+            <div class="grade-slide swiper-slide">
+                <div class="school-container swiper-container">
+                    <div class="school-wrapper swiper-wrapper">
+                        <div class="school-slide swiper-slide">
+                            <div class="album-container swiper-container">
+                                <div class="album-wrapper swiper-wrapper">
+                                    <div class="album-slide swiper-slide">
+                                        <img src="images/banner.png" alt="">
+                                    </div>
+                                    <div class="album-slide swiper-slide">
+                                        <img src="https://cdn.svon.org/modules/project/time/images/bj_djcc.jpgg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var swiper1 = new Swiper('.grade-container', {
+            slidesPerView: 1,
+            // paginationClickable: true,
+            // mousewheelControl: true,
+            swipeHandler: 'false',
+            // effect: 'fade'
+        });
+
+        var swiper2 = new Swiper('.school-container', {
+            slidesPerView: 1,
+            pagination: '.school-pagination',
+            swipeHandler: 'false',
+            effect: 'fade'
+        });
+
+        var swiper3 = new Swiper('.album-container', {
+            slidesPerView: 1,
+            // paginationClickable: true,
+            // mousewheelControl: true,
+            swipeHandler: 'false',
+//            effect: 'fade'
+        });
+    </script>
+</body>
+</html>

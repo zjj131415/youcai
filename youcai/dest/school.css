@@ -1,0 +1,126 @@
+.school-banner {
+  width: 100%;
+  height: 192px;
+}
+.school-banner img {
+  width: inherit;
+  height: inherit;
+}
+.shool-cont .shool-title {
+  width: 100%;
+  height: 100px;
+  background: #fafafa;
+}
+.shool-cont .shool-title ul {
+  width: 1180px;
+  margin: 0 auto;
+  padding-left: 98px;
+}
+.shool-cont .shool-title ul li {
+  width: 150px;
+  line-height: 100px;
+  float: left;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 60px;
+  position: relative;
+  font-size: 24px;
+}
+.shool-cont .shool-title ul li.selected {
+  color: #129992;
+}
+.shool-cont .shool-title ul li.selected:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: url(../images/school-bg.png) no-repeat;
+}
+.school-main {
+  width: 1180px;
+  margin: 0 auto;
+}
+.school-main .school-zhanshi {
+  height: 80px;
+  line-height: 80px;
+  position: relative;
+  text-indent: 10px;
+  font-size: 18px;
+}
+.school-main .school-zhanshi:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 3px;
+  height: 20px;
+  background: #129992;
+  margin-top: -10px;
+}
+.school-main .school-intro {
+  width: 100%;
+}
+.school-main .school-intro .school-item {
+  display: none;
+}
+.school-main .school-intro .school-item.selected {
+  display: block;
+}
+.school-main .school-intro .school-item ul li {
+  padding: 30px 112px 30px 22px;
+  border-top: 1px solid #ddd;
+}
+.school-main .school-intro .school-item ul li a {
+  display: block;
+  width: 100%;
+  height: 160px;
+}
+.school-main .school-intro .school-item ul li a .school-font {
+  float: right;
+  width: 724px;
+}
+.school-main .school-intro .school-item ul li a .school-font h2 {
+  font-weight: normal;
+  font-size: 20px;
+  color: #1b1b1b;
+  padding-bottom: 30px;
+}
+.school-main .school-intro .school-item ul li a .school-font p {
+  font-size: 14px;
+  line-height: 1.8;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.school-main .school-intro .school-item ul li a img {
+  width: 270px;
+  height: 160px;
+}
+.school-main .school-intro .school-item .page-1 {
+  width: 100%;
+  text-align: center;
+  padding-top: 48px;
+}
+.school-main .school-intro .school-item .page-1 a {
+  display: inline-block;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc7c6;
+}
+.school-main .school-intro .school-item .page-1 a.but {
+  background: url(../images/but.png) 50px center no-repeat;
+}
+.school-main .school-intro .school-item .page-1 a.but span {
+  padding-right: 6px;
+}
+.school-main .school-intro .school-item .page-1 a.tv {
+  background: #129992;
+  color: #fff;
+}
+
+/*# sourceMappingURL=school.css.map */

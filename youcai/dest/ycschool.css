@@ -1,0 +1,167 @@
+.dynamic-banner {
+  width: 100%;
+  height: 190px;
+}
+.dynamic-banner img {
+  width: inherit;
+  height: inherit;
+}
+.commont {
+  width: 1180px;
+  margin: 20px auto;
+}
+.commont .dy-right {
+  width: 934px;
+  float: right;
+  padding: 0 20px;
+}
+.commont .dy-left {
+  width: 246px;
+}
+.commont .dy-left .dy_all {
+  width: inherit;
+  height: 58px;
+  font-size: 18px;
+  line-height: 58px;
+  text-indent: 32px;
+  background: #129992;
+  color: #fff;
+}
+.commont .dy-left .kecheng {
+  width: inherit;
+  background: #f3f3f3;
+  padding: 1px 0;
+}
+.commont .dy-left .kecheng li {
+  height: 58px;
+  line-height: 58px;
+  text-indent: 32px;
+  background: #fff;
+  margin: 10px;
+}
+.commont .dy-left .kecheng li a {
+  display: block;
+}
+.xuanjiang {
+  width: 100%;
+}
+.xj_title {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-indent: 28px;
+  position: relative;
+  color: #129992;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+}
+.xj_title:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 4px;
+  height: 18px;
+  margin-top: -9px;
+  background: #129992;
+}
+.xj_item {
+  width: inherit;
+}
+.xj_item ul {
+  padding: 0 10px;
+}
+.xj_item ul li {
+  text-align: center;
+  border-bottom: 1px dashed #ddd;
+  font-size: 14px;
+  color: #666;
+  padding: 10px 0;
+}
+.xj_item ul li a {
+  display: block;
+}
+.xj_item ul li img {
+  width: 225px;
+  height: 132px;
+}
+.xj_item ul li h3 {
+  text-align: left;
+  font-weight: normal;
+  padding-top: 8px;
+}
+.xj_item ul li p {
+  text-align: left;
+  line-height: 1.8;
+}
+.dy-main {
+  width: 100%;
+}
+.dy-main .dy-item {
+  padding: 18px 0;
+  border-bottom: 1px dashed #ddd;
+}
+.dy-main .dy-item a {
+  display: block;
+}
+.dy-main .dy-item a .dy-font {
+  width: 622px;
+  float: right;
+}
+.dy-main .dy-item a .dy-font h2 {
+  font-size: 22px;
+  font-weight: normal;
+  color: #000;
+  padding-top: 10px;
+}
+.dy-main .dy-item a .dy-font p.time {
+  font-size: 16px;
+  color: #666;
+  padding: 12px 0 18px 0;
+}
+.dy-main .dy-item a .dy-font p.time em {
+  display: inline-block;
+  text-indent: 24px;
+  background: url(../images/time.png) no-repeat;
+}
+.dy-main .dy-item a .dy-font p.time i {
+  display: inline-block;
+  margin-left: 26px;
+  text-indent: 24px;
+  background: url(../images/addr.png) no-repeat;
+}
+.dy-main .dy-item a .dy-font p.fonts {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.dy-main .dy-item a .dy-font p.fonts i {
+  color: #f89200;
+}
+.dy-main .dy-item a img {
+  width: 240px;
+  height: 159px;
+}
+.page-1 {
+  width: 100%;
+  text-align: center;
+  padding-top: 48px;
+}
+.page-1 a {
+  display: inline-block;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc7c6;
+}
+.page-1 a.but {
+  background: url(../images/but.png) 50px center no-repeat;
+}
+.page-1 a.but span {
+  padding-right: 6px;
+}
+.page-1 a.tv {
+  background: #129992;
+  color: #fff;
+}
+
+/*# sourceMappingURL=ycschool.css.map */

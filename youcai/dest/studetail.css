@@ -1,0 +1,125 @@
+.cent-bg {
+  width: 100%;
+  background: url(../images/details.png) center 0 no-repeat;
+}
+.detail-mark {
+  width: 1180px;
+  margin: 0 auto;
+  height: 74px;
+  line-height: 74px;
+  font-size: 14px;
+  color: #666;
+  text-indent: 10px;
+}
+.cont-center {
+  width: 1180px;
+  margin: 0 auto;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 4px -4px #ddd;
+          box-shadow: 0 5px 4px -4px #ddd;
+}
+.student-right {
+  width: 294px;
+  float: right;
+}
+.student-right p.name-logo {
+  margin-top: 54px;
+}
+.student-right p.name-logo img {
+  width: 180px;
+  height: 180px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.student-right p.names {
+  padding-top: 20px;
+  color: #666;
+  padding-left: 6px;
+  font-size: 14px;
+  padding-right: 94px;
+}
+.student-right p.nameage {
+  padding-top: 6px;
+  padding-left: 6px;
+  color: #666;
+  font-size: 14px;
+  padding-right: 94px;
+}
+.student-right .rongy {
+  width: 200px;
+  height: 48px;
+  line-height: 48px;
+  border-top: 1px dashed #ddd;
+  margin-top: 30px;
+}
+.student-right .ry {
+  border-left: 2px solid #e6e6e6;
+  padding: 1px 0 10px 0;
+}
+.student-right .ry ul {
+  width: 200px;
+}
+.student-right .ry ul li {
+  width: inherit;
+  position: relative;
+  margin-top: 22px;
+}
+.student-right .ry ul li:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e6e6e6;
+  -webkit-box-shadow: 1px 1px 1px 4px #fff;
+          box-shadow: 1px 1px 1px 4px #fff;
+}
+.student-right .ry ul li p {
+  width: inherit;
+  padding-left: 10px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.student-right .ry ul li p img {
+  width: 200px;
+}
+.student-right .ry ul li span {
+  padding-left: 10px;
+  display: block;
+  font-size: 14px;
+  color: #000;
+}
+.cont-left {
+  width: 830px;
+  padding: 20px 88px 0 88px;
+}
+.cont-left h2 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #1b1b1b;
+  height: 56px;
+  line-height: 56px;
+  border-bottom: 1px solid #ddd;
+}
+.cont-left p {
+  text-indent: 2em;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+  padding-top: 20px;
+}
+.cont-left .time-bottom {
+  height: 40px;
+  line-height: 40px;
+  margin-top: 50px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  color: #666;
+}
+
+/*# sourceMappingURL=studetail.css.map */

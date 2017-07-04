@@ -1,0 +1,197 @@
+.school-banner {
+  width: 100%;
+  height: 192px;
+}
+.school-banner img {
+  width: inherit;
+  height: inherit;
+}
+.shool-cont .shool-title {
+  width: 100%;
+  height: 100px;
+  background: #fafafa;
+}
+.shool-cont .shool-title ul {
+  width: 1180px;
+  margin: 0 auto;
+  padding-left: 98px;
+}
+.shool-cont .shool-title ul li {
+  width: 150px;
+  line-height: 100px;
+  float: left;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 60px;
+  position: relative;
+  font-size: 24px;
+}
+.shool-cont .shool-title ul li.selected {
+  color: #129992;
+}
+.shool-cont .shool-title ul li.selected:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: url(../images/school-bg.png) no-repeat;
+}
+.teacher-top {
+  width: 100%;
+  height: 66px;
+  -webkit-box-shadow: 0 5px 4px -4px #ddd;
+          box-shadow: 0 5px 4px -4px #ddd;
+  position: relative;
+  z-index: -2;
+}
+.teacher-top ul {
+  width: 920px;
+  height: inherit;
+  margin: 0 auto;
+}
+.teacher-top ul li {
+  width: 184px;
+  height: inherit;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 22px;
+  text-indent: 20px;
+  float: left;
+  color: #666;
+  position: relative;
+}
+.teacher-top ul li.selected:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 183px;
+  height: 64px;
+  background: url(../images/shi.png);
+  z-index: -1;
+}
+.teacher-top ul li:first-of-type {
+  background: url(../images/shi-img1.png);
+  background-position: 20px 32px;
+  background-repeat: no-repeat;
+}
+.teacher-top ul li:nth-child(2) {
+  background: url(../images/shi-img2.png);
+  background-position: 20px 32px;
+  background-repeat: no-repeat;
+}
+.teacher-top ul li:nth-child(3) {
+  background: url(../images/shi-img3.png);
+  background-position: 20px 32px;
+  background-repeat: no-repeat;
+}
+.teacher-top ul li:nth-child(4) {
+  background: url(../images/shi-img4.png);
+  background-position: 20px 32px;
+  background-repeat: no-repeat;
+}
+.teacher-top ul li:nth-child(5) {
+  background: url(../images/shi-img5.png);
+  background-position: 20px 32px;
+  background-repeat: no-repeat;
+}
+.teacher-top ul li:first-of-type.selected {
+  color: #fff;
+  background: url(../images/shi-img1-active.png);
+  background-position: 20px 32px;
+  background-repeat: no-repeat;
+}
+.teacher-top ul li:nth-child(2).selected {
+  color: #fff;
+  background: url(../images/shi-img2-active.png);
+  background-position: 20px 32px;
+  background-repeat: no-repeat;
+}
+.teacher-top ul li:nth-child(3).selected {
+  color: #fff;
+  background: url(../images/shi-img3-active.png);
+  background-position: 20px 32px;
+  background-repeat: no-repeat;
+}
+.teacher-top ul li:nth-child(4).selected {
+  color: #fff;
+  background: url(../images/shi-img4-active.png);
+  background-position: 20px 32px;
+  background-repeat: no-repeat;
+}
+.teacher-top ul li:nth-child(5).selected {
+  color: #fff;
+  background: url(../images/shi-img5-active.png);
+  background-position: 20px 32px;
+  background-repeat: no-repeat;
+}
+.teacher-img {
+  width: 1180px;
+  margin: 0 auto;
+}
+.teacher-img ul {
+  width: inherit;
+  height: auto;
+}
+.teacher-img ul .move {
+  margin-right: -34px;
+}
+.teacher-img ul li {
+  width: 374px;
+  height: 538px;
+  background: #fff;
+  border: 1px solid #ddd;
+  float: left;
+  text-align: center;
+  margin-top: 40px;
+  margin-right: 30px;
+}
+.teacher-img ul li a {
+  display: block;
+  width: inherit;
+}
+.teacher-img ul li img {
+  width: 320px;
+  height: 210px;
+  margin-top: 26px;
+}
+.teacher-img ul li h3 {
+  text-align: left;
+  font-weight: normal;
+  font-size: 18px;
+  text-indent: 30px;
+  padding: 16px 0;
+}
+.teacher-img ul li p {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.8;
+  padding: 0 26px;
+  color: #666;
+}
+.page-1 {
+  width: 100%;
+  text-align: center;
+  padding-top: 48px;
+}
+.page-1 a {
+  display: inline-block;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc7c6;
+}
+.page-1 a.but {
+  background: url(../images/but.png) 50px center no-repeat;
+}
+.page-1 a.but span {
+  padding-right: 6px;
+}
+.page-1 a.tv {
+  background: #129992;
+  color: #fff;
+}
+
+/*# sourceMappingURL=teacher.css.map */

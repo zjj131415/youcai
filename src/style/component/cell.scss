@@ -1,0 +1,44 @@
+@import "../base/global";
+.lb_cells {
+  position: relative;
+  margin-top: .4rem;
+  //&::before {
+  //  @include brdCom(top, $Bd_COLOR);
+  //}
+  //&::after {
+  //  @include brdCom(bottom, $Bd_COLOR);
+  //}
+}
+.lb_cell {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: .47rem;
+  position: relative;
+  background: #fff;
+  &::after {
+    @include brdCom(bottom, $Bd_COLOR, .47rem);
+  }
+  &:last-child::after {
+    content: none;
+  }
+  .lb_cell_hd {
+    margin-right: .3rem;
+    .icon {
+      font-size: .8rem;
+      color: #f7b61e;
+    }
+  }
+  .lb_cell_bd {
+    flex: 1;
+    font-size: .66rem;
+    color: #333;
+  }
+  .lb_cell_ft {
+    word-break: break-all;
+    .icon {
+      font-size: .8rem;
+      color: #d9d9d9;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.__check,
+.__radios {
+  $size: .8rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  input[type=radio],
+  input[type=checkbox] {
+    position: absolute;
+    visibility: hidden;
+    &:checked ~ .__deck {
+      border: 1px solid #f7b61e;
+      background: #f7b61e;
+      &::before {
+        opacity: 1;
+      }
+    }
+    &:checked ~ .__check_text {
+      color: #f7b61e;
+    }
+  }
+  .__deck {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $size;
+    height: $size;
+    border-radius: 100%;
+    border: 1px solid #b2b2b2;
+    &::before {
+      opacity: 0;
+      content: '';
+      display: flex;
+      width: .28rem;
+      height: .14rem;
+      margin-top: -.08rem;
+      border: 2px solid #fff;
+      border-top: none;
+      border-right: none;
+      transform: rotate(-45deg);
+    }
+  }
+  .__check_text {
+    margin-left: .4rem;
+    font-size: .52rem;
+    color: #888;
+  }
+}

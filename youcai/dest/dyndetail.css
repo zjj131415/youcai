@@ -1,0 +1,140 @@
+.box {
+  width: 1160px;
+  margin: 0 auto;
+}
+.box .maks {
+  font-size: 14px;
+  color: #666;
+  padding: 24px 0;
+}
+.box .all-cont {
+  width: 100%;
+}
+.box .all-cont .detail-right {
+  width: 400px;
+  float: right;
+}
+.box .all-cont .detail-right .dny-title {
+  width: inherit;
+  height: 56px;
+  line-height: 56px;
+  text-indent: 10px;
+  font-size: 20px;
+  color: #129992;
+  position: relative;
+}
+.box .all-cont .detail-right .dny-title.line {
+  border-bottom: 1px solid #ddd;
+}
+.box .all-cont .detail-right .dny-title:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 4px;
+  height: 18px;
+  margin-top: -9px;
+  background: #129992;
+}
+.dny-course {
+  width: 100%;
+}
+.dny-course .choose {
+  width: inherit;
+  height: 38px;
+  position: relative;
+}
+.dny-course .choose ul {
+  background: #f5f5f5;
+  position: relative;
+  z-index: 0;
+}
+.dny-course .choose li {
+  width: 133px;
+  height: inherit;
+  float: left;
+  line-height: 38px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.dny-course .choose li.selected {
+  color: #fff;
+}
+.dny-course .choose li.selected:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 43px;
+  z-index: -1;
+  background: url(../images/dny-bg.png) no-repeat;
+}
+.dny-course .choose-cont {
+  width: 100%;
+}
+.dny-course .choose-cont .dny-item {
+  display: none;
+}
+.dny-course .choose-cont .dny-item.selected {
+  display: block;
+}
+.dny-course .choose-cont .dny-item ul li {
+  padding: 20px 10px 20px 0;
+  border-bottom: 1px dashed #ddd;
+}
+.dny-course .choose-cont .dny-item ul li a {
+  display: block;
+  height: 65px;
+  width: inherit;
+}
+.dny-course .choose-cont .dny-item ul li a .fonts {
+  float: right;
+  width: 260px;
+}
+.dny-course .choose-cont .dny-item ul li a .fonts h3 {
+  font-weight: normal;
+  color: #1b1b1b;
+  font-size: 16px;
+}
+.dny-course .choose-cont .dny-item ul li a .fonts p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #878787;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.dny-course .choose-cont .dny-item ul li a img {
+  width: 117px;
+  height: 65px;
+}
+.zixun {
+  width: 100%;
+}
+.zixun ul li {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  background: url(../images/tuoyuan1.png) 10px center no-repeat;
+}
+.zixun ul li a {
+  display: block;
+  height: inherit;
+  color: #666;
+  text-indent: 28px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-style: normal;
+}
+.detail-left {
+  width: 650px;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=dyndetail.css.map */

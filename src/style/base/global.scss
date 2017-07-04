@@ -1,0 +1,18 @@
+//全局border颜色；
+$Bd_COLOR: #ccc7c6;
+$TEXT_COLO: #878787;
+$THEME_COLOR: #129992;
+//伪元素实现1像素边框；
+/*
+*
+*/
+@mixin brdCom($pst, $bdrColor, $leftDis: 0) {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  left: $leftDis;
+  #{$pst}: 0;
+  border-top: 1px solid $bdrColor;
+  color: $bdrColor;
+  transform: scaleY(.5);
+}
