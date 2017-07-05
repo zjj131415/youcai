@@ -121,8 +121,8 @@ html {
     }
   }
   @at-root .course-cont {
-    margin-top: 15px;
     .course-detail {
+      margin-top: 15px;
       width: 880px;
       float: left;
       background: #fff;
@@ -220,6 +220,7 @@ html {
       float: right;
       width: 280px;
       .right-block {
+        margin-top: 15px;
         background: #fff;
        }
       .block-tit {
@@ -261,6 +262,35 @@ html {
         font-size: 14px;
         color: $TEXT_666;
         line-height:1.8;
+      }
+      .course-block {
+        padding: 20px;
+        border-bottom: 1px dashed #cdc9c8;
+        &:last-child {
+          border-bottom: none;
+        }
+        .course-h {
+          overflow: hidden;
+        }
+        .course-nam {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          margin-top: 10px;
+          font-size: 14px;
+          color: $TEXT_666;
+        }
+        .course-statistical {
+          padding-left: 10px;
+          font-size: 14px;
+          color: $TEXT_666;
+          .price {
+            color: $TEXT_ORANGE;
+          }
+          i {
+            font-family: arial;
+          }
+        }
       }
     }
   }

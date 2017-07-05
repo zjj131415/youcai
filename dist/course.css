@@ -162,11 +162,8 @@ html {
   color: #f79402;
 }
 
-.course-cont {
-  margin-top: 15px;
-}
-
 .course-cont .course-detail {
+  margin-top: 15px;
   width: 880px;
   float: left;
   background: #fff;
@@ -282,6 +279,7 @@ html {
 }
 
 .course-cont .course-right .right-block {
+  margin-top: 15px;
   background: #fff;
 }
 
@@ -330,4 +328,40 @@ html {
   font-size: 14px;
   color: #666;
   line-height: 1.8;
+}
+
+.course-cont .course-right .course-block {
+  padding: 20px;
+  border-bottom: 1px dashed #cdc9c8;
+}
+
+.course-cont .course-right .course-block:last-child {
+  border-bottom: none;
+}
+
+.course-cont .course-right .course-block .course-h {
+  overflow: hidden;
+}
+
+.course-cont .course-right .course-block .course-nam {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.course-cont .course-right .course-block .course-statistical {
+  padding-left: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.course-cont .course-right .course-block .course-statistical .price {
+  color: #f79402;
+}
+
+.course-cont .course-right .course-block .course-statistical i {
+  font-family: arial;
 }
