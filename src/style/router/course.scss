@@ -1,0 +1,267 @@
+@import "../base/global";
+html {
+  background: #f2efe9;
+}
+.course-wrapper {
+  width: 1180px;
+  margin: 0 auto;
+  .course-head {
+    height: 365px;
+    padding: 30px 35px;
+    background: #fff;
+    @at-root .course-head-l {
+      float: left;
+      width: 480px;
+      .l-i {
+        height: 270px;
+        overflow: hidden;
+      }
+      .l-share-agency {
+        margin-top: 5px;
+        .agency {
+          font-size: 12px;
+          color: $TEXT_COLO;
+        }
+      }
+      .share-keep {
+        float: right;
+        .iconfont {
+          font-size: 14px;
+          color: $THEME_COLOR;
+          vertical-align: middle;
+        }
+        .keep,
+        .share {
+          margin-right: 15px;
+          font-size: 12px;
+          color: $TEXT_COLO;
+        }
+      }
+    }
+    @at-root .course-head-r {
+      float: right;
+      width: 590px;
+      height: 270px;
+      .r-tit {
+        font-size: 24px;
+        color: $TEXT_BLACK;
+        font-weight: 600;
+      }
+      .r-tags {
+        padding: 13px 0;
+        > a {
+          padding: 4px 7px;
+          border-radius: 2px;
+          background: $THEME_COLOR;
+          cursor: pointer;
+          font-size: 16px;
+          color: #fff;
+        }
+      }
+      .r-price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 65px;
+        padding: 0 20px 0 10px;
+        background-color: #f9f9f9;
+        font-size: 14px;
+        color: $TEXT_666;
+        .price-d {
+          display: flex;
+          align-items: center;
+        }
+        .price-n {
+          padding-left: 5px;
+          font-size: 24px;
+          color: $TEXT_ORANGE;
+        }
+        .org-price {
+          padding-left: 20px;
+          padding-right: 20px;
+          text-decoration: line-through;
+          font-size: 14px;
+        }
+        .total-sh span {
+          color: $TEXT_ORANGE;
+        }
+        i {
+          font-family: arial;
+        }
+      }
+      .r-site,
+      .r-time {
+        margin-top: 13px;
+        font-size: 14px;
+        color: $TEXT_666;
+        > a {
+          padding-left: 5px;
+          color: $THEME_COLOR;
+        }
+      }
+      .r-actions {
+        margin-top: 13px;
+        a {
+          display: inline-block;
+          width: 135px;
+          height: 40px;
+          margin-right: 20px;
+          border: 1px solid $TEXT_ORANGE;
+          background: $TEXT_ORANGE;
+          line-height: 38px;
+          font-size: 18px;
+          color: #fff;
+          text-align: center;
+          &.look {
+            background: #fdeacc;
+            color: $TEXT_ORANGE;
+          }
+        }
+      }
+    }
+  }
+  @at-root .course-cont {
+    margin-top: 15px;
+    .course-detail {
+      width: 880px;
+      float: left;
+      background: #fff;
+      .nav-tab {
+        border-bottom: 1px solid #ccc7c6;
+        > li {
+          width: 175px;
+          height: 50px;
+          float: left;
+          cursor: pointer;
+          font-size: 16px;
+          color: $TEXT_666;
+          line-height:50px;
+          text-align: center;
+          &.active {
+            background: $THEME_COLOR;
+            color: #fff;
+          }
+        }
+      }
+      .course-info {
+        padding-bottom: 55px;
+      }
+      .tab-block {
+          margin-top: 25px;
+        .tab-tit {
+          padding-left: 25px;
+          position: relative;
+          margin-bottom: 30px;
+          font-size: 20px;
+          color: $THEME_COLOR;
+          &::before {
+            content: ' ';
+            position: absolute;
+            left: 4px;
+            top: 50%;
+            width: 8px;
+            height: 20px;
+            transform: translate(0, -50%);
+            background: $THEME_COLOR;
+          }
+        }
+        .timetable {
+          width: 712px;
+          height: 162px;
+          margin-left: 80px;
+          border: 1px solid #e5e3e2;
+          > li {
+            width: 355px;
+            height: 80px;
+            overflow: hidden;
+            float: left;
+            line-height: 80px;
+            font-size: 14px;
+            &:nth-child(1) {
+              border-bottom: 1px solid #e5e3e2;
+            }
+            &:nth-child(2) {
+              border-bottom: 1px solid #e5e3e2;
+            }
+          }
+          .timetable-t {
+            width: 110px;
+            height: 80px;
+            float: left;
+            background: #f9f9f9;
+            color: $TEXT_BLACK;
+            text-align: center;
+            font-weight: 600;
+          }
+          .timetable-i {
+            width: 245px;
+            height: 80px;
+            padding-left: 30px;
+            float: left;
+            color: $TEXT_666;
+          }
+        }
+        .figuration {
+          p {
+            padding-left: 20px;
+            font-size: 14px;
+            color: $TEXT_666;
+          }
+          .text {
+            padding: 20px;
+            font-size: 14px;
+            color: $TEXT_666;
+            line-height: 2;
+          }
+        }
+      }
+    }
+    .course-right {
+      float: right;
+      width: 280px;
+      .right-block {
+        background: #fff;
+       }
+      .block-tit {
+        height: 51px;
+        padding-left: 25px;
+        border-bottom: 1px solid #ccc7c6;
+        font-size: 16px;
+        color: $TEXT_666;
+        line-height: 50px;
+      }
+      .block-info {
+        padding: 25px 0;
+      }
+      .info-photo {
+        width: 95px;
+        height: 95px;
+        overflow: hidden;
+        margin: 0 auto;
+        border-radius: 100%;
+        background: #000;
+        text-align: center;
+        line-height:95px;
+      }
+      .info-name {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        color: $TEXT_BLACK;
+        text-align: center;
+      }
+      .info-dec {
+        padding-top: 4px;
+        font-size: 14px;
+        color: $TEXT_666;
+        text-align: center;
+      }
+      .info-present {
+        padding: 20px;
+        font-size: 14px;
+        color: $TEXT_666;
+        line-height:1.8;
+      }
+    }
+  }
+}

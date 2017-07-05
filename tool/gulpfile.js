@@ -16,7 +16,7 @@ let
 gulp.task('sass', cd => (
   gulp.src(path.resolve(basePath, 'src', 'style', 'router', '**'))
     .pipe(plumber())
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(autoPrefixer({browsers: ['last 20 versions']}))
     .pipe(gulp.dest(path.resolve(basePath, 'dist')))
     .pipe(notify("Found file: <%= file.relative %>!"))

@@ -1,0 +1,333 @@
+/*
+*
+*/
+html {
+  background: #f2efe9;
+}
+
+.course-wrapper {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.course-wrapper .course-head {
+  height: 365px;
+  padding: 30px 35px;
+  background: #fff;
+}
+
+.course-head-l {
+  float: left;
+  width: 480px;
+}
+
+.course-head-l .l-i {
+  height: 270px;
+  overflow: hidden;
+}
+
+.course-head-l .l-share-agency {
+  margin-top: 5px;
+}
+
+.course-head-l .l-share-agency .agency {
+  font-size: 12px;
+  color: #878787;
+}
+
+.course-head-l .share-keep {
+  float: right;
+}
+
+.course-head-l .share-keep .iconfont {
+  font-size: 14px;
+  color: #129992;
+  vertical-align: middle;
+}
+
+.course-head-l .share-keep .keep, .course-head-l .share-keep .share {
+  margin-right: 15px;
+  font-size: 12px;
+  color: #878787;
+}
+
+.course-head-r {
+  float: right;
+  width: 590px;
+  height: 270px;
+}
+
+.course-head-r .r-tit {
+  font-size: 24px;
+  color: #1b1b1b;
+  font-weight: 600;
+}
+
+.course-head-r .r-tags {
+  padding: 13px 0;
+}
+
+.course-head-r .r-tags > a {
+  padding: 4px 7px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background: #129992;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+}
+
+.course-head-r .r-price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 65px;
+  padding: 0 20px 0 10px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  color: #666;
+}
+
+.course-head-r .r-price .price-d {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.course-head-r .r-price .price-n {
+  padding-left: 5px;
+  font-size: 24px;
+  color: #f79402;
+}
+
+.course-head-r .r-price .org-price {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.course-head-r .r-price .total-sh span {
+  color: #f79402;
+}
+
+.course-head-r .r-price i {
+  font-family: arial;
+}
+
+.course-head-r .r-site, .course-head-r .r-time {
+  margin-top: 13px;
+  font-size: 14px;
+  color: #666;
+}
+
+.course-head-r .r-site > a, .course-head-r .r-time > a {
+  padding-left: 5px;
+  color: #129992;
+}
+
+.course-head-r .r-actions {
+  margin-top: 13px;
+}
+
+.course-head-r .r-actions a {
+  display: inline-block;
+  width: 135px;
+  height: 40px;
+  margin-right: 20px;
+  border: 1px solid #f79402;
+  background: #f79402;
+  line-height: 38px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+.course-head-r .r-actions a.look {
+  background: #fdeacc;
+  color: #f79402;
+}
+
+.course-cont {
+  margin-top: 15px;
+}
+
+.course-cont .course-detail {
+  width: 880px;
+  float: left;
+  background: #fff;
+}
+
+.course-cont .course-detail .nav-tab {
+  border-bottom: 1px solid #ccc7c6;
+}
+
+.course-cont .course-detail .nav-tab > li {
+  width: 175px;
+  height: 50px;
+  float: left;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+  line-height: 50px;
+  text-align: center;
+}
+
+.course-cont .course-detail .nav-tab > li.active {
+  background: #129992;
+  color: #fff;
+}
+
+.course-cont .course-detail .course-info {
+  padding-bottom: 55px;
+}
+
+.course-cont .course-detail .tab-block {
+  margin-top: 25px;
+}
+
+.course-cont .course-detail .tab-block .tab-tit {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: #129992;
+}
+
+.course-cont .course-detail .tab-block .tab-tit::before {
+  content: ' ';
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  width: 8px;
+  height: 20px;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background: #129992;
+}
+
+.course-cont .course-detail .tab-block .timetable {
+  width: 712px;
+  height: 162px;
+  margin-left: 80px;
+  border: 1px solid #e5e3e2;
+}
+
+.course-cont .course-detail .tab-block .timetable > li {
+  width: 355px;
+  height: 80px;
+  overflow: hidden;
+  float: left;
+  line-height: 80px;
+  font-size: 14px;
+}
+
+.course-cont .course-detail .tab-block .timetable > li:nth-child(1) {
+  border-bottom: 1px solid #e5e3e2;
+}
+
+.course-cont .course-detail .tab-block .timetable > li:nth-child(2) {
+  border-bottom: 1px solid #e5e3e2;
+}
+
+.course-cont .course-detail .tab-block .timetable .timetable-t {
+  width: 110px;
+  height: 80px;
+  float: left;
+  background: #f9f9f9;
+  color: #1b1b1b;
+  text-align: center;
+  font-weight: 600;
+}
+
+.course-cont .course-detail .tab-block .timetable .timetable-i {
+  width: 245px;
+  height: 80px;
+  padding-left: 30px;
+  float: left;
+  color: #666;
+}
+
+.course-cont .course-detail .tab-block .figuration p {
+  padding-left: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.course-cont .course-detail .tab-block .figuration .text {
+  padding: 20px;
+  font-size: 14px;
+  color: #666;
+  line-height: 2;
+}
+
+.course-cont .course-right {
+  float: right;
+  width: 280px;
+}
+
+.course-cont .course-right .right-block {
+  background: #fff;
+}
+
+.course-cont .course-right .block-tit {
+  height: 51px;
+  padding-left: 25px;
+  border-bottom: 1px solid #ccc7c6;
+  font-size: 16px;
+  color: #666;
+  line-height: 50px;
+}
+
+.course-cont .course-right .block-info {
+  padding: 25px 0;
+}
+
+.course-cont .course-right .info-photo {
+  width: 95px;
+  height: 95px;
+  overflow: hidden;
+  margin: 0 auto;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background: #000;
+  text-align: center;
+  line-height: 95px;
+}
+
+.course-cont .course-right .info-name {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1b1b1b;
+  text-align: center;
+}
+
+.course-cont .course-right .info-dec {
+  padding-top: 4px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+.course-cont .course-right .info-present {
+  padding: 20px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+}
