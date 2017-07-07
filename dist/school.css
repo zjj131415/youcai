@@ -1,0 +1,520 @@
+/*
+*
+*/
+.fl {
+  float: left;
+  display: inline;
+}
+
+.fr {
+  float: right;
+  display: inline;
+}
+
+.pd-td10 {
+  padding: 10px 0;
+}
+
+.school-wrapper {
+  padding-bottom: 60px;
+  background-size: 1920px 630px;
+  background: #f3f0ea top right no-repeat;
+}
+
+.school-wrapper .school-cont {
+  width: 1180px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.school-wrapper .head-m {
+  height: 101px;
+  border-bottom: 1px solid #ccc7c6;
+  background: #fff;
+}
+
+.school-wrapper .head-m .head-logo {
+  width: 160px;
+  height: 160px;
+  padding: 4px;
+  margin-left: 30px;
+  margin-top: -80px;
+  float: left;
+  background: #fff;
+}
+
+.school-wrapper .head-m .head-desc {
+  width: 340px;
+  float: left;
+  margin-left: 20px;
+}
+
+.school-wrapper .head-m .head-desc h3 {
+  margin-top: 13px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+}
+
+.school-wrapper .head-m .head-desc .address {
+  font-size: 14px;
+  color: #878787;
+}
+
+.school-wrapper .head-m .href {
+  margin-top: 40px;
+  margin-right: 35px;
+  float: right;
+  font-size: 14px;
+  color: #878787;
+}
+
+.school-wrapper .nav-m {
+  border-bottom: 1px solid #ccc7c6;
+  background: #fff;
+}
+
+.school-wrapper .nav-m ul {
+  width: 680px;
+  margin: 0 auto;
+}
+
+.school-wrapper .nav-m li {
+  width: 170px;
+  height: 54px;
+  line-height: 52px;
+  float: left;
+  cursor: pointer;
+}
+
+.school-wrapper .nav-m li.active > p {
+  border-bottom: 2px solid #129992;
+}
+
+.school-wrapper .nav-m li > p {
+  width: 100px;
+  margin: 0 auto;
+  border-bottom: 2px solid #fff;
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+}
+
+.school-wrapper .page-m {
+  background: #fff;
+}
+
+.school-wrapper .page-m .page-item {
+  display: none;
+}
+
+.school-wrapper .page-m .page-item.show {
+  display: block;
+}
+
+.school-wrapper .page-m .rectangle-tit {
+  height: 20px;
+  padding-left: 20px;
+  margin-left: 3px;
+  border-left: 10px solid #129992;
+  line-height: 20px;
+  font-size: 20px;
+  color: #129992;
+}
+
+.school-wrapper .page-m .school-index {
+  padding: 20px;
+}
+
+.school-wrapper .page-m .school-index .banner {
+  height: 380px;
+}
+
+.school-wrapper .page-m .school-index .advisory {
+  margin-top: 30px;
+}
+
+.school-wrapper .page-m .school-index .angle-tit {
+  width: 95px;
+  height: 24px;
+  background: #129992;
+  font-size: 16px;
+  color: #fff;
+  line-height: 24px;
+  text-align: center;
+  position: relative;
+}
+
+.school-wrapper .page-m .school-index .angle-tit::before {
+  content: ' ';
+  position: absolute;
+  left: -11px;
+  top: 0;
+  border-top: 24px solid #fff;
+  border-right: 11px solid transparent;
+  border-left: 11px solid transparent;
+}
+
+.school-wrapper .page-m .school-index .advisory1 {
+  width: 235px;
+  float: left;
+}
+
+.school-wrapper .page-m .school-index .advisory1 .banner {
+  height: 125px;
+}
+
+.school-wrapper .page-m .school-index .advisory1 h4 {
+  height: 54px;
+  padding: 5px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+  overflow: hidden;
+  line-height: 22px;
+  font-size: 14px;
+  color: #666;
+}
+
+.school-wrapper .page-m .school-index .advisory1 .dis {
+  height: 99px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+  font-size: 12px;
+  color: #878787;
+}
+
+.school-wrapper .page-m .school-index .advisory2,
+.school-wrapper .page-m .school-index .advisory3 {
+  width: 395px;
+  float: left;
+  margin-left: 60px;
+  height: 100px;
+}
+
+.school-wrapper .page-m .school-index .advisory2 .news,
+.school-wrapper .page-m .school-index .advisory3 .news {
+  height: 210px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.school-wrapper .page-m .school-index .advisory2 .new,
+.school-wrapper .page-m .school-index .advisory3 .new {
+  height: 30px;
+  line-height: 30px;
+}
+
+.school-wrapper .page-m .school-index .advisory2 .new a,
+.school-wrapper .page-m .school-index .advisory3 .new a {
+  float: left;
+  width: 320px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  color: #666;
+}
+
+.school-wrapper .page-m .school-index .advisory2 .new span,
+.school-wrapper .page-m .school-index .advisory3 .new span {
+  float: right;
+  font-size: 14px;
+  color: #666;
+}
+
+.school-wrapper .page-m .school-index .advisory2 .more,
+.school-wrapper .page-m .school-index .advisory3 .more {
+  width: 42px;
+  height: 22px;
+  float: right;
+  border: 1px solid #ccc7c6;
+  line-height: 20px;
+  text-align: center;
+}
+
+.school-wrapper .page-m .school-index .advisory2 .more > a,
+.school-wrapper .page-m .school-index .advisory3 .more > a {
+  font-size: 14px;
+  color: #666;
+}
+
+.school-wrapper .page-m .school-index .advisory3 {
+  width: 390px;
+}
+
+.school-wrapper .page-m .school-index .recall-m {
+  margin-top: 60px;
+}
+
+.school-wrapper .page-m .school-index .recall-m .title-bar {
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #878787;
+}
+
+.school-wrapper .page-m .school-index .recall-m .title-bar span {
+  margin-left: 5px;
+}
+
+.school-wrapper .page-m .school-index .recall-m .recall-wrapper {
+  margin-top: 30px;
+}
+
+.school-wrapper .page-m .school-index .recall-m .recall-slide {
+  width: 220px;
+  height: 210px;
+  margin-right: 10px;
+}
+
+.school-wrapper .page-m .school-index .recall-m .recall-slide:last-child {
+  margin-right: 0;
+}
+
+.school-wrapper .page-m .school-index .recall-m .recall-h {
+  width: 220px;
+  height: 170px;
+}
+
+.school-wrapper .page-m .school-index .recall-m .recall-d {
+  width: 220px;
+  height: 40px;
+  background: #f2f2f5;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  color: #666;
+}
+
+.school-wrapper .page-m .school-index .present-m {
+  margin-top: 60px;
+}
+
+.school-wrapper .page-m .school-index .present-m .banner {
+  height: 210px;
+  margin-top: 30px;
+  background: #000;
+}
+
+.school-wrapper .page-m .school-index .present-m .desc {
+  padding: 20px;
+  font-size: 16px;
+  color: #878787;
+}
+
+.school-wrapper .page-m .school-index .present-m .desc > p {
+  line-height: 30px;
+  text-indent: 1.2em;
+}
+
+.school-wrapper .page-m .school-advisory {
+  background: #fff;
+}
+
+.school-wrapper .page-m .school-advisory .advisory-cont {
+  width: 800px;
+  float: left;
+}
+
+.school-wrapper .page-m .school-advisory .advisory-cont .top {
+  padding: 20px 0;
+}
+
+.school-wrapper .page-m .school-advisory .advisory-cont .advisory-li {
+  height: 171px;
+  padding: 20px;
+  border-bottom: 1px dashed #ccc7c6;
+}
+
+.school-wrapper .page-m .school-advisory .advisory-cont .figure {
+  float: left;
+}
+
+.school-wrapper .page-m .school-advisory .advisory-cont .info {
+  width: 490px;
+  margin-left: 20px;
+  float: left;
+}
+
+.school-wrapper .page-m .school-advisory .advisory-cont .info h4 {
+  font-size: 20px;
+  color: #000;
+}
+
+.school-wrapper .page-m .school-advisory .advisory-cont .info .time {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #878787;
+}
+
+.school-wrapper .page-m .school-advisory .advisory-cont .info .text {
+  margin-top: 15px;
+  height: 38px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+  line-height: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.school-wrapper .page-m .school-advisory .advisory-cont .info .detail {
+  color: #f79402;
+  background: #fff;
+}
+
+.school-wrapper .page-m .school-advisory .advisory-cont .change-page {
+  padding: 48px 0;
+  text-align: center;
+}
+
+.school-wrapper .page-m .school-advisory .advisory-cont .change-page a {
+  margin: 0 2px;
+  padding: 3px 8px;
+  border: 1px solid #ccc7c6;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+  color: #878787;
+}
+
+.school-wrapper .page-m .school-advisory .advisory-cont .change-page a.active {
+  color: #fff;
+  background: #129992;
+  border: 1px solid #129992;
+}
+
+.school-wrapper .page-m .school-advisory .advisory-cont .change-page i {
+  font-size: 10px;
+  color: #ccc7c6;
+}
+
+.school-wrapper .page-m .school-advisory .advisory-billing {
+  width: 310px;
+  height: 100px;
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.school-wrapper .page-m .school-advisory .advisory-billing .billing-list {
+  padding: 0 20px 30px 20px;
+  border: 1px solid #ccc7c6;
+}
+
+.school-wrapper .page-m .school-advisory .advisory-billing .billing-list li {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc7c6;
+}
+
+.school-wrapper .page-m .school-advisory .advisory-billing .billing-list .top {
+  font-size: 12px;
+  color: #878787;
+}
+
+.school-wrapper .page-m .school-advisory .advisory-billing .billing-list .iconfont {
+  margin-right: 5px;
+  font-size: 12px;
+  color: #129992;
+}
+
+.school-wrapper .page-m .school-advisory .advisory-billing .billing-list p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.school-wrapper .page-m .school-history .video ul {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.school-wrapper .page-m .school-history .video li {
+  float: left;
+  margin: 30px 5px 0 5px;
+}
+
+.school-wrapper .page-m .school-history .video .top {
+  height: 40px;
+  padding-top: 20px;
+}
+
+.school-wrapper .page-m .school-history .video .number {
+  font-size: 14px;
+  color: #878787;
+}
+
+.school-wrapper .page-m .school-history .video .des {
+  width: 280px;
+  height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background: #f2f2f5;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+  color: #666;
+}
+
+.school-wrapper .page-m .school-history .photo {
+  padding-bottom: 30px;
+}
+
+.school-wrapper .page-m .school-history .photo ul {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.school-wrapper .page-m .school-history .photo li {
+  float: left;
+  margin: 30px 5px 0 5px;
+}
+
+.school-wrapper .page-m .school-history .photo .top {
+  height: 40px;
+  padding-top: 20px;
+}
+
+.school-wrapper .page-m .school-history .photo .number {
+  font-size: 14px;
+  color: #878787;
+}
+
+.school-wrapper .page-m .school-history .photo .des {
+  width: 215px;
+  height: 35px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background: #f2f2f5;
+  font-size: 14px;
+  line-height: 35px;
+  text-align: center;
+  color: #666;
+}
+
+.school-wrapper .page-m .school-present {
+  padding: 20px;
+  background: #fff;
+}
+
+.school-wrapper .page-m .school-present .desc {
+  padding: 20px;
+}
+
+.school-wrapper .page-m .school-present .desc p {
+  margin-top: 5px;
+  text-indent: 1.5em;
+  font-size: 16px;
+  color: #666;
+}

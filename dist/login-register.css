@@ -1,6 +1,16 @@
 /*
 *
 */
+.fl {
+  float: left;
+  display: inline;
+}
+
+.fr {
+  float: right;
+  display: inline;
+}
+
 .pd-td10 {
   padding: 10px 0;
 }

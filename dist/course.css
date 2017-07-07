@@ -1,6 +1,16 @@
 /*
 *
 */
+.fl {
+  float: left;
+  display: inline;
+}
+
+.fr {
+  float: right;
+  display: inline;
+}
+
 .pd-td10 {
   padding: 10px 0;
 }
@@ -821,7 +831,7 @@ html {
 
 .course-down .course-down-r .presentation-change a {
   margin: 0 2px;
-  padding: 5px 7px;
+  padding: 3px 8px;
   border: 1px solid #ccc7c6;
   -webkit-border-radius: 4px;
           border-radius: 4px;

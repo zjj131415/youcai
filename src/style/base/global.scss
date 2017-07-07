@@ -20,6 +20,17 @@ $THEME_COLOR: #129992;
   transform: scaleY(.5);
 }
 
+//浮动
+.fl {
+  float: left;
+  display: inline;
+}
+
+.fr {
+  float: right;
+  display: inline;
+}
+
 //不换行
 @mixin nowrap {
   overflow: hidden;

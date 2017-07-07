@@ -1,0 +1,426 @@
+@import "../base/global";
+//school-index;
+.school-wrapper {
+  padding-bottom: 60px;
+  background-size: 1920px 630px;
+  background: #f3f0ea top right no-repeat;
+  .school-cont {
+    width: 1180px;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+  .head-m {
+    height: 101px;
+    border-bottom: 1px solid $Bd_COLOR;
+    background: #fff;
+    .head-logo {
+      width: 160px;
+      height:160px;
+      padding: 4px;
+      margin-left: 30px;
+      margin-top: -80px;
+      float: left;
+      background: #fff;
+    }
+    .head-desc {
+      width: 340px;
+      float: left;
+      margin-left: 20px;
+      h3 {
+        margin-top: 13px;
+        font-size: 30px;
+        font-weight: bold;
+        color: #000;
+      }
+      .address {
+        font-size: 14px;
+        color: $TEXT_COLO;
+      }
+    }
+    .href {
+      margin-top: 40px;
+      margin-right: 35px;
+      float: right;
+      font-size: 14px;
+      color: $TEXT_COLO;
+    }
+  }
+  .nav-m {
+    border-bottom: 1px solid $Bd_COLOR;
+    background: #fff;
+    ul {
+      width: 680px;
+      margin: 0 auto;
+    }
+    li {
+      width: 170px;
+      height: 54px;
+      line-height: 52px;
+      float: left;
+      cursor: pointer;
+      &.active > p{
+        border-bottom: 2px solid $THEME_COLOR;
+      }
+      > p {
+        width: 100px;
+        margin: 0 auto;
+        border-bottom: 2px solid #fff;
+        text-align: center;
+        font-size: 18px;
+        color: $TEXT_666;
+      }
+    }
+  }
+  .page-m {
+    background: #fff;
+    .page-item {
+      display: none;
+      &.show {
+        display: block;
+      }
+    }
+    .rectangle-tit {
+      height: 20px;
+      padding-left: 20px;
+      margin-left: 3px;
+      border-left: 10px solid $THEME_COLOR;
+      line-height: 20px;
+      font-size: 20px;
+      color: $THEME_COLOR;
+    }
+    .school-index {
+      padding: 20px;
+      .banner {
+        height: 380px;
+      }
+      .advisory {
+        margin-top: 30px;
+      }
+      .angle-tit {
+        width: 95px;
+        height: 24px;
+        background: $THEME_COLOR;
+        font-size: 16px;
+        color: #fff;
+        line-height: 24px;
+        text-align: center;
+        position: relative;
+        &::before {
+          content: ' ';
+          position: absolute;
+          left: -11px;
+          top: 0;
+          border-top: 24px solid #fff;
+          border-right: 11px solid transparent;
+          border-left: 11px solid transparent;
+        }
+      }
+      .advisory1 {
+        width: 235px;
+        float: left;
+        .banner {
+          height: 125px;
+        }
+        h4 {
+          height: 54px;
+          padding: 5px 0;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          word-break: break-word;
+          overflow: hidden;
+          line-height: 22px;
+          font-size: 14px;
+          color: $TEXT_666;
+        }
+        .dis {
+          height: 99px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          line-height: 20px;
+          font-size: 12px;
+          color: $TEXT_COLO;
+        }
+      }
+      .advisory2,
+      .advisory3 {
+        width: 395px;
+        float: left;
+        margin-left: 60px;
+        height: 100px;
+        .news {
+          height: 210px;
+          margin-top: 20px;
+          overflow: hidden;
+        }
+        .new {
+          height: 30px;
+          line-height: 30px;
+          a {
+            float: left;
+            width: 320px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-size: 14px;
+            color: $TEXT_666;
+          }
+          span {
+            float: right;
+            font-size: 14px;
+            color: $TEXT_666;
+          }
+        }
+        .more {
+          width: 42px;
+          height: 22px;
+          float: right;
+          border: 1px solid $Bd_COLOR;
+          line-height: 20px;
+          text-align: center;
+          > a {
+            font-size: 14px;
+            color: $TEXT_666;
+          }
+        }
+      }
+      .advisory3 {
+        width: 390px;
+      }
+      .recall-m {
+        margin-top: 60px;
+        .title-bar {
+          height: 24px;
+          line-height:24px;
+          font-size: 12px;
+          color: $TEXT_COLO;
+          span {
+            margin-left: 5px;
+          }
+        }
+        .recall-wrapper {
+          margin-top: 30px;
+        }
+        .recall-slide {
+          width: 220px;
+          height: 210px;
+          margin-right: 10px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+        .recall-h {
+          width: 220px;
+          height: 170px;
+        }
+        .recall-d {
+          width: 220px;
+          height: 40px;
+          background: #f2f2f5;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-size: 14px;
+          line-height: 40px;
+          text-align: center;
+          color: $TEXT_666;
+        }
+      }
+      .present-m {
+        margin-top: 60px;
+        .banner {
+          height: 210px;
+          margin-top: 30px;
+          background: #000;
+        }
+        .desc {
+          padding: 20px;
+          font-size: 16px;
+          color: $TEXT_COLO;
+          > p {
+            line-height: 30px;
+            text-indent: 1.2em;
+          }
+        }
+      }
+    }
+    .school-advisory {
+      background: #fff;
+      .advisory-cont {
+        width: 800px;
+        float: left;
+        .top {
+          padding: 20px 0;
+        }
+        .list {
+
+        }
+        .advisory-li {
+          height: 171px;
+          padding: 20px;
+          border-bottom: 1px dashed $Bd_COLOR;
+        }
+        .figure {
+          float: left;
+        }
+        .info {
+          width: 490px;
+          margin-left: 20px;
+          float: left;
+          h4 {
+            font-size: 20px;
+            color: #000;
+          }
+          .time {
+            margin-top: 10px;
+            font-size: 14px;
+            color: $TEXT_COLO;
+          }
+          .text {
+            margin-top: 15px;
+            height: 38px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            word-break: break-word;
+            line-height: 20px;
+            font-size: 14px;
+            color: $TEXT_666;
+          }
+          .detail {
+            color: $TEXT_ORANGE;
+            background: #fff;
+          }
+        }
+        .change-page {
+          padding: 48px 0;
+          text-align: center;
+          a {
+            margin: 0 2px;
+            padding: 3px 8px;
+            border: 1px solid $Bd_COLOR;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 12px;
+            color: $TEXT_COLO;
+            &.active {
+              color: #fff;
+              background: $THEME_COLOR;
+              border: 1px solid $THEME_COLOR;
+            }
+          }
+          i {
+            font-size: 10px;
+            color: #ccc7c6;
+          }
+        }
+      }
+      .advisory-billing {
+        width: 310px;
+        height: 100px;
+        float: right;
+        margin-right: 20px;
+        margin-top: 20px;
+        .billing-list {
+          padding: 0 20px 30px 20px;
+          border: 1px solid $Bd_COLOR;
+          li {
+            padding: 20px 0;
+            border-bottom: 1px solid $Bd_COLOR;
+          }
+          .top {
+            font-size: 12px;
+            color: $TEXT_COLO;
+          }
+          .iconfont {
+            margin-right: 5px;
+            font-size: 12px;
+            color: $THEME_COLOR;
+          }
+          p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: $TEXT_666;
+          }
+        }
+      }
+    }
+    .school-history {
+      .video {
+        ul {
+          width: 1160px;
+          margin: 0 auto;
+        }
+        li {
+          float: left;
+          margin: 30px 5px 0 5px;
+        }
+        .top {
+          height: 40px;
+          padding-top: 20px;
+        }
+        .number {
+          font-size: 14px;
+          color: $TEXT_COLO;
+        }
+        .des {
+          width: 280px;
+          height: 40px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          background: #f2f2f5;
+          font-size: 14px;
+          text-align: center;
+          line-height: 40px;
+          color: $TEXT_666;
+        }
+      }
+      .photo {
+        padding-bottom: 30px;
+        ul {
+          width: 1160px;
+          margin: 0 auto;
+        }
+        li {
+          float: left;
+          margin: 30px 5px 0 5px;
+        }
+        .top {
+          height: 40px;
+          padding-top: 20px;
+        }
+        .number {
+          font-size: 14px;
+          color: $TEXT_COLO;
+        }
+        .des {
+          width: 215px;
+          height: 35px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          background: #f2f2f5;
+          font-size: 14px;
+          line-height: 35px;
+          text-align: center;
+          color: $TEXT_666;
+        }
+      }
+    }
+    .school-present {
+      padding: 20px;
+      background: #fff;
+      .desc {
+        padding: 20px;
+        p {
+          margin-top: 5px;
+          text-indent: 1.5em;
+          font-size: 16px;
+          color: $TEXT_666;
+        }
+      }
+    }
+  }
+}
