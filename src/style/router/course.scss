@@ -215,6 +215,80 @@ html {
             line-height: 2;
           }
         }
+        .course-star-end {
+          text-align: center;
+          .used {
+            font-size: 16px;
+            color: $TEXT_666;
+            > span {
+              color: $THEME_COLOR;
+            }
+          }
+          .cost {
+            width: 450px;
+            margin: 5px auto 55px auto;
+            font-size: 14px;
+            color: $TEXT_666;
+            .left {
+              float: left;
+            }
+            .right {
+              float: right;
+            }
+          }
+        }
+        .course-chapter {
+          padding: 20px;
+          li {
+            height: 65px;
+            line-height: 64px;
+            border-bottom: 1px dotted $Bd_COLOR;
+          }
+          .chapter-tag {
+            line-height: 32px;
+            float: left;
+            margin-top: 16px;
+            > span {
+              display: inline-block;
+              width: 66px;
+              height: 32px;
+              border-radius: 16px 0 0 16px;
+              background: #c0c0c0;
+              text-align: center;
+              color: #fff;
+              font-size: 14px;
+            }
+            .chapter-icon {
+              display: inline-block;
+              width: 44px;
+              height: 32px;
+              margin-left: -12px;
+              border-radius: 22px 0 0 22px;
+              text-align: center;
+              background: #fff;
+              > i {
+                display: block;
+                width: 32px;
+                height: 32px;
+                margin: 0 auto;
+                border-radius: 100%;
+                background: $THEME_COLOR;
+                text-align: center;
+                color: #fff;
+                font-size: 17px;
+              }
+            }
+          }
+          .text {
+            float: left;
+            margin-left: 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-size: 14px;
+            color: #000;
+          }
+        }
       }
     }
     .course-right {

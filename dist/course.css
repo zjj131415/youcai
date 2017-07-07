@@ -277,6 +277,96 @@ html {
   line-height: 2;
 }
 
+.course-cont .course-detail .tab-block .course-star-end {
+  text-align: center;
+}
+
+.course-cont .course-detail .tab-block .course-star-end .used {
+  font-size: 16px;
+  color: #666;
+}
+
+.course-cont .course-detail .tab-block .course-star-end .used > span {
+  color: #129992;
+}
+
+.course-cont .course-detail .tab-block .course-star-end .cost {
+  width: 450px;
+  margin: 5px auto 55px auto;
+  font-size: 14px;
+  color: #666;
+}
+
+.course-cont .course-detail .tab-block .course-star-end .cost .left {
+  float: left;
+}
+
+.course-cont .course-detail .tab-block .course-star-end .cost .right {
+  float: right;
+}
+
+.course-cont .course-detail .tab-block .course-chapter {
+  padding: 20px;
+}
+
+.course-cont .course-detail .tab-block .course-chapter li {
+  height: 65px;
+  line-height: 64px;
+  border-bottom: 1px dotted #ccc7c6;
+}
+
+.course-cont .course-detail .tab-block .course-chapter .chapter-tag {
+  line-height: 32px;
+  float: left;
+  margin-top: 16px;
+}
+
+.course-cont .course-detail .tab-block .course-chapter .chapter-tag > span {
+  display: inline-block;
+  width: 66px;
+  height: 32px;
+  -webkit-border-radius: 16px 0 0 16px;
+          border-radius: 16px 0 0 16px;
+  background: #c0c0c0;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+.course-cont .course-detail .tab-block .course-chapter .chapter-tag .chapter-icon {
+  display: inline-block;
+  width: 44px;
+  height: 32px;
+  margin-left: -12px;
+  -webkit-border-radius: 22px 0 0 22px;
+          border-radius: 22px 0 0 22px;
+  text-align: center;
+  background: #fff;
+}
+
+.course-cont .course-detail .tab-block .course-chapter .chapter-tag .chapter-icon > i {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background: #129992;
+  text-align: center;
+  color: #fff;
+  font-size: 17px;
+}
+
+.course-cont .course-detail .tab-block .course-chapter .text {
+  float: left;
+  margin-left: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  color: #000;
+}
+
 .course-cont .course-right {
   float: right;
   width: 280px;
