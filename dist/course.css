@@ -358,6 +358,7 @@ html {
 }
 
 .course-cont .course-detail .tab-block .course-chapter .text {
+  width: 700px;
   float: left;
   margin-left: 20px;
   overflow: hidden;
