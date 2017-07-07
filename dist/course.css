@@ -194,7 +194,12 @@ html {
 }
 
 .course-cont .course-detail .course-info {
+  display: none;
   padding-bottom: 55px;
+}
+
+.course-cont .course-detail .course-info.show {
+  display: block;
 }
 
 .course-cont .course-detail .tab-block {
@@ -712,4 +717,8 @@ html {
 .course-down .course-down-r .course-related ol a {
   font-size: 14px;
   color: #666;
+}
+
+.course-down {
+  background: #fff;
 }

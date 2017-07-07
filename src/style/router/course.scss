@@ -2,6 +2,9 @@
 html {
   background: #f2efe9;
 }
+
+//
+
 //课程详情
 .course-wrapper {
   width: 1180px;
@@ -145,6 +148,10 @@ html {
         }
       }
       .course-info {
+        &.show {
+          display: block;
+        }
+        display: none;
         padding-bottom: 55px;
       }
       .tab-block {
@@ -573,5 +580,13 @@ html {
         }
       }
     }
+  }
+}
+
+//分类
+.course-down {
+  background: #fff;
+  .course-down-r {
+
   }
 }
