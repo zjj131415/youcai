@@ -722,3 +722,120 @@ html {
 .course-down {
   background: #fff;
 }
+
+.course-down .course-down-r .banner {
+  height: 100px;
+  overflow: hidden;
+}
+
+.course-down .course-down-r .course-presentation {
+  margin-top: 20px;
+  border: 1px solid #ccc7c6;
+}
+
+.course-down .course-down-r .presentation-nav {
+  border-bottom: 1px solid #ccc7c6;
+}
+
+.course-down .course-down-r .presentation-nav > li {
+  width: 85px;
+  height: 40px;
+  float: left;
+  border-right: 1px solid transparent;
+  line-height: 40px;
+  text-align: center;
+}
+
+.course-down .course-down-r .presentation-nav > li a {
+  font-size: 14px;
+  color: #000;
+}
+
+.course-down .course-down-r .presentation-nav > li.active {
+  border-right: 1px solid #ccc7c6;
+}
+
+.course-down .course-down-r .presentation-nav > li.active a {
+  color: #129992;
+}
+
+.course-down .course-down-r .presentation-list {
+  padding: 0 30px;
+}
+
+.course-down .course-down-r .presentation-list .p-i {
+  padding: 20px 0;
+  border-bottom: 1px dotted #ccc7c6;
+}
+
+.course-down .course-down-r .presentation-list .p-img {
+  width: 165px;
+  height: 110px;
+  float: left;
+}
+
+.course-down .course-down-r .presentation-list .p-info {
+  width: 670px;
+  float: right;
+}
+
+.course-down .course-down-r .presentation-list .p-tit {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 5px;
+  font-size: 16px;
+  color: #000;
+}
+
+.course-down .course-down-r .presentation-list .p-download {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #878787;
+}
+
+.course-down .course-down-r .presentation-list .p-price {
+  margin-top: 10px;
+}
+
+.course-down .course-down-r .presentation-list .p-price i {
+  font-family: arial;
+}
+
+.course-down .course-down-r .presentation-list .p-price .price1 {
+  font-size: 18px;
+  color: #f79402;
+}
+
+.course-down .course-down-r .presentation-list .p-price .price2 {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #878787;
+}
+
+.course-down .course-down-r .presentation-change {
+  padding: 48px 0;
+  text-align: center;
+}
+
+.course-down .course-down-r .presentation-change a {
+  margin: 0 2px;
+  padding: 5px 7px;
+  border: 1px solid #ccc7c6;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+  color: #878787;
+}
+
+.course-down .course-down-r .presentation-change a.active {
+  color: #fff;
+  background: #129992;
+  border: 1px solid #129992;
+}
+
+.course-down .course-down-r .presentation-change i {
+  font-size: 10px;
+  color: #ccc7c6;
+}

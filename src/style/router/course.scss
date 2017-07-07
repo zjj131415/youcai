@@ -587,6 +587,98 @@ html {
 .course-down {
   background: #fff;
   .course-down-r {
-
+    .banner {
+      height: 100px;
+      overflow: hidden;
+    }
+    .course-presentation {
+      margin-top: 20px;
+      border: 1px solid $Bd_COLOR;
+    }
+    .presentation-nav {
+      border-bottom: 1px solid $Bd_COLOR;
+      > li {
+        width: 85px;
+        height: 40px;
+        float: left;
+        border-right: 1px solid transparent;
+        line-height: 40px;
+        text-align: center;
+        a {
+          font-size: 14px;
+          color: #000;
+        }
+        &.active {
+          border-right: 1px solid $Bd_COLOR;
+          a {
+            color: $THEME_COLOR;
+          }
+        }
+      }
+    }
+    .presentation-list {
+      padding: 0 30px;
+      .p-i {
+        padding: 20px 0;
+        border-bottom: 1px dotted $Bd_COLOR;
+      }
+      .p-img {
+        width: 165px;
+        height: 110px;
+        float: left;
+      }
+      .p-info {
+        width: 670px;
+        float: right;
+      }
+      .p-tit {
+        @include nowrap;
+        margin-top: 5px;
+        font-size: 16px;
+        color: #000;
+      }
+      .p-download {
+        margin-top: 10px;
+        font-size: 14px;
+        color: $TEXT_COLO;
+      }
+      .p-price {
+        margin-top: 10px;
+        i {
+          font-family: arial;
+        }
+        .price1 {
+          font-size: 18px;
+          color: $TEXT_ORANGE;
+        }
+        .price2 {
+          margin-left: 10px;
+          font-size: 16px;
+          color: $TEXT_COLO;
+        }
+      }
+    }
+    .presentation-change {
+      padding: 48px 0;
+      text-align: center;
+      a {
+        margin: 0 2px;
+        padding: 5px 7px;
+        border: 1px solid $Bd_COLOR;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 12px;
+        color: $TEXT_COLO;
+        &.active {
+          color: #fff;
+          background: $THEME_COLOR;
+          border: 1px solid $THEME_COLOR;
+        }
+      }
+      i {
+        font-size: 10px;
+        color: #ccc7c6;
+      }
+    }
   }
 }

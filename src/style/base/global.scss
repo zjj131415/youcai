@@ -20,6 +20,13 @@ $THEME_COLOR: #129992;
   transform: scaleY(.5);
 }
 
+//不换行
+@mixin nowrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .pd-td10 {
   padding: 10px 0;
 }
