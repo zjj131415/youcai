@@ -2,6 +2,7 @@
 html {
   background: #f2efe9;
 }
+//课程详情
 .course-wrapper {
   width: 1180px;
   margin: 0 auto;
@@ -290,6 +291,210 @@ html {
           i {
             font-family: arial;
           }
+        }
+      }
+    }
+  }
+}
+
+//课件下载
+.course-down {
+  background: #fff;
+  .course-down-cont {
+    width: 1180px;
+    margin: 0 auto;
+  }
+  .course-down-l {
+    width: 246px;
+    float: left;
+  }
+  .left-block {
+    padding-top: 20px;
+    .tit {
+      height: 44px;
+      padding-left: 25px;
+      background: $THEME_COLOR;
+      line-height: 44px;
+      font-size: 18px;
+      color: #fff;
+    }
+    .name {
+      margin: 0 15px;
+      height: 41px;
+      border-bottom: 1px dashed $Bd_COLOR ;
+      font-size: 16px;
+      font-weight: bold;
+      line-height:40px;
+      color: #000;
+    }
+    .block-cont {
+      border: 1px solid $Bd_COLOR;
+    }
+    .kind-list {
+      padding-top: 5px;
+      padding-bottom: 15px;
+      > li {
+        width: 61px;
+        height: 34px;
+        float: left;
+        text-align: center;
+        font-size: 14px;
+        line-height:34px;
+        color: $TEXT_666;
+      }
+      a {
+        color: $TEXT_666;
+      }
+    }
+    .course-item {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      height: 36px;
+      padding-left: 26px;
+      position: relative;
+      line-height: 36px;
+      > a {
+        font-size: 14px;
+        color: $TEXT_666;
+      }
+      &:before {
+        content: ' ';
+        display: block;
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        left: 8px;
+        top: 50%;
+        margin-top: -4px;
+        border-radius: 100%;
+        background: $TEXT_ORANGE;
+        vertical-align: middle;
+      }
+    }
+  }
+  .course-down-r {
+    margin-top: 20px;
+    width: 914px;
+    float: right;
+    .course-desc {
+      padding: 20px 30px;
+      border: 1px solid $Bd_COLOR;
+    }
+    .title {
+      margin-bottom: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #000;
+    }
+    .detail {
+      height: 260px;
+    }
+    .detail-i {
+      width: 390px;
+      height: 260px;
+      float: left;
+      overflow: hidden;
+    }
+    .detail-info {
+      width: 430px;
+      float: right;
+    }
+    .price-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 65px;
+      padding: 0 20px 0 10px;
+      background-color: #f9f9f9;
+      font-size: 14px;
+      color: $TEXT_666;
+      .price-d {
+        display: flex;
+        align-items: center;
+      }
+      .price-n {
+        padding-left: 10px;
+        font-size: 24px;
+        color: $TEXT_ORANGE;
+      }
+      .org-price {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-decoration: line-through;
+        font-size: 14px;
+      }
+      .total-sh span {
+        color: $TEXT_ORANGE;
+      }
+      i {
+        font-family: arial;
+      }
+    }
+    .detail-info-list {
+      margin-top: 5px;
+      font-size: 14px;
+      color: $TEXT_666;
+      > li {
+        height: 34px;
+        line-height: 34px;
+      }
+      .iconfont {
+        font-size: 16px;
+        color: $TEXT_ORANGE;
+      }
+    }
+    .course-present {
+      margin-top: 5px;
+      h4 {
+        height: 51px;
+        line-height: 50px;
+        border-bottom: 1px solid $Bd_COLOR;
+        font-size: 18px;
+        color: #000;
+      }
+      p {
+        padding: 20px 0;
+        line-height: 1.8;
+        font-size: 14px;
+        color: $TEXT_666;
+      }
+    }
+    .download {
+      > a {
+        display: block;
+        cursor: pointer;
+        width: 136px;
+        height: 42px;
+        border: 1px solid $TEXT_ORANGE;
+        background: $TEXT_ORANGE;
+        line-height:40px;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+    .course-related {
+      margin-top: 20px;
+      border: 1px solid $Bd_COLOR;
+      .tit {
+        padding: 0 25px;
+        height: 51px;
+        border-bottom: 1px solid $Bd_COLOR;
+        background: #f3f3f3;
+        line-height:50px;
+        font-size: 18px;
+        color: #000;
+      }
+      ol {
+        padding: 20px;
+        li {
+          height: 28px;
+          line-height: 28px;
+        }
+        a {
+          font-size: 14px;
+          color: $TEXT_666;
         }
       }
     }

@@ -536,6 +536,10 @@ html {
 /*
 *
 */
+.pd-td10 {
+  padding: 10px 0;
+}
+
 input[type='checkbox'] {
   margin: 0;
   padding: 0;
