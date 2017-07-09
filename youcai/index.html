@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="dest/header.css">
+  <link rel="stylesheet" href="dest/index.css">
+  <link rel="stylesheet" href="https://cdn.svon.org/libs/swiper/swiper-3.4.2.min.css">
+  <script type="text/javascript" src='http://cdn.svon.org/libs/jquery/jquery-1.11.2.min.js'></script>
+  <script type="text/javascript" src="https://cdn.svon.org/libs/swiper/swiper-3.4.2.min.js"></script>
+    <style>
+        .grade-container {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+        }
+        .school-container {
+            position: relative;
+        }
+        .school-menu {
+            position: absolute;
+            left: 0 ;
+            top: 0;
+            z-index: 1000;
+            height: 410px;
+            width: 240px;
+            background: rgba(255, 255, 255, .6);
+        }
+        .school-menu-item {
+            box-sizing: border-box;
+            height: 68px;
+            padding: 11px 0;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+        .school-menu-item::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 200px;
+            margin-left: -100px;
+            border-bottom: 1px dashed #ccc7c6;
+        }
+        .school-menu-item:last-child::after{
+            content: none ;
+        }
+        .school-menu-item.active {
+            background: #fff;
+        }
+        .school-menu-item > img{
+            width: 149px;
+            height: 46px;
+        }
+        .school-slide {
+            padding-right: 190px;
+            position: relative;
+        }
+        .album-menu {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 190px;
+            height: 100%;
+            cursor: pointer;
+        }
+        .album-slide {
+            height: 410px;
+            text-align: center;
+        }
+        .album-slide-title {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding-left: 260px;
+            height: 56px;
+            background: rgba(0, 0, 0, .6);
+            text-align: left;
+            line-height:56px;
+            font-size: 14px;
+            color: #fff;
+        }
+        .album-menu-item {
+            height: 102px;
+            border: 1px solid #fff;
+            position: relative;
+            cursor: pointer;
+        }
+        .album-menu-item > img{
+            width: 100%;
+            height: 100%;
+        }
+        .album-menu-item.active {
+            border: 2px solid #fff;
+        }
+        .album-menu-item.active::after {
+            content: ' ';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            z-index: 30;
+            transform: translate3d(-100%, -50%, 0);
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 6px solid transparent;
+            border-right: 5px solid #f7f7f7;
+            border-bottom: 6px solid transparent;
+        }
+    </style>
+</head>
+<body>
+  <div class="header">
+     <div class="header-top">
+       <div class="grid clearfix">
+          <div class="tel"><p>服务热线：<i>023-67825643</i>（9:00-18:00）</p></div>
+          <div class="personal-center">
+            <ul class="per-center clearfix">
+              <li class="nav-er1">
+                <a href="#">管理中心</a>
+                <div class="center-er">
+                  <ul>
+                    <li><a href="#">首页</a><a href="#">个人中心</a></li>
+                    <li><a href="#">个人中心</a></li>
+                    <li><a href="#">个人中心</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">帮助中心</a></li>
+            </ul>
+          </div>
+       </div>
+     </div><!-- end header-top -->
+     <div class="header-main">
+       <div class="grid">
+           <div class="logo"></div>
+           <div class="header-right">
+             <ul>
+               <li><a href="#"><i><img src="images/students.png" alt=""></i><p>学生登录</p></a></li>
+               <li><a href="#"><i><img src="images/teacher.png" alt=""></i><p>老师登录</p></a></li>
+               <li><a href="#"><i><img src="images/school.png" alt=""></i><p>学校登录</p></a></li>
+             </ul>
+           </div>
+           <div class="header-center clearfix">
+              <div class="city" id="citys">
+                 <span class="cty">全国</span>
+                 <div class="city-choose clearfix">
+                   <div class="city-item tiv"><a href="javascript:void(0)">上海</a></div>
+                   <div class="city-item"><a href="javascript:void(0)">天津</a></div>
+                   <div class="city-item"><a href="javascript:void(0)">河北</a></div>
+                   <div class="city-item"><a href="javascript:void(0)">湖北</a></div>
+                   <div class="city-item"><a href="javascript:void(0)">广东</a></div>
+                   <div class="city-item"><a href="javascript:void(0)">杭州</a></div>
+                   <div class="city-item"><a href="javascript:void(0)">南京</a></div>
+                   <div class="city-item"><a href="javascript:void(0)">重庆</a></div>
+                   <div class="city-item"><a href="javascript:void(0)">成都</a></div>
+                   <div class="city-item"><a href="javascript:void(0)">福建</a></div>
+                 </div>
+              </div>
+              <div class="search-top">
+               <form class="clearfix">
+                 <input type="text" class="shu-text">
+                 <input type="button" value="搜索" class="btns">
+               </form>
+              </div><!-- end search-top -->
+           </div><!-- end header-center -->
+        </div>
+     </div><!-- end header-main -->
+     <div class="header-nav">
+       <ul class="clearfix">
+         <li class="active"><a href="#">首页</a></li>
+         <li><a href="#">名校风采</a></li>
+         <li><a href="#">优才动态</a></li>
+         <li><a href="#">资力量</a></li>
+         <li><a href="#">优才中心</a></li>
+         <li><a href="#">优才学院</a></li>
+         <li><a href="#">优才图书馆</a></li>
+       </ul>
+     </div>
+  </div><!-- end header -->
+  <div class="commont">
+    <div class="banner">
+      <div class="swiper-container swiper-container1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/banner.png" alt=""></div>
+            <div class="swiper-slide"><img src="https://cdn.svon.org/modules/project/time/images/bj_djcc.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="https://cdn.svon.org/modules/project/time/images/bj_tianqijun.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination swiper-pagination1"></div>
+      </div>
+    </div><!-- end banner -->
+    <div class="school-cont">
+       <div class="school-title clearfix">
+         <h1>名校风采</h1>
+         <a href="#">更多 >></a>
+         <ul class="school-btn clearfix" id="button1">
+           <li class="selected">大学</li>
+           <li>高中</li>
+           <li>初中</li>
+           <li>小学</li>
+           <li>幼儿园</li>
+         </ul>
+       </div><!-- end school-title -->
+        <div class="grade-container swiper-container">
+            <div class="grade-wrapper swiper-wrapper">
+                <div class="grade-slide swiper-slide">
+                    <div class="school-container swiper-container">
+                        <div class="school-wrapper swiper-wrapper">
+                            <div data-index="0" class="school-slide swiper-slide clearfix">
+                                <div class="album-container swiper-container">
+                                    <div class="album-wrapper swiper-wrapper">
+                                        <div class="album-slide swiper-slide">
+                                            <img src="http://www.huanqiuyoucai.com/public/uploads/20170705/0c74b399d892c927b7ca423b1499dd67.jpg" alt="">
+                                            <h3 class="album-slide-title">aa</h3>
+                                        </div>
+                                        <div class="album-slide swiper-slide">
+                                            <img src="http://www.huanqiuyoucai.com/public/uploads/20170705/0c74b399d892c927b7ca423b1499dd67.jpg" alt="">
+                                            <h3 class="album-slide-title">aa</h3>
+                                        </div>
+                                        <div class="album-slide swiper-slide">
+                                            <img src="http://lcimg.oss-cn-hangzhou.aliyuncs.com/canger/img/page4.png" alt="">
+                                            <h3 class="album-slide-title">aa</h3>
+                                        </div>
+                                        <div class="album-slide swiper-slide">
+                                            <img src="http://lcimg.oss-cn-hangzhou.aliyuncs.com/canger/img/page4.png" alt="">
+                                            <h3 class="album-slide-title">aa</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album-menu">
+                                    <div class="album-menu-item active">
+                                        <img src="http://www.huanqiuyoucai.com/public/uploads/20170630/2866808c1fd8de81aa18a22ec89b13a7.png" alt="">
+                                    </div>
+                                    <div class="album-menu-item">
+                                        <img src="http://www.huanqiuyoucai.com/public/uploads/20170630/2866808c1fd8de81aa18a22ec89b13a7.png" alt="">
+                                    </div>
+                                    <div class="album-menu-item">
+                                        <img src="http://www.huanqiuyoucai.com/public/uploads/20170630/2866808c1fd8de81aa18a22ec89b13a7.png" alt="">
+                                    </div>
+                                    <div class="album-menu-item">
+                                        <img src="http://www.huanqiuyoucai.com/public/uploads/20170630/2866808c1fd8de81aa18a22ec89b13a7.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-index="1" class="school-slide swiper-slide clearfix">
+                                <div class="album-container swiper-container">
+                                    <div class="album-wrapper swiper-wrapper">
+                                        <div class="album-slide swiper-slide">
+                                            <img src="http://lcimg.oss-cn-hangzhou.aliyuncs.com/canger/img/page4.png" alt="">
+                                            <h3 class="album-slide-title">aa</h3>
+                                        </div>
+                                        <div class="album-slide swiper-slide">
+                                            <img src="http://lcimg.oss-cn-hangzhou.aliyuncs.com/canger/img/page3.png" alt="">
+                                            <h3 class="album-slide-title">bb</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album-menu">
+                                    <div class="album-menu-item active">
+                                        <img src="http://www.huanqiuyoucai.com/public/uploads/20170630/2866808c1fd8de81aa18a22ec89b13a7.png" alt="">
+                                    </div>
+                                    <div class="album-menu-item">
+                                        <img src="http://www.huanqiuyoucai.com/public/uploads/20170630/2866808c1fd8de81aa18a22ec89b13a7.png" alt="">
+                                    </div>
+                                    <div class="album-menu-item">
+                                        <img src="http://www.huanqiuyoucai.com/public/uploads/20170630/2866808c1fd8de81aa18a22ec89b13a7.png" alt="">
+                                    </div>
+                                    <div class="album-menu-item">
+                                        <img src="http://www.huanqiuyoucai.com/public/uploads/20170630/2866808c1fd8de81aa18a22ec89b13a7.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="school-menu">
+                            <div class="school-menu-item active">
+                                <img src="http://www.huanqiuyoucai.com/public/uploads/20170606/1b50b7a97e06d55e6a0223f397ce1cb8.gif" alt="">
+                            </div>
+                            <div class="school-menu-item">
+                                <img src="http://www.huanqiuyoucai.com/public/uploads/20170606/1b50b7a97e06d55e6a0223f397ce1cb8.gif" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grade-slide swiper-slide">
+                    <div class="school-container swiper-container">
+                        <div class="school-wrapper swiper-wrapper">
+                            <div data-index="2" class="school-slide swiper-slide clearfix">
+                                <div class="album-container swiper-container">
+                                    <div class="album-wrapper swiper-wrapper">
+                                        <div class="album-slide swiper-slide">
+                                            <img src="http://lcimg.oss-cn-hangzhou.aliyuncs.com/canger/img/page4.png" alt="">
+                                            <h3 class="album-slide-title">aa</h3>
+                                        </div>
+                                        <div class="album-slide swiper-slide">
+                                            <img src="http://lcimg.oss-cn-hangzhou.aliyuncs.com/canger/img/page3.png" alt="">
+                                            <h3 class="album-slide-title">aa</h3>
+                                        </div>
+                                        <div class="album-slide swiper-slide">
+                                            <img src="http://lcimg.oss-cn-hangzhou.aliyuncs.com/canger/img/page4.png" alt="">
+                                            <h3 class="album-slide-title">aa</h3>
+                                        </div>
+                                        <div class="album-slide swiper-slide">
+                                            <img src="http://lcimg.oss-cn-hangzhou.aliyuncs.com/canger/img/page4.png" alt="">
+                                            <h3 class="album-slide-title">aa</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album-menu">
+                                    <div class="album-menu-item active">
+                                        <img src="http://www.huanqiuyoucai.com/public/uploads/20170630/2866808c1fd8de81aa18a22ec89b13a7.png" alt="">
+                                    </div>
+                                    <div class="album-menu-item">
+                                        <img src="http://www.huanqiuyoucai.com/public/uploads/20170630/2866808c1fd8de81aa18a22ec89b13a7.png" alt="">
+                                    </div>
+                                    <div class="album-menu-item">
+                                        <img src="http://www.huanqiuyoucai.com/public/uploads/20170630/2866808c1fd8de81aa18a22ec89b13a7.png" alt="">
+                                    </div>
+                                    <div class="album-menu-item">
+                                        <img src="http://www.huanqiuyoucai.com/public/uploads/20170630/2866808c1fd8de81aa18a22ec89b13a7.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-index="3" class="school-slide swiper-slide clearfix">
+                                <div class="album-container swiper-container">
+                                    <div class="album-wrapper swiper-wrapper">
+                                        <div class="album-slide swiper-slide">
+                                            <img src="http://lcimg.oss-cn-hangzhou.aliyuncs.com/canger/img/page4.png" alt="">
+                                            <h3 class="album-slide-title">aa</h3>
+                                        </div>
+                                        <div class="album-slide swiper-slide">
+                                            <img src="http://lcimg.oss-cn-hangzhou.aliyuncs.com/canger/img/page3.png" alt="">
+                                            <h3 class="album-slide-title">bb</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album-menu">
+                                    <div class="album-menu-item active">
+                                        <img src="http://www.huanqiuyoucai.com/public/uploads/20170630/2866808c1fd8de81aa18a22ec89b13a7.png" alt="">
+                                    </div>
+                                    <div class="album-menu-item">
+                                        <img src="http://www.huanqiuyoucai.com/public/uploads/20170630/2866808c1fd8de81aa18a22ec89b13a7.png" alt="">
+                                    </div>
+                                    <div class="album-menu-item">
+                                        <img src="http://www.huanqiuyoucai.com/public/uploads/20170630/2866808c1fd8de81aa18a22ec89b13a7.png" alt="">
+                                    </div>
+                                    <div class="album-menu-item">
+                                        <img src="http://www.huanqiuyoucai.com/public/uploads/20170630/2866808c1fd8de81aa18a22ec89b13a7.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="school-menu">
+                            <div class="school-menu-item active">
+                                <img src="http://www.huanqiuyoucai.com/public/uploads/20170606/1b50b7a97e06d55e6a0223f397ce1cb8.gif" alt="">
+                            </div>
+                            <div class="school-menu-item">
+                                <img src="http://www.huanqiuyoucai.com/public/uploads/20170606/1b50b7a97e06d55e6a0223f397ce1cb8.gif" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end school-intr -->
+    </div><!-- end school-cont -->
+    <div class="school-mark">
+      <div class="mark-ico">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-container swiper-container2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/school-1.png" alt=""></div>
+              <div class="swiper-slide">2</div>
+              <div class="swiper-slide">3</div>
+              <div class="swiper-slide">4</div>
+              <div class="swiper-slide">5</div>
+              <div class="swiper-slide">6</div>
+              <div class="swiper-slide">7</div>
+              <div class="swiper-slide">8</div>
+              <div class="swiper-slide">9</div>
+            </div>
+        </div>
+      </div>
+    </div><!-- end school-mark -->
+    <div class="dynamic">
+      <div class="school-title clearfix">
+         <h1>优才动态</h1>
+         <a href="#">更多 >></a>
+         <ul class="school-font clearfix">
+           <li></li>
+         </ul>
+      </div>
+      <div class="dynamic-cont clearfix">
+        <div class="dynamic-right">
+          <img src="images/img-xuan1.png" alt="">
+            <h4>高考试题参考答案·志愿填报</h4>
+          </img>
+          <img src="images/img-xuan2.png" alt="">
+            <h4>2017高考试卷解析直播峰会</h4>
+          </img>
+          <img src="images/img-xuan3.png" alt="">
+            <h4>摆脱题海现在就要1元</h4>
+          </img>
+        </div><!-- end dynamic-right -->
+        <div class="dynamic-flet clearfix">
+          <div class="dynamic-l1 f1">
+            <div class="dynamic-l1title">
+              <h3>综合动态</h3>
+            </div>
+            <div class="dynamic-img">
+               <img src="images/dny-img.png" alt="">
+               <p>志合者，不以山海为远</p>
+            </div>
+            <div class="dny-news">
+              <ul>
+                <li><a href="#" class="clearfix"><i>课程 | 2017春季班 “赢”7+ 新梦想都是大公司的分公司的回复</i><span>06-14</span></a></li>
+                <li><a href="#" class="clearfix"><i>课程 | 2017春季班 “赢”7+ 新梦想...</i><span>06-14</span></a></li>
+                <li><a href="#" class="clearfix"><i>课程 | 2017春季班 “赢”7+ 新梦想...</i><span>06-14</span></a></li>
+                <li><a href="#" class="clearfix"><i>课程 | 2017春季班 “赢”7+ 新梦想...</i><span>06-14</span></a></li>
+                <li><a href="#" class="clearfix"><i>课程 | 2017春季班 “赢”7+ 新梦想...</i><span>06-14</span></a></li>
+                <li><a href="#" class="clearfix"><i>课程 | 2017春季班 “赢”7+ 新梦想...</i><span>06-14</span></a></li>
+                <li><a href="#" class="clearfix"><i>课程 | 2017春季班 “赢”7+ 新梦想...</i><span>06-14</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="dynamic-l1">
+            <div class="dynamic-l1title">
+              <h3>媒体资讯</h3>
+            </div>
+            <div class="dynamic-img">
+               <img src="images/dny-img.png" alt="">
+               <p>志合者，不以山海为远</p>
+            </div>
+            <div class="dny-news">
+              <ul>
+                <li><a href="#" class="clearfix"><i>课程 | 2017春季班 “赢”7+ 新梦想...</i><span>06-14</span></a></li>
+                <li><a href="#" class="clearfix"><i>课程 | 2017春季班 “赢”7+ 新梦想...</i><span>06-14</span></a></li>
+                <li><a href="#" class="clearfix"><i>课程 | 2017春季班 “赢”7+ 新梦想...</i><span>06-14</span></a></li>
+                <li><a href="#" class="clearfix"><i>课程 | 2017春季班 “赢”7+ 新梦想...</i><span>06-14</span></a></li>
+                <li><a href="#" class="clearfix"><i>课程 | 2017春季班 “赢”7+ 新梦想...</i><span>06-14</span></a></li>
+                <li><a href="#" class="clearfix"><i>课程 | 2017春季班 “赢”7+ 新梦想...</i><span>06-14</span></a></li>
+                <li><a href="#" class="clearfix"><i>课程 | 2017春季班 “赢”7+ 新梦想...</i><span>06-14</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- end dynamic-flet -->
+      </div>
+    </div><!-- end dynamic -->
+    <div class="teacher-power">
+      <div class="teacher-center">
+        <div class="school-title clearfix">
+           <h1>师资力量</h1>
+           <a href="#">更多 >></a>
+           <ul class="school-btn clearfix" id="button2">
+             <li class="active">大学</li>
+             <li>高中</li>
+             <li>初中</li>
+             <li>小学</li>
+           </ul>
+        </div>
+        <div class="teacher-main clearfix">
+          <div class="teacher-mainR">
+            <div class="teacher-tui" >
+              <div class="box2" id="main2">
+                 <ul class="teach-item" id="pinter2">
+                   <li class="active">
+                      <div class="swiper-container" id="swiper-container3">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="swiper-img clearfix">
+                                <a href="#">
+                                  <img src="images/imgs.png" alt="">
+                                  <h4>国家高级教师：<i>胡正伟</i>  </h4>
+                                  <p>1990年毕业于四川外语学院英语语言文学系，获文学学士学位。</p>
+                                </a>
+                                <a href="#">
+                                  <img src="images/imgs.png" alt="">
+                                  <h4>国家高级教师：<i>胡正伟</i>  </h4>
+                                  <p>1990年毕业于四川外语学院英语语言文学系，获文学学士学位。</p>
+                                </a>
+                                <a href="#">
+                                  <img src="images/imgs.png" alt="">
+                                  <h4>国家高级教师：<i>胡正伟</i>  </h4>
+                                  <p>1990年毕业于四川外语学院英语语言文学系，获文学学士学位。</p>
+                                </a>
+                                <a href="#">
+                                  <img src="images/imgs.png" alt="">
+                                  <h4>国家高级教师：<i>胡正伟</i>  </h4>
+                                  <p>1990年毕业于四川外语学院英语语言文学系，获文学学士学位。</p>
+                                </a>
+                                <a href="#">
+                                  <img src="images/imgs.png" alt="">
+                                  <h4>国家高级教师：<i>胡正伟</i>  </h4>
+                                  <p>1990年毕业于四川外语学院英语语言文学系，获文学学士学位。</p>
+                                </a>
+                                <a href="#">
+                                  <img src="images/imgs.png" alt="">
+                                  <h4>国家高级教师：<i>胡正伟</i>  </h4>
+                                  <p>1990年毕业于四川外语学院英语语言文学系，获文学学士学位。</p>
+                                </a>
+                                <a href="#">
+                                  <img src="images/imgs.png" alt="">
+                                  <h4>国家高级教师：<i>胡正伟</i>  </h4>
+                                  <p>1990年毕业于四川外语学院英语语言文学系，获文学学士学位。</p>
+                                </a>
+                                <a href="#">
+                                  <img src="images/imgs.png" alt="">
+                                  <h4>国家高级教师：<i>胡正伟</i>  </h4>
+                                  <p>1990年毕业于四川外语学院英语语言文学系，获文学学士学位。</p>
+                                </a>
+                                <a href="#">
+                                  <img src="images/imgs.png" alt="">
+                                  <h4>国家高级教师：<i>胡正伟</i>  </h4>
+                                  <p>1990年毕业于四川外语学院英语语言文学系，获文学学士学位。</p>
+                                </a>
+                                <a href="#">
+                                  <img src="images/imgs.png" alt="">
+                                  <h4>国家高级教师：<i>胡正伟</i>  </h4>
+                                  <p>1990年毕业于四川外语学院英语语言文学系，获文学学士学位。</p>
+                                </a>
+                                <a href="#">
+                                  <img src="images/imgs.png" alt="">
+                                  <h4>国家高级教师：<i>胡正伟</i>  </h4>
+                                  <p>1990年毕业于四川外语学院英语语言文学系，获文学学士学位。</p>
+                                </a>
+                                <a href="#">
+                                  <img src="images/imgs.png" alt="">
+                                  <h4>国家高级教师：<i>胡正伟</i>  </h4>
+                                  <p>1990年毕业于四川外语学院英语语言文学系，获文学学士学位。</p>
+                                </a>
+                                <a href="#">
+                                  <img src="images/imgs.png" alt="">
+                                  <h4>国家高级教师：<i>胡正伟</i>  </h4>
+                                  <p>1990年毕业于四川外语学院英语语言文学系，获文学学士学位。</p>
+                                </a>
+                            </div>
+                          </div><!-- end swiper-slide -->
+                          <div class="swiper-slide">slider2</div>
+                          <div class="swiper-slide">slider3</div>
+                          <div class="swiper-slide">Slide 4</div>
+                        </div>
+                        <!-- Add Pagination -->
+
+                      </div>
+                      <div class="swiper-pagination swiper-pagination3"></div>
+                   </li>
+                   <li>2</li>
+                   <li>3</li>
+                   <li>4</li>
+                 </ul>
+              </div><!-- end box2 -->
+            </div><!-- end teacher-tui -->
+          </div><!-- end teacher-mainR -->
+          <div class="teacher-mainL">
+              <ul>
+                <li>
+                  <a href="#">
+                   <i>专家教授</i>
+                   <span>EXPERTS</span>
+                   </a>
+                 </li>
+                   <li>
+                    <a href="#">
+                     <i>特级教师</i>
+                     <span>SUPERFLNE</span>
+                    </a>
+                 </li>
+                 <li>
+                    <a href="#">
+                     <i>高级教师</i>
+                     <span>SENIOR</span>
+                    </a>
+                 </li>
+                 <li>
+                   <a href="#">
+                     <i>优秀教师</i>
+                     <span>EXCELLENT</span>
+                   </a>
+                 </li>
+                 <li>
+                   <a href="#">
+                     <i>普通教师</i>
+                     <span>REGISTER</span>
+                   </a>
+                 </li>
+              </ul>
+          </div><!-- end teacher-mainL -->
+        </div><!-- end teacher-main -->
+      </div>
+    </div><!-- end teacher-power -->
+
+    <div class="youcai-center">
+      <div class="youcai-grid">
+        <div class="school-title clearfix">
+           <h1>优才中心</h1>
+           <a href="#">更多 >></a>
+           <ul class="school-font clearfix">
+             <li></li>
+           </ul>
+        </div>
+        <div class="youcai-cont clearfix">
+          <div class="man-right ">
+            <div class="youcai-studes clearfix">
+              <div class="man1 f2">
+                <div class="dynamic-l1title">
+                  <h3>媒体资讯</h3>
+                </div>
+                <div class="man1-cont">
+                  <ul>
+                    <li class="clearfix">
+                      <div class="font">
+                        <h4>河南高考文科状元王子瑾</h4>
+                        <p>有效掌控时间，及时反省自己，经常查漏补缺，“其实我做的卷子并不多，但每次我都会把题给做...</p>
+                      </div>
+                      <div class="photo">
+                        <img src="images/img2.png" alt="">
+                        <em>王子瑾</em>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="font">
+                        <h4>河南高考文科状元王子瑾</h4>
+                        <p>有效掌控时间，及时反省自己，经常查漏补缺，“其实我做的卷子并不多，但每次我都会把题给做...</p>
+                      </div>
+                      <div class="photo">
+                        <img src="images/img2.png" alt="">
+                        <em>王子瑾</em>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="man1">
+                <div class="dynamic-l1title">
+                  <h3>学习分享</h3>
+                </div>
+                <div class="man1-cont">
+                  <ul>
+                    <li class="clearfix">
+                      <div class="font">
+                        <h4>河南高考文科状元王子瑾</h4>
+                        <p>有效掌控时间，及时反省自己，经常查漏补缺，“其实我做的卷子并不多，但每次我都会把题给做...</p>
+                      </div>
+                      <div class="photo">
+                        <img src="images/img2.png" alt="">
+                        <em>王子瑾</em>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="font">
+                        <h4>河南高考文科状元王子瑾</h4>
+                        <p>有效掌控时间，及时反省自己，经常查漏补缺，“其实我做的卷子并不多，但每次我都会把题给做...</p>
+                      </div>
+                      <div class="photo">
+                        <img src="images/img2.png" alt="">
+                        <em>王子瑾</em>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- end youcai-studes -->
+            <div class="youcai1">
+              <div class="swiper-container swiper-container4">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <img src="images/img3.png" alt="">
+                     <h5>曹童</h5>
+                     <i> 读于清华大学</i>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/img3.png" alt="">
+                     <h5>曹童</h5>
+                     <i> 读于清华大学</i>
+                  </div>
+                  <div class="swiper-slide">
+                     <img src="images/img3.png" alt="">
+                     <h5>曹童</h5>
+                     <i> 读于清华大学</i>
+                  </div>
+                  <div class="swiper-slide">
+                     <img src="images/img3.png" alt="">
+                     <h5>曹童</h5>
+                     <i> 读于清华大学</i>
+                  </div>
+                  <div class="swiper-slide">
+                     <img src="images/img3.png" alt="">
+                     <h5>曹童</h5>
+                     <i> 读于清华大学</i>
+                  </div>
+                  <div class="swiper-slide">
+                     <img src="images/img3.png" alt="">
+                     <h5>曹童</h5>
+                     <i> 读于清华大学</i>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end youcai1 -->
+            </div><!-- end man-right -->
+            <div class="tuijian">
+              <img src="images/img1.png" alt="">
+              <p>
+                <i>学员心声</i> 6个月这么快就过去了，先谢谢老师们辛勤劳动，同学们的相互支持。O(∩_∩)O哈哈~课件很喜欢，班级虽然结课了，但是学习会继续下去，会继续坚持每天学习一点点。
+              </p>
+            </div>
+          </div>
+      </div><!-- end youcai-grid -->
+    </div><!-- end youcai-center -->
+    <div class="cooperation">
+      <div class="school-title clearfix">
+         <h1>合作机构</h1>
+         <a href="#">更多 >></a>
+         <ul class="school-font1 clearfix">
+           <li></li>
+         </ul>
+      </div>
+      <div class="cooperation-logo">
+        <ul class="clearfix">
+          <li><img src="images/logob.png" alt=""></li>
+          <li><img src="images/logom.png" alt=""></li>
+          <li><img src="images/logoh.png" alt=""></li>
+          <li><img src="images/logor.png" alt=""></li>
+          <li><img src="images/logof.png" alt=""></li>
+        </ul>
+      </div>
+    </div><!-- end cooperation -->
+    <div class="advertis-1"></div><!--广告 end advertis-1 -->
+    <div class="youcai-library">
+      <div class="school-title clearfix">
+         <h1>优才图书馆</h1>
+         <a href="#" class="book">全部课件</a>
+         <ul class="library clearfix" id="y_library" data-context="#tab-library">
+           <li class="selected">热门</li>
+           <li>免费</li>
+           <li>限时</li>
+           <li>语文</li>
+           <li>数学</li>
+           <li>化学</li>
+           <li>英语</li>
+           <li>物理</li>
+         </ul>
+      </div>
+      <div class="library-cont" id="tab-library">
+        <div class="item selected">
+          <ul class="clearfix">
+            <li>
+              <a href="#">
+                <img src="images/book-1.png" alt="">
+                <p>人教版《道德与法治》七年级上册-第四单元 生命的思考 复习课件</p>
+                <em>[查看详情]</em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/book-1.png" alt="">
+                <p>2017年（人教版）中考英语总复习课件-八年级下册考点精讲14</p>
+                <em>[查看详情]</em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/book-1.png" alt="">
+                <p>人教版《道德与法治》七年级上册-第四单元 生命的思考 复习课件</p>
+                <em>[查看详情]</em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/book-1.png" alt="">
+                <p>人教版《道德与法治》七年级上册-第四单元 生命的思考 复习课件</p>
+                <em>[查看详情]</em>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <!--  -->
+      </div>
+    </div><!-- end youcai-library -->
+    <div class="advertis-2 clearfix">
+      <a href="#"><img src="images/l_left1.png" alt=""></a>
+      <a href="#"><img src="images/l_left2.png" alt=""></a>
+      <a href="#"><img src="images/l_left3.png" alt=""></a>
+      <a href="#"><img src="images/l_left4.png" alt=""></a>
+    </div><!-- end advertis-2 -->
+
+  </div><!-- end commont -->
+  <div class="footer">
+      <!-- <div class="f_container"></div> -->
+      <div class="footer-nav grid clearfix">
+        <div class="footer-mark">
+          <div class="f_logo"></div>
+          <div class="share clearfix">
+            <a href="#" class="sina"></a>
+            <a href="#" class="weixin">
+              <p class="wei-ios">
+                <img src="images/img1.png" alt="">
+              </p>
+            </a>
+            <a href="#" class="qq"></a>
+          </div>
+        </div>
+        <div class="cate clearfix">
+          <dl class="cate-nav">
+             <dt>关于我们</dt>
+             <dd><a href="#">关于我们</a></dd>
+             <dd><a href="#">网站地图</a></dd>
+             <dd><a href="#">网站条款</a></dd>
+          </dl>
+          <dl class="cate-nav">
+             <dt>服务支持</dt>
+             <dd><a href="#">消费保障</a></dd>
+             <dd><a href="#">支付问题</a></dd>
+             <dd><a href="#">侵权投诉</a></dd>
+          </dl>
+          <dl class="cate-nav">
+             <dt>帮助中心</dt>
+             <dd><a href="#">平台流程</a></dd>
+             <dd><a href="#">关于注册</a></dd>
+             <dd><a href="#">问题反馈</a></dd>
+          </dl>
+          <dl class="cate-nav">
+             <dt>合作交流</dt>
+             <dd><a href="#">联系我们</a></dd>
+             <dd><a href="#">加入我们</a></dd>
+          </dl>
+          <dl class="cate-nav">
+             <dt>客服热线</dt>
+             <dd class="tel"><a href="#">023-67825643</a></dd>
+             <dd class="f4"><a href="#">( 9:00 - 18:00 )</a></dd>
+          </dl>
+        </div><!-- end cate -->
+
+      </div><!-- end footer-nav -->
+      <div class="footer-font">
+        <p>Copyright © 2015 shengyuanwang.net All Rights Reserved　版权所有·生源网　浙ICP备14012994号-1 增值电信业务经营许可证 ：渝A2-20140130 </p>
+        <p>生源网是网络服务平台方，若您发现您的权利被侵害，请发起知识产权投诉，copyright@shengyuanwang.net</p>
+      </div>
+  </div><!-- end footer -->
+
+  <div class="fixed-left">
+     <ul>
+       <li class="kefu">
+        <a href="#">在线客服</a>
+       </li>
+       <li class="weixin">
+        <a href="#" >
+         官方微信
+        </a>
+        <div class="sao">
+          <p>扫一扫关注我们</p>
+          <img src="images/er.png" alt="">
+        </div>
+       </li>
+       <li class="phone">
+        <a href="#">
+          客服电话
+        </a>
+        <div class="p_hover">
+          <span>023-67825643</span>
+        </div>
+       </li>
+       <li class="back_top" id="top">
+        <a href="#">
+          返回顶部
+        </a>
+       </li>
+     </ul>
+  </div><!-- end fixed-left -->
+  <script type="text/javascript" src="js/navmenu.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/test.js"></script>
+  <script>
+      $(function() {
+          window.scrollTo(0, 0);
+          var secKill = new School();
+          secKill.initFn();
+      });
+
+      var School = function() {
+          this.$_nav_i = $('#button1 > li');
+          this.$_album_i = $('.album-menu > .album-menu-item');
+          this.$_school_i = $('.school-menu > .school-menu-item')
+      };
+
+      School.prototype = {
+          initFn: function () {
+              this.switchTab();
+              this.intSwiper();
+              this.switchAlbum();
+              this.switchSchool();
+          },
+          intSwiper: function () {
+              var self = this;
+            this.swiper1 = new Swiper('.grade-container', {
+                slidesPerView: 1,
+                swipeHandler: 'false',
+                autoplay: 3000,
+                onSlideChangeEnd: function (e) {
+                    self.$_nav_i.eq(e.realIndex).addClass('active').siblings().removeClass('active');
+                    console.log()
+//                    self.$_nav_i[e.realIndex].addClass('active').siblings().removeClass('active');
+                }
+            });
+            this.swiper2 = new Swiper('.school-container', {
+                slidesPerView: 1,
+                pagination: '.school-pagination',
+                swipeHandler: 'false',
+                autoplay: 3000
+            });
+            this.swiper3 = new Swiper('.album-container', {
+                slidesPerView: 1,
+                pagination: '.school-pagination',
+                swipeHandler: 'false',
+            });
+          },
+          switchTab: function () {
+              var self  = this;
+              this.$_nav_i.click(function () {
+                var $index = $(this).index();
+                  self.swiper1.slideTo($index);
+                })
+          },
+          switchSchool: function () {
+              var self = this;
+              this.$_school_i.click(function () {
+                  var $index = $(this).index();
+                  $(this).addClass('active').siblings().removeClass('active');
+                  self.swiper2[self.swiper1.activeIndex].slideTo($index);
+              })
+          },
+          switchAlbum: function () {
+              var self = this;
+              this.$_album_i.click(function () {
+                  var $index = $(this).index();
+                  var $_i = $(this).parents('.school-slide').attr('data-index');
+                  $(this).addClass('active').siblings().removeClass('active');
+                  self.swiper3[$_i].slideTo($index);
+              })
+          },
+      }
+  </script>
+</body>
+</html>
