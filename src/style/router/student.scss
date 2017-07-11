@@ -104,7 +104,19 @@ html {
 
       //个人资料
       .user-info {
-
+        padding: 0 30px;
+        .item-form {
+          display: flex;
+          align-items: center;
+          height: 75px;
+          padding: 0 5px;
+          border-bottom: 1px dashed $Bd_COLOR;
+          .item-form-tit {
+            width: 65px;
+            font-size: 14px;
+            color: $TEXT_666;
+          }
+        }
       }
       //账号管理
       .user-account {

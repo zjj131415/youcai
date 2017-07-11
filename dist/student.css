@@ -118,6 +118,30 @@ html {
   color: #129992;
 }
 
+.cont-m .user-info {
+  padding: 0 30px;
+}
+
+.cont-m .user-info .item-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75px;
+  padding: 0 5px;
+  border-bottom: 1px dashed #ccc7c6;
+}
+
+.cont-m .user-info .item-form .item-form-tit {
+  width: 65px;
+  font-size: 14px;
+  color: #666;
+}
+
 .cont-m .user-account {
   padding: 0 30px;
 }
