@@ -6,9 +6,6 @@ $TEXT_ORANGE: #f79402;
 $TEXT_666: #666;
 $THEME_COLOR: #129992;
 //伪元素实现1像素边框；
-/*
-*
-*/
 @mixin brdCom($pst, $bdrColor, $leftDis: 0) {
   content: ' ';
   position: absolute;
@@ -20,24 +17,9 @@ $THEME_COLOR: #129992;
   transform: scaleY(.5);
 }
 
-//浮动
-.fl {
-  float: left;
-  display: inline;
-}
-
-.fr {
-  float: right;
-  display: inline;
-}
-
 //不换行
 @mixin nowrap {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-
-.pd-td10 {
-  padding: 10px 0;
 }

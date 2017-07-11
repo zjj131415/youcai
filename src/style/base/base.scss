@@ -55,6 +55,18 @@ input[type='checkbox'] {
   vertical-align: text-bottom; }
 
 
+//浮动
+.fl {
+  float: left;
+  display: inline;
+}
+
+.fr {
+  float: right;
+  display: inline;
+}
+
+
 //清除浮动
 .clearfix:before,
 .clearfix:after {
@@ -72,6 +84,11 @@ input[type='checkbox'] {
 .bdr-btm,
 .bdr-top {
   position: relative;
+}
+
+//间距
+.pd-td10 {
+  padding: 10px 0;
 }
 
 .bdr-top::before {

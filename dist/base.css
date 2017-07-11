@@ -533,9 +533,14 @@ html {
   overflow-x: hidden;
 }
 
-/*
-*
-*/
+input[type='checkbox'] {
+  margin: 0;
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  vertical-align: text-bottom;
+}
+
 .fl {
   float: left;
   display: inline;
@@ -544,18 +549,6 @@ html {
 .fr {
   float: right;
   display: inline;
-}
-
-.pd-td10 {
-  padding: 10px 0;
-}
-
-input[type='checkbox'] {
-  margin: 0;
-  padding: 0;
-  width: 14px;
-  height: 14px;
-  vertical-align: text-bottom;
 }
 
 .clearfix:before,
@@ -572,6 +565,10 @@ input[type='checkbox'] {
 .bdr-btm,
 .bdr-top {
   position: relative;
+}
+
+.pd-td10 {
+  padding: 10px 0;
 }
 
 .bdr-top::before {

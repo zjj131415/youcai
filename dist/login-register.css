@@ -1,20 +1,3 @@
-/*
-*
-*/
-.fl {
-  float: left;
-  display: inline;
-}
-
-.fr {
-  float: right;
-  display: inline;
-}
-
-.pd-td10 {
-  padding: 10px 0;
-}
-
 .login-wrapper {
   width: 1180px;
   margin: 0 auto 160px auto;

@@ -902,10 +902,9 @@
             this.swiper1 = new Swiper('.grade-container', {
                 slidesPerView: 1,
                 swipeHandler: 'false',
-                autoplay: 3000,
+//                autoplay: 3000,
                 onSlideChangeEnd: function (e) {
                     self.$_nav_i.eq(e.realIndex).addClass('active').siblings().removeClass('active');
-                    console.log()
 //                    self.$_nav_i[e.realIndex].addClass('active').siblings().removeClass('active');
                 }
             });
@@ -913,12 +912,19 @@
                 slidesPerView: 1,
                 pagination: '.school-pagination',
                 swipeHandler: 'false',
-                autoplay: 3000
+//                autoplay: 3000
             });
             this.swiper3 = new Swiper('.album-container', {
                 slidesPerView: 1,
                 pagination: '.school-pagination',
                 swipeHandler: 'false',
+				autoplay: 3000,
+				onSlideChangeEnd: function (e) {
+//					var $_i = e.parents('.school-slide').attr('data-index');
+//					$(this).addClass('active').siblings().removeClass('active');
+					console.log(e)
+//					self.swiper3[$_i].slideTo($index);
+				}
             });
           },
           switchTab: function () {
