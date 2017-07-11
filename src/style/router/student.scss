@@ -51,7 +51,7 @@ html {
           &.active {
             color: #fff;
             > i {
-              color: #ff;
+              color: #fff;
             }
           }
           > i {
@@ -65,48 +65,203 @@ html {
         }
       }
       .menu-foot {
-        padding-top: 70px;
-        padding-bottom: 30px;
+        height: 280px;
         border-top: 1px solid $Bd_COLOR;
         text-align: center;
+        .we-chat {
+          $size: 200px;
+          width: $size;
+          height: $size;
+          padding: 15px 0;
+          margin: 60px auto 0 auto;
+          background: #f7f7f7;
+        }
         > p,
           span{
           font-size: 14px;
           color: $TEXT_666;
         }
         .menu-qr-code {
-          margin: 15px 0;
+          margin: 10px 0;
         }
       }
     }
     @at-root .cont-m {
       width: 920px;
+      min-height: 750px;
       float: right;
-      padding: 0 20px;
       border: 1px solid $Bd_COLOR;
-      .cont-title {
-        height: 62px;
-        border-bottom: 1px solid $THEME_COLOR;
-        line-height: 60px;
-        font-size: 16px;
-        color: $THEME_COLOR;
+      .cont-title-box {
+        margin: 0 30px;
+        .cont-title {
+          height: 62px;
+          border-bottom: 1px solid $THEME_COLOR;
+          line-height: 60px;
+          font-size: 16px;
+          color: $THEME_COLOR;
+        }
       }
+
       //个人资料
       .user-info {
 
       }
       //账号管理
       .user-account {
-        .account-item {
+        padding: 0 30px;
+        .item-box {
+          display: flex;
+          align-items: center;
+          height: 70px;
           padding: 0 30px;
-          .item-title {
-            font-size: 16px;
-            font-weight: 500;
+          border-bottom: 1px solid $Bd_COLOR;
+        }
+        .account-item-l {
+          width: 135px;
+          > i {
+            margin-right: 5px;
+            font-size: 22px;
+            color: $THEME_COLOR;
+          }
+          > span {
+            font-size: 18px;
+          }
+        }
+        .account-item-z {
+          width: 380px;
+          font-size: 12px;
+          color: $TEXT_666;
+        }
+        .account-item-r {
+          flex: 1px;
+          text-align: right;
+          .toggle {
+            cursor: pointer;
+            font-size: 14px;
+            color: #5381df;
+          }
+        }
+        .item-form {
+          display: none;
+          padding: 30px 0;
+        }
+        .form-component {
+          width: 500px;
+          margin: 0 auto;
+          .cell {
+            display: flex;
+            align-items: center;
+            height: 36px;
+            margin-top: 10px;
+          }
+          .cell-hd {
+            width: 120px;
+            font-size: 14px;
+            color: $TEXT_666;
+            text-align: right;
+          }
+          .cell-bd {
+            flex: 1;
+            display: flex;
+            .mobile {
+              font-size: 18px;
+              color: #1b1b1b;
+            }
+            .btn {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 54px;
+              height: 36px;
+              margin-right: 10px;
+              border-radius: 3px;
+              font-size: 14px;
+              &.success {
+                border: 1px solid $THEME_COLOR;
+                background: $THEME_COLOR;
+                color: #fff;
+              }
+              &.cancel {
+                border: 1px solid $Bd_COLOR;
+                background: transparent;
+                color: $TEXT_666;
+              }
+            }
+          }
+          .cell-ft {
+            width: 100px;
+            text-align: right;
+            .link {
+              font-size: 14px;
+              color: #5381df;
+            }
+          }
+
+          .max-txt,
+          .min-inout {
+            width: 280px;
+            height: 36px;
+            padding: 5px 10px;
+            border: 1px solid $Bd_COLOR;
+            border-radius: 2px;
+            font-size: 14px;
             color: #000;
           }
-          .iconfont {
-            font-size: 24px;
-            color: $THEME_COLOR;
+          .min-inout {
+            width: 148px;
+          }
+          .get-code {
+            width: 100px;
+            height: 36px;
+            margin-left: 10px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            color: #fff;
+            background: $THEME_COLOR;
+            &.disabled {
+              background: #c1c1c1;
+            }
+          }
+        }
+      }
+      //我的课程
+      .user-course {
+        .course-list {
+          padding: 10px 20px;
+          > li {
+            width: 272.5px;
+            height: 275px;
+            float: left;
+            margin: 10px;
+          }
+          .course-info {
+            height: 120px;
+            padding: 20px 15px;
+            border: 1px solid $Bd_COLOR;
+            h4 {
+              font-size: 14px;
+              color: $TEXT_666;
+              height: 48px;
+              line-height:24px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              word-break: break-word;
+            }
+          }
+          .course-price {
+            margin-top: 10px;
+            span {
+              font-size: 14px;
+              color: $TEXT_ORANGE;
+            }
+            i {
+              font-family: arial;
+            }
           }
         }
       }

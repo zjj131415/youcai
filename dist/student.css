@@ -64,7 +64,7 @@ html {
 }
 
 .student-center-menu .menu-list .menu-item.active > i {
-  color: #ff;
+  color: #fff;
 }
 
 .student-center-menu .menu-list .menu-item > i {
@@ -77,10 +77,17 @@ html {
 }
 
 .student-center-menu .menu-foot {
-  padding-top: 70px;
-  padding-bottom: 30px;
+  height: 280px;
   border-top: 1px solid #ccc7c6;
   text-align: center;
+}
+
+.student-center-menu .menu-foot .we-chat {
+  width: 200px;
+  height: 200px;
+  padding: 15px 0;
+  margin: 60px auto 0 auto;
+  background: #f7f7f7;
 }
 
 .student-center-menu .menu-foot > p, .student-center-menu .menu-foot span {
@@ -89,17 +96,21 @@ html {
 }
 
 .student-center-menu .menu-foot .menu-qr-code {
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .cont-m {
   width: 920px;
+  min-height: 750px;
   float: right;
-  padding: 0 20px;
   border: 1px solid #ccc7c6;
 }
 
-.cont-m .cont-title {
+.cont-m .cont-title-box {
+  margin: 0 30px;
+}
+
+.cont-m .cont-title-box .cont-title {
   height: 62px;
   border-bottom: 1px solid #129992;
   line-height: 60px;
@@ -107,17 +118,217 @@ html {
   color: #129992;
 }
 
-.cont-m .user-account .account-item {
+.cont-m .user-account {
   padding: 0 30px;
 }
 
-.cont-m .user-account .account-item .item-title {
-  font-size: 16px;
-  font-weight: 500;
+.cont-m .user-account .item-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  padding: 0 30px;
+  border-bottom: 1px solid #ccc7c6;
+}
+
+.cont-m .user-account .account-item-l {
+  width: 135px;
+}
+
+.cont-m .user-account .account-item-l > i {
+  margin-right: 5px;
+  font-size: 22px;
+  color: #129992;
+}
+
+.cont-m .user-account .account-item-l > span {
+  font-size: 18px;
+}
+
+.cont-m .user-account .account-item-z {
+  width: 380px;
+  font-size: 12px;
+  color: #666;
+}
+
+.cont-m .user-account .account-item-r {
+  -webkit-box-flex: 1px;
+  -webkit-flex: 1px;
+      -ms-flex: 1px;
+          flex: 1px;
+  text-align: right;
+}
+
+.cont-m .user-account .account-item-r .toggle {
+  cursor: pointer;
+  font-size: 14px;
+  color: #5381df;
+}
+
+.cont-m .user-account .item-form {
+  display: none;
+  padding: 30px 0;
+}
+
+.cont-m .user-account .form-component {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.cont-m .user-account .form-component .cell {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 36px;
+  margin-top: 10px;
+}
+
+.cont-m .user-account .form-component .cell-hd {
+  width: 120px;
+  font-size: 14px;
+  color: #666;
+  text-align: right;
+}
+
+.cont-m .user-account .form-component .cell-bd {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cont-m .user-account .form-component .cell-bd .mobile {
+  font-size: 18px;
+  color: #1b1b1b;
+}
+
+.cont-m .user-account .form-component .cell-bd .btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 54px;
+  height: 36px;
+  margin-right: 10px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  font-size: 14px;
+}
+
+.cont-m .user-account .form-component .cell-bd .btn.success {
+  border: 1px solid #129992;
+  background: #129992;
+  color: #fff;
+}
+
+.cont-m .user-account .form-component .cell-bd .btn.cancel {
+  border: 1px solid #ccc7c6;
+  background: transparent;
+  color: #666;
+}
+
+.cont-m .user-account .form-component .cell-ft {
+  width: 100px;
+  text-align: right;
+}
+
+.cont-m .user-account .form-component .cell-ft .link {
+  font-size: 14px;
+  color: #5381df;
+}
+
+.cont-m .user-account .form-component .max-txt, .cont-m .user-account .form-component .min-inout {
+  width: 280px;
+  height: 36px;
+  padding: 5px 10px;
+  border: 1px solid #ccc7c6;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  font-size: 14px;
   color: #000;
 }
 
-.cont-m .user-account .account-item .iconfont {
-  font-size: 24px;
-  color: #129992;
+.cont-m .user-account .form-component .min-inout {
+  width: 148px;
+}
+
+.cont-m .user-account .form-component .get-code {
+  width: 100px;
+  height: 36px;
+  margin-left: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+  background: #129992;
+}
+
+.cont-m .user-account .form-component .get-code.disabled {
+  background: #c1c1c1;
+}
+
+.cont-m .user-course .course-list {
+  padding: 10px 20px;
+}
+
+.cont-m .user-course .course-list > li {
+  width: 272.5px;
+  height: 275px;
+  float: left;
+  margin: 10px;
+}
+
+.cont-m .user-course .course-list .course-info {
+  height: 120px;
+  padding: 20px 15px;
+  border: 1px solid #ccc7c6;
+}
+
+.cont-m .user-course .course-list .course-info h4 {
+  font-size: 14px;
+  color: #666;
+  height: 48px;
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+.cont-m .user-course .course-list .course-price {
+  margin-top: 10px;
+}
+
+.cont-m .user-course .course-list .course-price span {
+  font-size: 14px;
+  color: #f79402;
+}
+
+.cont-m .user-course .course-list .course-price i {
+  font-family: arial;
 }

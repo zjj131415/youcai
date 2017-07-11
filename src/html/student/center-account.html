@@ -58,26 +58,151 @@
                 </li>
             </ul>
             <div class="menu-foot">
-                <p>环球优才微信公众号</p>
-                <div class="menu-qr-code">
-                    <img width="110" height="110" src="../../images/p6.jpg" alt="">
+                <div class="we-chat">
+                    <p>环球优才微信公众号</p>
+                    <div class="menu-qr-code">
+                        <img width="115" height="115" src="../../images/p_11.jpg" alt="">
+                    </div>
+                    <span>关注我们</span>
                 </div>
-                <span>关注我们</span>
             </div>
         </div>
         <div class="cont-m">
-            <h3 class="cont-title">荣誉认证</h3>
+            <div class="cont-title-box">
+                <h3 class="cont-title">安全设置</h3>
+            </div>
             <div class="user-account">
                 <div class="account-item">
-                    <i class="iconfont icon-suo"></i>
-                    <span class="item-title">登陆密码</span>
-                    <span>登录账号时需要输入的密码</span>
-                    <a class="fr" href="">修改登录密码</a>
+                    <div class="item-box">
+                        <div class="account-item-l">
+                            <i class="iconfont icon-suo"></i>
+                            <span>登陆密码</span>
+                        </div>
+                        <div class="account-item-z">
+                            登录账号时需要输入的密码登录账号时需要输入的密码
+                        </div>
+                        <div class="account-item-r">
+                            <span class="toggle">修改登录密码</span>
+                        </div>
+                    </div>
+                    <div class="item-form">
+                        <div class="form-component">
+                            <div class="cell">
+                                <div class="cell-hd">
+                                    当前登录密码：
+                                </div>
+                                <div class="cell-bd">
+                                    <input class="max-txt" type="text"/>
+                                </div>
+                                <div class="cell-ft">
+                                    <a class="link" href="javascript:alert(1)">找回登录密码</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-component">
+                            <div class="cell">
+                                <div class="cell-hd">
+                                    新登录密码：
+                                </div>
+                                <div class="cell-bd">
+                                    <input class="max-txt" type="text"/>
+                                </div>
+                                <div class="cell-ft">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-component">
+                            <div class="cell">
+                                <div class="cell-hd">
+                                    确认新登录密码：
+                                </div>
+                                <div class="cell-bd">
+                                    <input class="max-txt" type="text"/>
+                                </div>
+                                <div class="cell-ft">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-component">
+                            <div class="cell mt20">
+                                <div class="cell-hd">
+                                </div>
+                                <div class="cell-bd">
+                                    <a class="btn success" href="javascript:alert(1)">确认</a>
+                                    <a class="btn cancel" href="javascript:alert(1)">取消</a>
+                                </div>
+                                <div class="cell-ft">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="account-item">
+                    <div class="item-box">
+                        <div class="account-item-l">
+                            <i class="iconfont icon-shoujibangding"></i>
+                            <span>手机绑定</span>
+                        </div>
+                        <div class="account-item-z">
+                            修改绑定手机需要验证当前手机号与新手机号，如果当前手机号遗失或
+                            无法收到验证码，请致电客服023-86776298协助修改
+                        </div>
+                        <div class="account-item-r">
+                            <span class="toggle">修改绑定手机</span>
+                        </div>
+                    </div>
+                    <div class="item-form">
+                        <div class="form-component">
+                            <div class="cell">
+                                <div class="cell-hd">
+                                    已绑定手机号：
+                                </div>
+                                <div class="cell-bd">
+                                    <span class="mobile">151***9700</span>
+                                </div>
+                                <div class="cell-ft">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-component">
+                            <div class="cell">
+                                <div class="cell-hd">
+                                    新登录密码：
+                                </div>
+                                <div class="cell-bd">
+                                    <input class="min-inout" type="text">
+                                    <button class="get-code disabled">获取验证码</button>
+                                </div>
+                                <div class="cell-ft">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-component">
+                            <div class="cell mt20">
+                                <div class="cell-hd">
+                                </div>
+                                <div class="cell-bd">
+                                    <a class="btn success" href="javascript:alert(1)">下一步</a>
+                                    <a class="btn cancel" href="javascript:alert(1)">取消</a>
+                                </div>
+                                <div class="cell-ft">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
+<script>
+    (function () {
+        $(function () {
+            $('.account-item-r > .toggle').click(function () {
+                $(this).parents('.account-item').find('.item-form').toggle(200);
+            })
+        })
+    })();
+</script>
 </body>
 </html>
