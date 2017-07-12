@@ -1,0 +1,538 @@
+html {
+  background: #f4f1eb;
+}
+
+.teacher-wrapper {
+  background: no-repeat top center;
+}
+
+.teacher-wrapper .wrapper {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.teacher-wrapper .head-info {
+  height: 300px;
+  padding: 40px 0;
+}
+
+.teacher-wrapper .head-info .photo {
+  width: 150px;
+  height: 150px;
+  padding: 3px;
+  margin: 0 auto;
+  overflow: hidden;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background: #fff;
+}
+
+.teacher-wrapper .head-info .photo > span {
+  display: block;
+  width: 144px;
+  height: 144px;
+  overflow: hidden;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+}
+
+.teacher-wrapper .head-info .name {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #1b1b1b;
+  text-align: center;
+}
+
+.teacher-wrapper .head-info .desc {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.teacher-wrapper .head-info .desc > span {
+  padding: 0 3px;
+}
+
+.teacher-wrapper .top-nav-m {
+  background: #fff;
+}
+
+.teacher-wrapper .top-nav-m .nav-list {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.teacher-wrapper .top-nav-m li {
+  width: 260px;
+  float: left;
+}
+
+.teacher-wrapper .top-nav-m li.active a {
+  border-bottom: 4px solid #129992;
+}
+
+.teacher-wrapper .top-nav-m a {
+  display: block;
+  width: 90px;
+  height: 47px;
+  margin: 0 auto;
+  border-bottom: 4px solid #fff;
+  line-height: 43px;
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+}
+
+.teacher-wrapper .cont-m {
+  margin-top: 20px;
+}
+
+.teacher-wrapper .cont-m .cont-title {
+  height: 48px;
+  padding: 0 20px;
+  border-bottom: 1px solid #ccc7c6;
+  line-height: 47px;
+  font-size: 14px;
+  color: #000;
+}
+
+.teacher-index .see-more {
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  color: #666;
+}
+
+.teacher-index .teacher-course {
+  margin-bottom: 20px;
+}
+
+.teacher-index .billing {
+  width: 260px;
+  background: #fff;
+}
+
+.teacher-index .billing .hide-all {
+  height: 30px;
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  line-height: 30px;
+}
+
+.teacher-index .tags-list {
+  padding: 5px 17px;
+  border-bottom: 1px dashed #ccc7c6;
+}
+
+.teacher-index .tags-list li {
+  height: 24px;
+  padding: 0 14px;
+  margin: 5px 3px;
+  float: left;
+  border: 1px solid #129992;
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
+  background: #d0ebe9;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.teacher-index .img-list {
+  width: 260px;
+  margin-top: 20px;
+  background: #fff;
+}
+
+.teacher-index .img-list .img-grounp {
+  padding: 4px;
+  border-bottom: 1px dashed #ccc7c6;
+}
+
+.teacher-index .img-list .img-head-l {
+  padding: 2px;
+}
+
+.teacher-index .img-list .img-min {
+  padding: 2px;
+}
+
+.teacher-course .course-menu {
+  width: 260px;
+  height: 280px;
+  float: left;
+  background: #f3f3f3;
+}
+
+.teacher-course .course-menu .item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 58px;
+  margin-bottom: 12px;
+  padding: 0 20px;
+  background: #fff;
+  color: #666;
+}
+
+.teacher-course .course-menu .item.active {
+  background: #129992;
+  color: #fff;
+}
+
+.teacher-course .course-menu .item span {
+  font-size: 18px;
+}
+
+.teacher-course .course-cont {
+  width: 900px;
+  float: right;
+  background: #fff;
+}
+
+.teacher-course .cont-list {
+  padding: 0 20px;
+}
+
+.teacher-course .list-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px dashed #ccc7c6;
+}
+
+.teacher-course .list-item .banner {
+  width: 200px;
+  height: 110px;
+  margin-right: 30px;
+}
+
+.teacher-course .list-item .info {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+}
+
+.teacher-course .list-item .info .tit {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  color: #1b1b1b;
+}
+
+.teacher-course .list-item .info .des, .teacher-course .list-item .info p {
+  color: #666;
+}
+
+.teacher-course .list-item .action {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+}
+
+.teacher-course .list-item .action a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80px;
+  height: 30px;
+  margin-top: 10px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background: #129992;
+  font-size: 14px;
+  color: #fff;
+}
+
+.teacher-course .list-item .action i {
+  font-family: arial;
+}
+
+.teacher-course .list-item .action p {
+  font-size: 18px;
+  color: #f79402;
+}
+
+.teacher-course .change-page {
+  padding: 48px 0;
+  text-align: center;
+}
+
+.teacher-course .change-page a {
+  margin: 0 2px;
+  padding: 3px 8px;
+  border: 1px solid #ccc7c6;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+  color: #878787;
+}
+
+.teacher-course .change-page a.active {
+  color: #fff;
+  background: #129992;
+  border: 1px solid #129992;
+}
+
+.teacher-course .change-page i {
+  font-size: 10px;
+  color: #ccc7c6;
+}
+
+.teacher-history .reveal {
+  width: 900px;
+  float: left;
+  background: #fff;
+}
+
+.teacher-history .teacher-present ul {
+  padding: 20px;
+}
+
+.teacher-history .teacher-present ul li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.teacher-history .teacher-present ul li span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70px;
+  height: 30px;
+  font-size: 14px;
+  color: #666;
+}
+
+.teacher-history .teacher-present ul li p {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 14px;
+  color: #1b1b1b;
+  line-height: 30px;
+}
+
+.teacher-history .teacher-past {
+  padding: 0 10px 50px 10px;
+}
+
+.teacher-history .teacher-past .cont-title {
+  height: 40px;
+  padding: 0 5px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #ccc7c6;
+  line-height: 40px;
+}
+
+.teacher-history .teacher-past dl {
+  padding: 10px 0;
+  position: relative;
+}
+
+.teacher-history .teacher-past dl::before {
+  content: ' ';
+  position: absolute;
+  left: 6px;
+  top: 0;
+  width: 2px;
+  background: #ccc7c6;
+  height: 100%;
+}
+
+.teacher-history .teacher-past dt {
+  height: 30px;
+  padding: 0 40px;
+  position: relative;
+  font-size: 14px;
+  color: #1b1b1b;
+  line-height: 30px;
+}
+
+.teacher-history .teacher-past dt::before, .teacher-history .teacher-past dt::after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  margin-top: -7px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background: #fff;
+}
+
+.teacher-history .teacher-past dt::after {
+  width: 10px;
+  height: 10px;
+  left: 2px;
+  top: 50%;
+  margin-top: -5px;
+  background: #ccc7c6;
+}
+
+.teacher-history .teacher-past dd {
+  padding: 0 35px;
+  font-size: 14px;
+  color: #666;
+}
+
+.teacher-history .billing {
+  width: 260px;
+  float: right;
+  background: #fff;
+}
+
+.teacher-history .billing .hide-all {
+  height: 30px;
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  line-height: 30px;
+}
+
+.teacher-history .tags-list {
+  padding: 5px 17px;
+  border-bottom: 1px dashed #ccc7c6;
+}
+
+.teacher-history .tags-list li {
+  height: 24px;
+  padding: 0 14px;
+  margin: 5px 3px;
+  float: left;
+  border: 1px solid #129992;
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
+  background: #d0ebe9;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.teacher-media {
+  background: #fff;
+}
+
+.teacher-media .cont-title-num {
+  font-size: 14px;
+  color: #666;
+}
+
+.teacher-media .video-list {
+  width: 1140px;
+  margin: 10px auto 60px auto;
+}
+
+.teacher-media .video-list li {
+  width: 275px;
+  height: 208px;
+  margin: 5px;
+  float: left;
+}
+
+.teacher-media .video-list .tit {
+  height: 38px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background: #f2f2f5;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  line-height: 38px;
+}
+
+.teacher-media .image-list {
+  width: 1140px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.teacher-media .image-list li {
+  width: 208px;
+  height: 247px;
+  margin: 15px 10px;
+  float: left;
+}
+
+.teacher-media .image-list .tit {
+  height: 33px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  line-height: 33px;
+}
