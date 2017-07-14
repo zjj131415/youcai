@@ -506,3 +506,109 @@ html {
   font-size: 12px;
   color: #878787;
 }
+
+.cont-m .user-history {
+  padding: 20px;
+}
+
+.cont-m .user-history .history-cont {
+  padding: 20px 0;
+  border-bottom: 1px dashed #ccc7c6;
+}
+
+.cont-m .user-history .history-details {
+  padding: 30px;
+  position: relative;
+}
+
+.cont-m .user-history .history-details::before {
+  content: ' ';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: #ccc7c6;
+}
+
+.cont-m .user-history .history-item {
+  font-size: 14px;
+}
+
+.cont-m .user-history .history-item .time {
+  position: relative;
+  color: #1b1b1b;
+}
+
+.cont-m .user-history .history-item .time::before {
+  content: ' ';
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  position: absolute;
+  left: -28px;
+  top: 0;
+}
+
+.cont-m .user-history .history-item .time::after {
+  content: ' ';
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background: #ccc7c6;
+  position: absolute;
+  left: -24px;
+  top: 5px;
+}
+
+.cont-m .user-history .history-item p {
+  color: #666;
+}
+
+.cont-m .user-history .history-item .img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 175px;
+  height: 125px;
+  margin: 15px 0;
+}
+
+.cont-m .user-history .history-item .img > img {
+  max-width: 100%;
+}
+
+.cont-m .user-history .upload {
+  margin-top: 20px;
+}
+
+.cont-m .user-history .upload a {
+  width: 70px;
+  height: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #f79402;
+  color: #f79402;
+  font-size: 14px;
+}
+
+.cont-m .user-history .upload i {
+  margin: 0 3px;
+  font-size: 20px;
+}
