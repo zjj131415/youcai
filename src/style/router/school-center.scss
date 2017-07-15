@@ -1,0 +1,436 @@
+@import "../base/global";
+html {
+  background: #f7f8f8;
+}
+
+.school-wrapper {
+  margin-top: 20px;
+  .wrapper {
+    width: 1180px;
+    margin:0 auto;
+  }
+  .menu-m {
+    width: 240px;
+    float: left;
+    border: 1px solid $Bd_COLOR;
+    background: #fff;
+    text-align: center;
+    color: $TEXT_666;
+    font-size: 16px;
+    .menu-list {
+      padding: 0 15px;
+    }
+    .child-li {
+      height: 40px;
+      line-height: 40px;
+      a {
+        font-size: 14px;
+        color: $TEXT_666;
+      }
+      &.active > a{
+        font-size: 16px;
+      }
+    }
+    .menu-item {
+      height: 46px;
+      border-top: 1px dashed $Bd_COLOR;
+      line-height: 45px;
+      &.active > a {
+        color: $THEME_COLOR;
+      }
+      a {
+        color: $TEXT_666;
+      }
+    }
+    .parent-li {
+      height: 46px;
+      border-bottom: 1px solid $Bd_COLOR;
+      line-height: 45px;
+      &.active {
+        color: $THEME_COLOR;
+      }
+    }
+    .qr-code {
+      width: 200px;
+      height: 200px;
+      margin: 200px auto 30px auto;
+      background: #f7f7f7;
+      p {
+        padding: 12px 0;
+        font-size: 14px;
+        color: $TEXT_COLO;
+      }
+      .img {
+        width: 115px;
+        height: 115px;
+        margin: 0 auto;
+        background: #fff;
+      }
+    }
+  }
+  .cont-m {
+    width: 920px;
+    float: right;
+    .common-h {
+      padding-bottom: 15px;
+      border-bottom: 1px solid $THEME_COLOR;
+      h4 {
+        font-size: 16px;
+        color: #129992;
+      }
+      a {
+        display: block;
+        width: 70px;
+        height: 30px;
+        border: 1px solid $THEME_COLOR;
+        line-height: 28px;
+        text-align: center;
+        font-size: 16px;
+        color: $THEME_COLOR;
+      }
+      i {
+        margin-right: 3px;
+        font-size: 20px;
+      }
+    }
+    .change-page {
+      padding: 48px 0;
+      text-align: center;
+      a {
+        margin: 0 2px;
+        padding: 3px 8px;
+        border: 1px solid $Bd_COLOR;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 12px;
+        color: $TEXT_COLO;
+        &.active {
+          color: #fff;
+          background: $THEME_COLOR;
+          border: 1px solid $THEME_COLOR;
+        }
+      }
+      i {
+        font-size: 10px;
+        color: #ccc7c6;
+      }
+    }
+    //index
+    @at-root .school-index {
+      padding-bottom: 40px;
+      border: 1px solid $Bd_COLOR;
+      background: #fff;
+      .block-title {
+        margin-top: 35px;
+        margin-bottom: 20px;
+        padding-left: 12px;
+        font-size: 16px;
+        color: #1b1b1b;
+      }
+      .school-head {
+        display: flex;
+        align-items: center;
+        margin: 0 20px;
+        padding: 30px 0;
+        border-bottom: 1px solid $Bd_COLOR;
+        .img {
+          $size: 80px;
+          width: $size;
+          height: $size;
+          margin-left: 20px;
+          margin-right: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .desc {
+          flex: 1;
+          overflow: hidden;
+          h4 {
+            font-size: 22px;
+            color: $TEXT_666;
+          }
+          .location {
+            display: flex;
+            font-size: 14px;
+            color: $TEXT_COLO;
+            span,
+            a {
+              margin-right: 50px;
+            }
+            a {
+              color: #5381df;
+            }
+          }
+        }
+        .action {
+          height: 80px;
+          a {
+            font-size: 12px;
+            color: #5381df;
+          }
+          i {
+            font-size: 16px;
+            color: $TEXT_COLO;
+          }
+        }
+      }
+      .school-table {
+        margin: 0 16px;
+        .table {
+          border: 1px solid $Bd_COLOR;
+        }
+        dt,
+        dd {
+          display: flex;
+          align-items: center;
+          height: 41px;
+          overflow: hidden;
+          border-bottom: 1px solid $Bd_COLOR;
+          font-size: 14px;
+          color: $TEXT_666;
+        }
+        dt {
+          background: #f7f7f7;
+        }
+        dd:last-child {
+          border: none;
+        }
+        .w300,
+        .w310,
+        .w135 {
+          height: 40px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          border-right: 1px solid $Bd_COLOR;
+          line-height: 40px;
+          text-align: center;
+        }
+        .w300 {
+          width: 300px;
+        }
+        .w310 {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          span {
+            margin-left: 30px;
+            color: #129992;
+          }
+        }
+        .w135 {
+          width: 135px;
+          &:last-child {
+            border: none;
+          }
+        }
+        .schedule {
+          width: 180px;
+          height: 8px;
+          overflow: hidden;
+          border-radius: 4px;
+          background: #f3f0ea;
+          p {
+            height: 8px;
+            background: #f89200;
+          }
+        }
+      }
+      .school-news {
+        margin: 0 16px;
+        .new-plate {
+
+        }
+        .new-block {
+          width: 390px;
+          padding: 0 10px;
+          font-size: 14px;
+          color: $TEXT_666;
+        }
+        li {
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        a {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-size: 14px;
+          color: $TEXT_666;
+        }
+        span {
+        }
+      }
+      .school-history {
+        padding: 0 6px;
+        .block-title {
+          margin-left: 6px;
+        }
+        .item-list {
+          padding: 0 10px;
+          li {
+            width: 275px;
+            float: left;
+            margin: 10px;
+          }
+          .item-desc {
+            height: 40px;
+            background: #f2f2f5;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            text-align: center;
+            font-size: 14px;
+            color: $TEXT_666;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+    //briefing
+    @at-root .school-briefing {
+      padding: 20px;
+      border: 1px solid $Bd_COLOR;
+      background: #fff;
+      .table {
+        border: 1px solid $Bd_COLOR;
+        dd,
+        dt {
+          display: flex;
+          overflow: hidden;
+        }
+        dt {
+          height: 40px;
+          background: #f7f7f7;
+        }
+        dd {
+          height: 71px;
+          border-bottom: 1px dashed $Bd_COLOR;
+          &:last-child {
+            border: none;
+          }
+        }
+        .w430,
+        .w87,
+        .w162,
+        .w111,
+        .w83 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          overflow: hidden;
+          border-right: 1px solid $Bd_COLOR;
+          font-size: 14px;
+          color: $TEXT_666;
+        }
+        .w430 {
+          width: 430px;
+        }
+        .w87 {
+          width: 87px;
+        }
+        .w162 {
+          width: 162px;
+        }
+        .w111 {
+          width: 111px;
+        }
+        .w83 {
+          flex: 1;
+          a {
+            font-size: 12px;
+            color: #5381df;
+          }
+        }
+      }
+    }
+    //news
+    @at-root .school-news {
+      padding: 20px;
+      border: 1px solid $Bd_COLOR;
+      background: #fff;
+      .news-list {
+        li {
+          display: flex;
+          align-items: center;
+          padding: 10px 0;
+          border-bottom: 1px dashed $Bd_COLOR;
+          text-align: center;
+          font-size: 14px;
+          color: $TEXT_666;
+        }
+        .desc {
+          margin-left: 20px;
+          flex: 1;
+          text-align: left;
+        }
+        .time {
+          width: 220px;
+        }
+        .action {
+          width: 105px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 10px;
+          a {
+            font-size: 12px;
+            color: #5381df;
+          }
+        }
+      }
+    }
+    //demand
+    @at-root .school-demand {
+      padding: 20px;
+      background: #fff;
+      .form-item {
+        display: flex;
+        margin-top: 20px;
+        font-size: 14px;
+        color: $TEXT_666;
+        .name {
+          width: 80px;
+          height: 36px;
+          margin-right: 30px;
+          text-align: right;
+          line-height: 36px;
+        }
+        .tet {
+          width: 362px;
+          height: 36px;
+          padding: 5px;
+          border: 1px solid $Bd_COLOR;
+          outline: none;
+          background: transparent;
+          border-radius: 2px;
+        }
+        .textare {
+          width: 362px;
+          height: 190px;
+          padding: 5px;
+          border: 1px solid $Bd_COLOR;
+          outline: none;
+          background: transparent;
+          border-radius: 2px;
+        }
+        button {
+          width: 150px;
+          height: 36px;
+          padding: 5px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          background: $THEME_COLOR;
+          border-radius: 2px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
