@@ -443,8 +443,19 @@ html {
         margin-top: 20px;
         margin-bottom: 10px;
         background: #e8e8e8;
+        .file {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          cursor: pointer;
+        }
         .img {
           height: 125px;
+          overflow: hidden;
+          position: relative;
         }
         .desc {
           height: 25px;
@@ -519,6 +530,16 @@ html {
             height: 125px;
             cursor: pointer;
             background: #f8f8f8;
+            position: relative;
+            .file {
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              opacity: 0;
+              cursor: pointer;
+            }
           }
           i {
             font-size: 30px;

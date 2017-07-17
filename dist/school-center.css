@@ -602,8 +602,20 @@ html {
   background: #e8e8e8;
 }
 
+.school-board .upload-img .file {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
 .school-board .upload-img .img {
   height: 125px;
+  overflow: hidden;
+  position: relative;
 }
 
 .school-board .upload-img .desc {
@@ -705,6 +717,17 @@ html {
   height: 125px;
   cursor: pointer;
   background: #f8f8f8;
+  position: relative;
+}
+
+.school-board .form-item .form-upload-img .upload-btn .file {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .school-board .form-item .form-upload-img i {
