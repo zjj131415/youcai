@@ -591,6 +591,7 @@ html {
 .school-board {
   padding: 20px;
   background: #fff;
+  border: 1px solid #ccc7c6;
 }
 
 .school-board .upload-img {
