@@ -612,3 +612,98 @@ html {
   margin: 0 3px;
   font-size: 20px;
 }
+
+.cont-m .user-history .form-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.cont-m .user-history .form-item .name {
+  width: 100px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #666;
+}
+
+.cont-m .user-history .form-item .txt, .cont-m .user-history .form-item .selected, .cont-m .user-history .form-item .time {
+  width: 410px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid #ccc7c6;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background: transparent;
+  font-size: 14px;
+  color: #1d1d1d;
+}
+
+.cont-m .user-history .form-item .selected {
+  width: 190px;
+}
+
+.cont-m .user-history .form-item .time {
+  width: 260px;
+}
+
+.cont-m .user-history .form-item .text {
+  font-size: 14px;
+  color: #666;
+}
+
+.cont-m .user-history .form-item .upload {
+  width: 220px;
+  height: 140px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #e8e8e8;
+  position: relative;
+  font-size: 30px;
+  color: #a0a0a0;
+}
+
+.cont-m .user-history .form-item .upload .file {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.cont-m .user-history .form-item .btn {
+  width: 150px;
+  height: 36px;
+  margin-right: 20px;
+  outline: none;
+  border: none;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+}
+
+.cont-m .user-history .form-item .btn.save {
+  background: #129992;
+}
+
+.cont-m .user-history .form-item .btn.cancel {
+  border: 1px solid #ccc7c6;
+  color: #666;
+}
