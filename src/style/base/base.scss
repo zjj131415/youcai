@@ -86,6 +86,11 @@ input[type='checkbox'] {
   position: relative;
 }
 
+//no boder
+.noborder {
+  border: none !important;
+}
+
 //间距
 .pd-td10 {
   padding: 10px 0;

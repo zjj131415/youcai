@@ -432,5 +432,108 @@ html {
         }
       }
     }
+    //board
+    @at-root .school-board {
+      padding: 20px;
+      background: #fff;
+      .upload-img {
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        background: #e8e8e8;
+        .img {
+          height: 125px;
+        }
+        .desc {
+          height: 25px;
+          background: #747474;
+          line-height: 25px;
+          font-size: 14px;
+          color: #fff;
+          text-align: center;
+        }
+      }
+      .form-item {
+        display: flex;
+        padding: 20px 0;
+        border-bottom: 1px dashed $Bd_COLOR;
+        .name {
+          width: 80px;
+          height: 36px;
+          padding-left: 10px;
+          line-height: 36px;
+          font-size: 14px;
+          color: $TEXT_666;
+        }
+        .txt {
+          width: 260px;
+          height: 36px;
+          padding: 5px;
+          background: transparent;
+          border: 1px solid $Bd_COLOR;
+          outline: none;
+          border-radius: 2px;
+          font-size: 14px;
+          color: #1d1d1d;
+        }
+        .textarea {
+          width: 662px;
+          height: 302px;
+          padding: 5px;
+          border: 1px solid $Bd_COLOR;
+          background: transparent;
+          outline: none;
+          border-radius: 2px;
+          resize: none;
+          line-height: 1.5;
+          font-size: 14px;
+          color: #1d1d1d;
+        }
+        .btn {
+          width: 150px;
+          height: 36px;
+          margin-right: 20px;
+          border: none;
+          outline: none;
+          background: transparent;
+          border-radius: 2px;
+          font-size: 14px;
+          color: #fff;
+          &.save {
+            background: $THEME_COLOR;
+          }
+          &.reset {
+            color: $TEXT_666;
+            border: 1px solid $Bd_COLOR;
+          }
+        }
+        .form-upload-img {
+          .upload-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 660px;
+            height: 125px;
+            cursor: pointer;
+            background: #f8f8f8;
+          }
+          i {
+            font-size: 30px;
+            color: #a3a3a3;
+          }
+          .text {
+            font-size: 14px;
+            color: $TEXT_666;
+          }
+          p {
+            padding: 5px 0;
+            font-size: 12px;
+            color: $TEXT_COLO;
+          }
+        }
+      }
+    }
   }
 }

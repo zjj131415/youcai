@@ -567,6 +567,10 @@ input[type='checkbox'] {
   position: relative;
 }
 
+.noborder {
+  border: none !important;
+}
+
 .pd-td10 {
   padding: 10px 0;
 }
