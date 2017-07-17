@@ -1,0 +1,156 @@
+@import "../base/global";
+html {
+  background: #f7f7f7;
+}
+.pay-wrapper {
+  width: 1180px;
+  margin: 0 auto;
+  border: 1px solid $Bd_COLOR;
+  background: #fff;
+  .wrapper {
+    margin: 0 40px;
+    padding-bottom: 50px;
+  }
+  .top-title {
+    height: 64px;
+    padding: 0 10px;
+    border-bottom: 2px solid $THEME_COLOR;
+    line-height: 62px;
+    font-size: 16px;
+    color: $THEME_COLOR;
+  }
+  .order-list {
+    font-size: 14px;
+    dt {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      background: #f7f7f7;
+      font-size: $TEXT_COLO;
+    }
+    dd {
+      display: flex;
+      align-items: center;
+      padding: 20px 0;
+      border-bottom: 1px dashed $Bd_COLOR;
+    }
+    .w780 {
+      flex: 1;
+      padding-left: 10px;
+    }
+    .w100 {
+      width: 100px;
+      text-align: center;
+    }
+    .info {
+      display: flex;
+      padding: 0;
+      .img {
+        width: 170px;
+        height: 95px;
+        overflow: hidden;
+      }
+      .detail {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p {
+          width: 260px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          word-break: break-word;
+          font-size: 16px;
+          color: $TEXT_666;
+        }
+        .time {
+          margin-top: 20px;
+          color: $TEXT_666;
+        }
+      }
+    }
+    .name,
+    .num,
+    .rebate,
+    .price {
+      font-size: 16px;
+      color: $TEXT_666;
+    }
+    .num span {
+      color: $THEME_COLOR;
+    }
+    .price {
+      color: $TEXT_ORANGE;
+      i {
+        font-family: arial;
+      }
+    }
+  }
+  .price-total {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    text-align: right;
+    font-size: 16px;
+    color: $TEXT_666;
+    .price {
+      font-size: 24px;
+      color: $TEXT_ORANGE;
+      i {
+        font-family: arial;
+        font-size: 16px;
+      }
+      em {
+        font-size: 18px;
+      }
+    }
+  }
+  .pay-type {
+    margin-top: 20px;
+    h4 {
+      font-size: 16px;
+      color: #1d1d1d;
+    }
+    .type-dep {
+      display: flex;
+      align-items: center;
+      height: 103px;
+      padding: 0 10px;
+      background: #f7f7f7;
+      border: 1px solid $Bd_COLOR;
+    }
+    .pay-img {
+      width: 154px;
+      height: 40px;
+      overflow: hidden;
+      margin-left: 5px;
+      margin-right: 55px;
+      border: 1px solid $Bd_COLOR;
+      background: #fff;
+      cursor: pointer;
+    }
+  }
+  .pay-settlement {
+    .price-total {
+      text-align: right;
+      padding-bottom: 0;
+    }
+    .button {
+      margin-top: 10px;
+      text-align: right;
+      a {
+        display: inline-block;
+        width: 105px;
+        height: 40px;
+        background: $TEXT_ORANGE;
+        border-radius: 2px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+  }
+}

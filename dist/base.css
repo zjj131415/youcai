@@ -505,7 +505,6 @@ input, img {
 
 input:focus, a:focus {
   outline: none;
-  -webkit-appearance: none;
 }
 
 a {
