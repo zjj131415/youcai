@@ -10,15 +10,15 @@
     position: absolute;
     visibility: hidden;
     &:checked ~ .__deck {
-      border: 1px solid #f7b61e;
-      background: #f7b61e;
+      border: 1px solid #16ad60;
+      background: #16ad60;
       &::before {
         opacity: 1;
       }
     }
-    &:checked ~ .__check_text {
-      color: #f7b61e;
-    }
+    //&:checked ~ .__check_text {
+    //  color: #f7b61e;
+    //}
   }
   .__deck {
     display: flex;
@@ -44,6 +44,6 @@
   .__check_text {
     margin-left: .4rem;
     font-size: .52rem;
-    color: #888;
+    color: #838383;
   }
 }

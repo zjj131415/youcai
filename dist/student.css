@@ -182,6 +182,10 @@ html {
   margin-right: 20px;
 }
 
+.cont-m .user-info .form-item .__check {
+  margin-right: 20px;
+}
+
 .cont-m .user-info .form-item .btn {
   width: 152px;
   height: 36px;
