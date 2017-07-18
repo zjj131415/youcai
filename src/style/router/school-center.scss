@@ -679,5 +679,11 @@ html {
         }
       }
     }
+    //history
+    @at-root .school-history {
+      padding: 20px 30px;
+      border: 1px solid $Bd_COLOR;
+      min-height: 736px;
+    }
   }
 }
