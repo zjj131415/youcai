@@ -94,7 +94,7 @@
                     </div>
                 </div>
                 <div class="upload">
-                    <a href="javascript:alert(1)">
+                    <a>
                         <i>+</i>
                         添加
                     </a>
@@ -144,6 +144,12 @@
     (function () {
 		$(function () {
 			$("#element_id").cxCalendar();
+			$('.upload > a').click(function () {
+                $('.upload-form').show();
+			});
+            $('.btn.cancel').click(function () {
+				$('.upload-form').hide();
+			});
 		});
 	})();
 </script>

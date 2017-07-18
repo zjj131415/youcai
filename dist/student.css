@@ -613,6 +613,10 @@ html {
   font-size: 20px;
 }
 
+.cont-m .user-history .upload-form {
+  display: none;
+}
+
 .cont-m .user-history .form-item {
   display: -webkit-box;
   display: -webkit-flex;
