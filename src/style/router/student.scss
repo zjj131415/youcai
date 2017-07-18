@@ -526,6 +526,57 @@ html {
           }
         }
       }
+      //志愿
+      .user-wish {
+        padding: 0 30px;
+        .wish-form {
+
+        }
+        .form-item {
+          display: flex;
+          padding: 20px 0;
+          border-bottom: 1px dashed $Bd_COLOR;
+          font-size: 14px;
+          color: $TEXT_666;
+          .name {
+            width: 95px;
+            height: 36px;
+            line-height: 36px;
+          }
+          .txt {
+            width: 262px;
+            height: 36px;
+            padding: 5px;
+            outline: none;
+            border: 1px solid $Bd_COLOR;
+            background: transparent;
+            border-radius: 2px;
+          }
+          .select {
+            width: 190px;
+          }
+          .btn {
+            width: 152px;
+            height: 36px;
+            margin-right: 20px;
+            border: none;
+            outline: none;
+            background: transparent;
+            border-radius: 2px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #fff;
+            &.save {
+              background: $THEME_COLOR;
+            }
+            &.reset {
+              border: 1px solid $Bd_COLOR;
+              color: $TEXT_666;
+            }
+          }
+        }
+      }
+
     }
   }
 }

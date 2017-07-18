@@ -720,3 +720,62 @@ html {
   border: 1px solid #ccc7c6;
   color: #666;
 }
+
+.cont-m .user-wish {
+  padding: 0 30px;
+}
+
+.cont-m .user-wish .form-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px dashed #ccc7c6;
+  font-size: 14px;
+  color: #666;
+}
+
+.cont-m .user-wish .form-item .name {
+  width: 95px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.cont-m .user-wish .form-item .txt {
+  width: 262px;
+  height: 36px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid #ccc7c6;
+  background: transparent;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+}
+
+.cont-m .user-wish .form-item .select {
+  width: 190px;
+}
+
+.cont-m .user-wish .form-item .btn {
+  width: 152px;
+  height: 36px;
+  margin-right: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+}
+
+.cont-m .user-wish .form-item .btn.save {
+  background: #129992;
+}
+
+.cont-m .user-wish .form-item .btn.reset {
+  border: 1px solid #ccc7c6;
+  color: #666;
+}

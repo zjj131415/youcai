@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../../dist/base.css">
+    <link rel="stylesheet" href="../../../dist/student.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2g1un31zh62vgqfr.css">
+    <link href="//cdn.bootcss.com/select2/4.0.3/css/select2.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/select2/4.0.3/js/select2.min.js"></script>
+</head>
+<body>
+<div class="student-center-wrapper">
+    <div class="wrapper clearfix">
+        <div class="student-center-menu">
+            <div class="menu-info">
+                <div class="info-photo">
+                    <img width="80" height="80" src="../../images/p6.jpg" alt="">
+                </div>
+                <h3 class="info-name">追风少年</h3>
+                <a class="info-action" href="javascript:alert(1)">[修改头像]</a>
+            </div>
+            <ul class="menu-list">
+                <li class="active">
+                    <a class="menu-item" href="javascript:alert('item')">
+                        个人资料
+                        <i class="iconfont icon-right fr"></i>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="menu-item" href="javascript:alert('item')">
+                        账号管理
+                        <i class="iconfont icon-right fr"></i>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="menu-item" href="javascript:alert('item')">
+                        我的志愿
+                        <i class="iconfont icon-right fr"></i>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="menu-item" href="javascript:alert('item')">
+                        我的课程
+                        <i class="iconfont icon-right fr"></i>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="menu-item" href="javascript:alert('item')">
+                        我的收藏
+                        <i class="iconfont icon-right fr"></i>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="menu-item" href="javascript:alert('item')">
+                        荣誉认证
+                        <i class="iconfont icon-right fr"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="menu-foot">
+                <p>环球优才微信公众号</p>
+                <div class="menu-qr-code">
+                    <img width="" height="116" src="../../images/p_11.jpg" alt="">
+                </div>
+                <span>关注我们</span>
+            </div>
+        </div>
+        <div class="cont-m">
+            <div class="cont-title-box">
+                <h3 class="cont-title">我的志愿</h3>
+            </div>
+            <div class="user-wish">
+                <div class="wish-form">
+                    <form>
+                        <div class="form-item">
+                            <span class="name">意向地区：</span>
+                            <select class="txt select" type="text">
+                                <option value="">sss</option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <span class="name">志愿学校：</span>
+                            <input class="txt" type="text">
+                        </div>
+                        <div class="form-item">
+                            <span class="name">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</span>
+                            <input class="txt" type="text">
+                        </div>
+                        <div class="form-item">
+                            <span class="name">身份证号：</span>
+                            <input class="txt" type="text">
+                        </div>
+                        <div class="form-item">
+                            <span class="name">手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机：</span>
+                            <input class="txt" type="text">
+                        </div>
+                        <div class="form-item">
+                            <span class="name">联系地址：</span>
+                            <input class="txt" type="text">
+                        </div>
+                        <div class="form-item">
+                            <span class="name"></span>
+                            <button class="btn save" type="submit">保存</button>
+                            <button class="btn reset" type="reset">重置</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".js-example-basic-single").select2();
+	});
+</script>
+</body>
+</html>
