@@ -470,8 +470,15 @@ html {
           .selected {
             width: 190px;
           }
+          .select2-selection--single {
+            background-color: #fff;
+            border: 1px solid $Bd_COLOR;
+            border-radius: 2px;
+          }
           .time {
             width: 260px;
+            background: url(//code.ciaoca.com/jquery/cxCalendar/demo/img/cxcalendar.png) no-repeat 95% center;
+            cursor: pointer;
           }
           .text {
             font-size: 14px;

@@ -645,8 +645,17 @@ html {
   width: 190px;
 }
 
+.cont-m .user-history .form-item .select2-selection--single {
+  background-color: #fff;
+  border: 1px solid #ccc7c6;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+}
+
 .cont-m .user-history .form-item .time {
   width: 260px;
+  background: url(//code.ciaoca.com/jquery/cxCalendar/demo/img/cxcalendar.png) no-repeat 95% center;
+  cursor: pointer;
 }
 
 .cont-m .user-history .form-item .text {

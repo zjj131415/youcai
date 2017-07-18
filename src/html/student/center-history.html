@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="../../../dist/student.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_hzqjq8eyvnp14i.css">
     <link href="//cdn.bootcss.com/bootstrap-select/2.0.0-beta1/css/bootstrap-select.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../dist/jquery.cxcalendar.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <script src="//cdn.bootcss.com/bootstrap-select/2.0.0-beta1/js/bootstrap-select.min.js"></script>
+    <script src="../../../js/jquery.cxcalendar.js"></script>
 </head>
 <body>
 <div class="student-center-wrapper">
@@ -106,15 +107,16 @@
                         </div>
                         <div class="form-item">
                             <span class="name">获得名次：</span>
-                            <select class="selected">
-                                <option value="selected">sss</option>
-                                <option value="selected">sss</option>
-                                <option value="selected">sss</option>
+                            <select class="selected" name="" id="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value=""></option>
                             </select>
                         </div>
                         <div class="form-item">
                             <span class="name">获奖时间：</span>
-                            <input class="time" type="time">
+                            <!--<input id="element_id" type="text">-->
+                            <input id="element_id"  type="text" class="input time" size="12" value="" readonly="">
                         </div>
                         <div class="form-item">
                             <span class="name"></span>
@@ -138,5 +140,12 @@
         </div>
     </div>
 </div>
+<script>
+    (function () {
+		$(function () {
+			$("#element_id").cxCalendar();
+		});
+	})();
+</script>
 </body>
 </html>
