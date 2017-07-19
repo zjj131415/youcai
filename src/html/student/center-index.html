@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="../../../dist/base.css">
     <link rel="stylesheet" href="../../../dist/student.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_2g1un31zh62vgqfr.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../../dist/jquery.cxcalendar.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="../../../js/jquery.cxcalendar.js"></script>
 </head>
 <body>
      <div class="student-center-wrapper">
@@ -70,23 +72,79 @@
                      <h3 class="cont-title">个人设置</h3>
                  </div>
                  <div class="user-info">
-                     <div class="user-form">
-                         <div class="item-form">
-                             <div class="item-form-tit">昵称</div>
-                             <div class="form-group">
-                                 <select class="form-control" id="exampleSelect1">
-                                     <option>1</option>
-                                     <option>2</option>
-                                     <option>3</option>
-                                     <option>4</option>
-                                     <option>5</option>
-                                 </select>
+                     <div class="info-form">
+                         <form>
+                             <div class="form-item">
+                                <span class="name">昵称</span>
+                                 <input class="txt" type="text">
+                                 <span class="plc">请填写真实姓名，方便老师联系你</span>
                              </div>
-                         </div>
+                             <div class="form-item">
+                                 <span class="name">昵称</span>
+                                 <label class="__check">
+                                     <input type="radio" name="check" checked value="on">
+                                     <i class="__deck"></i>
+                                     <span class="__check_text">男</span>
+                                 </label>
+                                 <label class="__check">
+                                     <input type="radio" name="check" value="on">
+                                     <i class="__deck"></i>
+                                     <span class="__check_text">女</span>
+                                 </label>
+                             </div>
+                             <div class="form-item">
+                                 <span class="name"> 生日 </span>
+                                 <input id="element_id"  type="text" class="input time" size="12" value="" readonly="">
+                             </div>
+                             <div class="form-item">
+                                 <span class="name">地区 </span>
+                                 <select class="select1" name="" id="">
+                                     <option value="">1</option>
+                                     <option value="">2</option>
+                                     <option value="">3</option>
+                                 </select>
+                                 <span class="select-text">省</span>
+                                 <select class="select1" name="" id="">
+                                     <option value="">1</option>
+                                     <option value="">2</option>
+                                     <option value="">3</option>
+                                 </select>
+                                 <span class="select-text">省</span>
+                                 <select class="select1" name="" id="">
+                                     <option value="">1</option>
+                                     <option value="">2</option>
+                                     <option value="">3</option>
+                                 </select>
+                                 <span class="select-text">省</span>
+                             </div>
+                             <div class="form-item">
+                                 <span class="name">简介 </span>
+                                 <input class="txt desc" type="text">
+                                 <span class="plc">还可以输入20个字</span>
+                             </div>
+                             <div class="form-item">
+                                 <span class="name"></span>
+                                 <button class="btn save" type="submit">保存</button>
+                                 <button class="btn reset" type="reset">重置</button>
+                             </div>
+                         </form>
                      </div>
                  </div>
              </div>
          </div>
      </div>
+     <script type="text/javascript">
+		 (function () {
+			 $(function () {
+				 $("#element_id").cxCalendar();
+				 $('.upload > a').click(function () {
+					 $('.upload-form').show();
+				 });
+				 $('.btn.cancel').click(function () {
+					 $('.upload-form').hide();
+				 });
+			 });
+		 })();
+     </script>
 </body>
 </html>

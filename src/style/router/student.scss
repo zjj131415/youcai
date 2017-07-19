@@ -105,16 +105,79 @@ html {
       //个人资料
       .user-info {
         padding: 0 30px;
-        .item-form {
+        .info-form {
+
+        }
+        .form-item {
           display: flex;
-          align-items: center;
-          height: 75px;
-          padding: 0 5px;
-          border-bottom: 1px dashed $Bd_COLOR;
-          .item-form-tit {
+          padding: 20px 0;
+          border-bottom: 1px solid $Bd_COLOR;
+          font-size: 14px;
+          color: $TEXT_666;
+          .name {
             width: 65px;
+            height: 36px;
+            padding-left: 4px;
+            line-height: 36px;
+          }
+          .plc {
+            height: 36px;
+            margin-left: 18px;
+            line-height: 36px;
+            color: #5381df;
+          }
+          .txt,
+          .time,
+          .select1 {
+            width: 360px;
+            padding: 5px;
+            border: 1px solid $Bd_COLOR;
+            outline: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: transparent;
+            border-radius: 2px;
+            color: #1d1d1d;
+          }
+          .time {
+            width: 260px;
+            background: url(//code.ciaoca.com/jquery/cxCalendar/demo/img/cxcalendar.png) no-repeat 95% center;
+            cursor: pointer;
+          }
+          .desc {
+            width: 410px;
+          }
+          .select1 {
+            width: 190px;
+          }
+          .select-text {
+            height: 36px;
+            line-height: 36px;
+            margin-left: 10px;
+            margin-right: 20px;
+          }
+          .__check {
+            margin-right: 20px;
+          }
+          .btn {
+            width: 152px;
+            height: 36px;
+            margin-right: 20px;
+            border: none;
+            outline: none;
+            background: transparent;
+            border-radius: 2px;
+            cursor: pointer;
             font-size: 14px;
-            color: $TEXT_666;
+            color: #fff;
+            &.save {
+              background: $THEME_COLOR;
+            }
+            &.reset {
+              border: 1px solid $Bd_COLOR;
+              color: $TEXT_666;
+            }
           }
         }
       }
@@ -444,6 +507,7 @@ html {
           }
         }
         .upload-form {
+          display: none;
         }
         .form-item {
           display: flex;
@@ -470,8 +534,15 @@ html {
           .selected {
             width: 190px;
           }
+          .select2-selection--single {
+            background-color: #fff;
+            border: 1px solid $Bd_COLOR;
+            border-radius: 2px;
+          }
           .time {
             width: 260px;
+            background: url(//code.ciaoca.com/jquery/cxCalendar/demo/img/cxcalendar.png) no-repeat 95% center;
+            cursor: pointer;
           }
           .text {
             font-size: 14px;
@@ -512,6 +583,56 @@ html {
               background: $THEME_COLOR;
             }
             &.cancel {
+              border: 1px solid $Bd_COLOR;
+              color: $TEXT_666;
+            }
+          }
+        }
+      }
+      //志愿
+      .user-wish {
+        padding: 0 30px;
+        .wish-form {
+
+        }
+        .form-item {
+          display: flex;
+          padding: 20px 0;
+          border-bottom: 1px dashed $Bd_COLOR;
+          font-size: 14px;
+          color: $TEXT_666;
+          .name {
+            width: 95px;
+            height: 36px;
+            line-height: 36px;
+          }
+          .txt {
+            width: 262px;
+            height: 36px;
+            padding: 5px;
+            outline: none;
+            border: 1px solid $Bd_COLOR;
+            background: transparent;
+            border-radius: 2px;
+          }
+          .select {
+            width: 190px;
+          }
+          .btn {
+            width: 152px;
+            height: 36px;
+            margin-right: 20px;
+            border: none;
+            outline: none;
+            background: transparent;
+            border-radius: 2px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #fff;
+            &.save {
+              background: $THEME_COLOR;
+            }
+            &.reset {
               border: 1px solid $Bd_COLOR;
               color: $TEXT_666;
             }

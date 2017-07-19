@@ -617,3 +617,81 @@ input[type='checkbox'] {
   font-size: 12px;
   color: #fff;
 }
+
+.__check,
+.__radios {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.__check input[type=radio],
+.__check input[type=checkbox],
+.__radios input[type=radio],
+.__radios input[type=checkbox] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.__check input[type=radio]:checked ~ .__deck,
+.__check input[type=checkbox]:checked ~ .__deck,
+.__radios input[type=radio]:checked ~ .__deck,
+.__radios input[type=checkbox]:checked ~ .__deck {
+  background: #129992;
+}
+
+.__check input[type=radio]:checked ~ .__deck::before,
+.__check input[type=checkbox]:checked ~ .__deck::before,
+.__radios input[type=radio]:checked ~ .__deck::before,
+.__radios input[type=checkbox]:checked ~ .__deck::before {
+  background: #129992;
+}
+
+.__check .__deck,
+.__radios .__deck {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 18px;
+  height: 18px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  border: 3px solid #ccc7c6;
+}
+
+.__check .__deck::before,
+.__radios .__deck::before {
+  content: ' ';
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  background: transparent;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+}
+
+.__check .__check_text,
+.__radios .__check_text {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #666;
+}

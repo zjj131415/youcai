@@ -745,3 +745,183 @@ html {
   font-size: 12px;
   color: #878787;
 }
+
+.school-account {
+  padding: 0 30px;
+  border: 1px solid #ccc7c6;
+  min-height: 736px;
+}
+
+.school-account .item-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  padding: 0 30px;
+  border-bottom: 1px solid #ccc7c6;
+}
+
+.school-account .account-item-l {
+  width: 135px;
+}
+
+.school-account .account-item-l > i {
+  margin-right: 5px;
+  font-size: 22px;
+  color: #129992;
+}
+
+.school-account .account-item-l > span {
+  font-size: 18px;
+}
+
+.school-account .account-item-z {
+  width: 380px;
+  font-size: 12px;
+  color: #666;
+}
+
+.school-account .account-item-r {
+  -webkit-box-flex: 1px;
+  -webkit-flex: 1px;
+      -ms-flex: 1px;
+          flex: 1px;
+  text-align: right;
+}
+
+.school-account .account-item-r .toggle {
+  cursor: pointer;
+  font-size: 14px;
+  color: #5381df;
+}
+
+.school-account .item-form {
+  display: none;
+  padding: 30px 0;
+}
+
+.school-account .form-component {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.school-account .form-component .cell {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 36px;
+  margin-top: 10px;
+}
+
+.school-account .form-component .cell-hd {
+  width: 120px;
+  font-size: 14px;
+  color: #666;
+  text-align: right;
+}
+
+.school-account .form-component .cell-bd {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.school-account .form-component .cell-bd .mobile {
+  font-size: 18px;
+  color: #1b1b1b;
+}
+
+.school-account .form-component .cell-bd .btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 54px;
+  height: 36px;
+  margin-right: 10px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  font-size: 14px;
+}
+
+.school-account .form-component .cell-bd .btn.success {
+  border: 1px solid #129992;
+  background: #129992;
+  color: #fff;
+}
+
+.school-account .form-component .cell-bd .btn.cancel {
+  border: 1px solid #ccc7c6;
+  background: transparent;
+  color: #666;
+}
+
+.school-account .form-component .cell-ft {
+  width: 100px;
+  text-align: right;
+}
+
+.school-account .form-component .cell-ft .link {
+  font-size: 14px;
+  color: #5381df;
+}
+
+.school-account .form-component .max-txt, .school-account .form-component .min-inout {
+  width: 280px;
+  height: 36px;
+  padding: 5px 10px;
+  border: 1px solid #ccc7c6;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  font-size: 14px;
+  color: #000;
+}
+
+.school-account .form-component .min-inout {
+  width: 148px;
+}
+
+.school-account .form-component .get-code {
+  width: 100px;
+  height: 36px;
+  margin-left: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+  background: #129992;
+}
+
+.school-account .form-component .get-code.disabled {
+  background: #c1c1c1;
+}
+
+.school-history {
+  padding: 20px 30px;
+  border: 1px solid #ccc7c6;
+  min-height: 736px;
+}
