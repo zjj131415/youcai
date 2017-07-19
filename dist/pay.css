@@ -1,0 +1,216 @@
+html {
+  background: #f7f7f7;
+}
+
+.pay-wrapper {
+  width: 1180px;
+  margin: 0 auto;
+  border: 1px solid #ccc7c6;
+  background: #fff;
+}
+
+.pay-wrapper .wrapper {
+  margin: 0 40px;
+  padding-bottom: 50px;
+}
+
+.pay-wrapper .top-title {
+  height: 64px;
+  padding: 0 10px;
+  border-bottom: 2px solid #129992;
+  line-height: 62px;
+  font-size: 16px;
+  color: #129992;
+}
+
+.pay-wrapper .order-list {
+  font-size: 14px;
+}
+
+.pay-wrapper .order-list dt {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  background: #f7f7f7;
+  font-size: #878787;
+}
+
+.pay-wrapper .order-list dd {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px dashed #ccc7c6;
+}
+
+.pay-wrapper .order-list .w780 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 10px;
+}
+
+.pay-wrapper .order-list .w100 {
+  width: 100px;
+  text-align: center;
+}
+
+.pay-wrapper .order-list .info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+.pay-wrapper .order-list .info .img {
+  width: 170px;
+  height: 95px;
+  overflow: hidden;
+}
+
+.pay-wrapper .order-list .info .detail {
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pay-wrapper .order-list .info .detail p {
+  width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+  font-size: 16px;
+  color: #666;
+}
+
+.pay-wrapper .order-list .info .detail .time {
+  margin-top: 20px;
+  color: #666;
+}
+
+.pay-wrapper .order-list .name,
+.pay-wrapper .order-list .num,
+.pay-wrapper .order-list .rebate,
+.pay-wrapper .order-list .price {
+  font-size: 16px;
+  color: #666;
+}
+
+.pay-wrapper .order-list .num span {
+  color: #129992;
+}
+
+.pay-wrapper .order-list .price {
+  color: #f79402;
+}
+
+.pay-wrapper .order-list .price i {
+  font-family: arial;
+}
+
+.pay-wrapper .price-total {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  text-align: right;
+  font-size: 16px;
+  color: #666;
+}
+
+.pay-wrapper .price-total .price {
+  font-size: 24px;
+  color: #f79402;
+}
+
+.pay-wrapper .price-total .price i {
+  font-family: arial;
+  font-size: 16px;
+}
+
+.pay-wrapper .price-total .price em {
+  font-size: 18px;
+}
+
+.pay-wrapper .pay-type {
+  margin-top: 20px;
+}
+
+.pay-wrapper .pay-type h4 {
+  font-size: 16px;
+  color: #1d1d1d;
+}
+
+.pay-wrapper .pay-type .type-dep {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 103px;
+  padding: 0 10px;
+  background: #f7f7f7;
+  border: 1px solid #ccc7c6;
+}
+
+.pay-wrapper .pay-type .pay-img {
+  width: 154px;
+  height: 40px;
+  overflow: hidden;
+  margin-left: 5px;
+  margin-right: 55px;
+  border: 1px solid #ccc7c6;
+  background: #fff;
+  cursor: pointer;
+}
+
+.pay-wrapper .pay-settlement .price-total {
+  text-align: right;
+  padding-bottom: 0;
+}
+
+.pay-wrapper .pay-settlement .button {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.pay-wrapper .pay-settlement .button a {
+  display: inline-block;
+  width: 105px;
+  height: 40px;
+  background: #f79402;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
