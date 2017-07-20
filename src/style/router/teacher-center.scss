@@ -10,6 +10,7 @@ html {
   }
   .menu-m {
     width: 240px;
+    float: left;
     border: 1px solid $Bd_COLOR;
     background: #fff;
     h4 {
@@ -89,6 +90,170 @@ html {
       p {
         height: 37px;
         line-height: 37px;
+      }
+    }
+  }
+  .cont-m {
+    width: 920px;
+    min-height: 802px;
+    float: right;
+    border: 1px solid $Bd_COLOR;
+    background: #fff;
+    .top-title {
+      height: 65px;
+      padding-left: 10px;
+      border-bottom: 2px solid $THEME_COLOR;
+      line-height: 63px;
+      font-size: 16px;
+      color: $THEME_COLOR;
+      .action {
+        display: block;
+        width: 90px;
+        height: 30px;
+        margin-top: 17px;
+        border: 1px solid $THEME_COLOR;
+        line-height: 28px;
+        text-align: center;
+        color: $THEME_COLOR;
+        font-size: 16px;
+        i {
+          font-size: 18px;
+        }
+      }
+      .plc {
+        float: right;
+        font-size: 14px;
+        color: $TEXT_666;
+      }
+    }
+  }
+  .cont-index {
+    .top-banner {
+      height: 120px;
+      overflow: hidden;
+    }
+    .info-head {
+      display: flex;
+      align-items: center;
+      margin: 0 20px;
+      padding: 30px 0;
+      border-bottom: 1px solid $Bd_COLOR;
+      .photo {
+        width: 80px;
+        height: 80px;
+        margin-left: 25px;
+        overflow: hidden;
+        border-radius: 100%;
+      }
+      .detail {
+        flex: 1;
+        overflow: hidden;
+        margin-left: 30px;
+      }
+      .name {
+        font-size: 22px;
+        color: $TEXT_666;
+      }
+      .desc,
+      .phone {
+        margin-top: 3px;
+        font-size: 14px;
+        color: $TEXT_666;
+      }
+      .iconPhone,
+      .iconAttest {
+        margin-right: 6px;
+        font-size: 20px;
+        color: $THEME_COLOR;
+      }
+      .iconAttest {
+        color: #18a502;
+      }
+      .actions {
+        height: 95px;
+        a {
+          font-size: 12px;
+          color: #5381df;
+        }
+      }
+    }
+    .info-cont {
+      .title {
+        height: 50px;
+        margin: 0 30px;
+        line-height: 50px;
+        font-size: 18px;
+        color: #1d1d1d;
+        span {
+          margin-left: 25px;
+          font-size: 12px;
+          color: $TEXT_COLO;
+        }
+      }
+      dl {
+        width: 610px;
+        margin: 0 auto;
+      }
+       dt {
+         display: flex;
+         align-items: center;
+         margin: 10px 22px;
+       }
+      dd {
+        display: flex;
+        align-items: center;
+        height: 55px;
+        border-bottom: 1px dashed $Bd_COLOR;
+      }
+      .task-text {
+        font-size: 12px;
+        color: $TEXT_666;
+        em {
+          color: $THEME_COLOR;
+        }
+      }
+      .task-schedule {
+        width: 280px;
+        height: 8px;
+        margin-left: 55px;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 4px;
+        em {
+          display: block;
+          height: 8px;
+          background: $THEME_COLOR;
+        }
+      }
+      .hd {
+        width: 160px;
+        padding-left: 10px;
+        font-size: 14px;
+        color: #1d1d1d;
+        .success_fill {
+          vertical-align: middle;
+          font-size: 20px;
+          color: $TEXT_ORANGE;
+        }
+        .prompt_fill {
+          vertical-align: middle;
+          font-size: 20px;
+          color: $Bd_COLOR;
+        }
+      }
+      .bd {
+        flex: 1;
+        font-size: 12px;
+        color: $TEXT_COLO;
+        text-align: center;
+      }
+      .ft {
+        width: 170px;
+        text-align: center;
+        a {
+          font-size: 12px;
+          color: #5381df;
+        }
       }
     }
   }
