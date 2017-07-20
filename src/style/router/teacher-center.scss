@@ -127,6 +127,7 @@ html {
       }
     }
   }
+  //index
   .cont-index {
     .top-banner {
       height: 120px;
@@ -263,6 +264,127 @@ html {
           font-size: 12px;
           color: #5381df;
         }
+      }
+    }
+  }
+  //course
+  .cont-course {
+    padding: 0 20px;
+    .top-race {
+      display: flex;
+      padding-top: 24px;
+      padding-bottom: 30px;
+    }
+    .race-item {
+      height: 32px;
+      margin-right: 30px;
+      font-size: 12px;
+      color: $TEXT_666;
+      line-height: 32px;
+      .option,
+      .btn {
+        width: 170px;
+        height: 26px;
+        padding: 5px;
+        border: 1px solid $Bd_COLOR;
+        border-radius: 2px;
+        outline: none;
+        cursor: pointer;
+        background: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-size: 12px;
+        color: $TEXT_666;
+      }
+      .btn {
+        width: 48px;
+        height: 32px;
+        border: none;
+        background: $THEME_COLOR;
+        color: #fff;
+        font-size: 14px;
+      }
+      .reset {
+        width: auto;
+        background: none;
+        font-size: 12px;
+        color: #5381df;
+      }
+    }
+    dl {
+      width: 880px;
+      margin: 0 auto;
+      font-size: 14px;
+      color: $TEXT_666;
+    }
+    dd,
+    dt {
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    dt {
+      height: 40px;
+      background: #f2f2f2;
+    }
+    dd {
+      padding: 20px 0;
+      border-bottom: 1px dashed $Bd_COLOR;
+    }
+    .w100 {
+      width: 100px;
+    }
+    .w155 {
+      width: 155px;
+    }
+    .w95 {
+      width: 95px;
+    }
+    .w140 {
+      width: 140px;
+    }
+    .w1 {
+      flex: 1;
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      .img {
+        width: 135px;
+        height: 75px;
+        overflow: hidden;
+      }
+      .name {
+        flex: 1;
+        margin-left: 15px;
+      }
+    }
+    .price {
+      color: $TEXT_ORANGE;
+      i {
+        font-family: Arial;
+      }
+    }
+    .num {
+
+    }
+    .status {
+      &.review{
+        color: $TEXT_666;
+      }
+      &.conduct{
+        color: #129992;
+      }
+      &.refuse{
+        color: #ff0000;
+      }
+      &.class{
+        color: #f79402;
+      }
+      &.complete{
+        color: $TEXT_666;
       }
     }
   }
