@@ -501,3 +501,116 @@ html {
 .teacher-center-wrapper .cont-course .status.complete {
   color: #666;
 }
+
+.teacher-center-wrapper .cont-resume .prompt {
+  height: 70px;
+  margin: 0 10px;
+  line-height: 80px;
+  font-size: 14px;
+  color: #878787;
+}
+
+.teacher-center-wrapper .cont-resume .prompt .iconfont {
+  margin: 0 5px;
+  color: #f79402;
+}
+
+.teacher-center-wrapper .cont-resume .images {
+  margin: 0 10px;
+}
+
+.teacher-center-wrapper .cont-resume .images .top-title {
+  margin: 0 10px;
+}
+
+.teacher-center-wrapper .cont-resume .images li {
+  width: 204px;
+  height: 250px;
+  margin: 10px;
+  float: left;
+}
+
+.teacher-center-wrapper .cont-resume .images .block-img {
+  height: 206px;
+  overflow: hidden;
+}
+
+.teacher-center-wrapper .cont-resume .images .block-desc {
+  height: 44px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 44px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+.teacher-center-wrapper .cont-resume .videos {
+  padding: 0 7px;
+}
+
+.teacher-center-wrapper .cont-resume .videos .top-title {
+  margin: 0 13px;
+}
+
+.teacher-center-wrapper .cont-resume .videos .prompt {
+  margin: 0 13px;
+}
+
+.teacher-center-wrapper .cont-resume .videos li {
+  width: 275px;
+  height: 210px;
+  float: left;
+  margin: 13px;
+}
+
+.teacher-center-wrapper .cont-resume .videos .block-img {
+  width: 275px;
+  height: 170px;
+  overflow: hidden;
+  position: relative;
+}
+
+.teacher-center-wrapper .cont-resume .videos .block-img .o-floor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.teacher-center-wrapper .cont-resume .videos .block-img .o-floor i {
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  line-height: 40px;
+  font-size: 44px;
+  color: #fff;
+}
+
+.teacher-center-wrapper .cont-resume .videos .block-desc {
+  height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 40px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
