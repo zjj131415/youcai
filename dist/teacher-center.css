@@ -578,6 +578,7 @@ html {
   top: 0;
   width: 100%;
   height: 100%;
+  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -613,4 +614,296 @@ html {
   font-size: 14px;
   color: #666;
   text-align: center;
+}
+
+.teacher-center-wrapper .cont-honor {
+  padding: 0 20px;
+}
+
+.teacher-center-wrapper .cont-honor .honor-block .block-head {
+  height: 75px;
+  padding-left: 10px;
+  padding-right: 65px;
+  border-bottom: 1px solid #ccc7c6;
+  line-height: 100px;
+  font-size: 16px;
+  color: #666;
+}
+
+.teacher-center-wrapper .cont-honor .honor-block .warning {
+  color: #f95710;
+}
+
+.teacher-center-wrapper .cont-honor .honor-block .prompt {
+  color: #878787;
+}
+
+.teacher-center-wrapper .cont-honor .honor-block .add {
+  width: 54px;
+  height: 36px;
+  margin-top: 20px;
+  border: 1px solid #129992;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 14px;
+  color: #129992;
+}
+
+.teacher-center-wrapper .cont-honor .honor-item {
+  border-bottom: 1px dashed #ccc7c6;
+}
+
+.teacher-center-wrapper .cont-honor .honor-item .ctn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 74px;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.teacher-center-wrapper .cont-honor .honor-item .hd {
+  width: 300px;
+}
+
+.teacher-center-wrapper .cont-honor .honor-item .hd .iconfont {
+  margin-right: 5px;
+  font-size: 20px;
+  color: #ccc7c6;
+  vertical-align: middle;
+}
+
+.teacher-center-wrapper .cont-honor .honor-item .bd {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.teacher-center-wrapper .cont-honor .honor-item .ft {
+  width: 150px;
+  text-align: center;
+}
+
+.teacher-center-wrapper .cont-honor .honor-item .btn {
+  width: 54px;
+  height: 36px;
+  outline: none;
+  border: none;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 14px;
+  color: #fff;
+}
+
+.teacher-center-wrapper .cont-honor .honor-item .btn.attest {
+  background: #f79402;
+}
+
+.teacher-center-wrapper .cont-honor .honor-item .btn.save {
+  margin-right: 15px;
+  background: #129992;
+}
+
+.teacher-center-wrapper .cont-honor .honor-item .btn.cancel {
+  border: 1px solid #ccc7c6;
+  color: #666;
+}
+
+.teacher-center-wrapper .cont-honor .honor-item .honor-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 46px;
+}
+
+.teacher-center-wrapper .cont-honor .honor-item .img {
+  width: 150px;
+  height: 120px;
+  overflow: hidden;
+  position: relative;
+  background: #e8e8e8;
+}
+
+.teacher-center-wrapper .cont-honor .honor-item .img .file {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 3;
+  opacity: 0;
+}
+
+.teacher-center-wrapper .cont-honor .honor-item .img .ft-tit {
+  width: 100%;
+  height: 34px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  background: #747474;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 34px;
+}
+
+.teacher-center-wrapper .cont-honor .honor-item .detail {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 110px;
+}
+
+.teacher-center-wrapper .cont-honor .honor-item .detail p {
+  font-size: 14px;
+  color: #878787;
+}
+
+.teacher-center-wrapper .cont-honor .honor-item .detail .actions {
+  margin-top: 20px;
+}
+
+.teacher-center-wrapper .cont-honor .add-history {
+  display: none;
+  padding-left: 10px;
+  margin-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px dashed #ccc7c6;
+}
+
+.teacher-center-wrapper .cont-honor .add-history .choose-time {
+  float: left;
+  margin-right: 20px;
+}
+
+.teacher-center-wrapper .cont-honor .add-history .time-tit {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.teacher-center-wrapper .cont-honor .add-history .select {
+  width: 80PX;
+  height: 36px;
+  margin-right: 10px;
+  padding-left: 10px;
+  border: 1px solid #ccc7c6;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.teacher-center-wrapper .cont-honor .add-history .textarea {
+  margin-top: 15px;
+}
+
+.teacher-center-wrapper .cont-honor .add-history .textarea .text {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.teacher-center-wrapper .cont-honor .add-history .textarea textarea {
+  width: 700px;
+  height: 100px;
+  padding: 5px;
+  background: transparent;
+  outline: none;
+  border: 1px solid #ccc7c6;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  resize: none;
+  word-break: break-all;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.teacher-center-wrapper .cont-honor .add-history .buttons {
+  margin-top: 10px;
+}
+
+.teacher-center-wrapper .cont-honor .add-history .btn {
+  width: 54px;
+  height: 36px;
+  outline: none;
+  border: none;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 14px;
+  color: #fff;
+}
+
+.teacher-center-wrapper .cont-honor .add-history .btn.attest {
+  background: #f79402;
+}
+
+.teacher-center-wrapper .cont-honor .add-history .btn.save {
+  margin-right: 15px;
+  background: #129992;
+}
+
+.teacher-center-wrapper .cont-honor .add-history .btn.cancel {
+  border: 1px solid #ccc7c6;
+  color: #666;
+}
+
+.teacher-center-wrapper .cont-honor .history-list {
+  padding-bottom: 40px;
+}
+
+.teacher-center-wrapper .cont-honor .history-list li {
+  padding: 15px;
+  border-bottom: 1px dashed #ccc7c6;
+  font-size: 14px;
+  color: #878787;
+}
+
+.teacher-center-wrapper .cont-honor .history-list .time {
+  color: #666;
 }
