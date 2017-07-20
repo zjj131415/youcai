@@ -160,14 +160,23 @@ html {
         font-size: 14px;
         color: $TEXT_666;
       }
-      .iconPhone,
-      .iconAttest {
-        margin-right: 6px;
+      .iconfont {
+        margin-right: 4px;
         font-size: 20px;
         color: $THEME_COLOR;
+        vertical-align: middle;
       }
-      .iconAttest {
-        color: #18a502;
+      .shenfenrenzheng {
+        color: #21aa0f;
+      }
+      .jiaoshirenzheng {
+        color: #fb7208;
+      }
+      .zhuanyerenzheng {
+        color: #5592e8;
+      }
+      .xuelirenzheng {
+        color: #e32024;
       }
       .actions {
         height: 95px;
@@ -232,12 +241,12 @@ html {
         color: #1d1d1d;
         .success_fill {
           vertical-align: middle;
-          font-size: 20px;
+          font-size: 18px;
           color: $TEXT_ORANGE;
         }
         .prompt_fill {
           vertical-align: middle;
-          font-size: 20px;
+          font-size: 18px;
           color: $Bd_COLOR;
         }
       }

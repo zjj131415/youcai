@@ -200,15 +200,27 @@ html {
   color: #666;
 }
 
-.teacher-center-wrapper .cont-index .info-head .iconPhone,
-.teacher-center-wrapper .cont-index .info-head .iconAttest {
-  margin-right: 6px;
+.teacher-center-wrapper .cont-index .info-head .iconfont {
+  margin-right: 4px;
   font-size: 20px;
   color: #129992;
+  vertical-align: middle;
 }
 
-.teacher-center-wrapper .cont-index .info-head .iconAttest {
-  color: #18a502;
+.teacher-center-wrapper .cont-index .info-head .shenfenrenzheng {
+  color: #21aa0f;
+}
+
+.teacher-center-wrapper .cont-index .info-head .jiaoshirenzheng {
+  color: #fb7208;
+}
+
+.teacher-center-wrapper .cont-index .info-head .zhuanyerenzheng {
+  color: #5592e8;
+}
+
+.teacher-center-wrapper .cont-index .info-head .xuelirenzheng {
+  color: #e32024;
 }
 
 .teacher-center-wrapper .cont-index .info-head .actions {
@@ -298,13 +310,13 @@ html {
 
 .teacher-center-wrapper .cont-index .info-cont .hd .success_fill {
   vertical-align: middle;
-  font-size: 20px;
+  font-size: 18px;
   color: #f79402;
 }
 
 .teacher-center-wrapper .cont-index .info-cont .hd .prompt_fill {
   vertical-align: middle;
-  font-size: 20px;
+  font-size: 18px;
   color: #ccc7c6;
 }
 
