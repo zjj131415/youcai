@@ -16,71 +16,100 @@ html {
   float: left;
   border: 1px solid #ccc7c6;
   background: #fff;
-  text-align: center;
-  color: #666;
-  font-size: 16px;
 }
 
-.school-wrapper .menu-m .menu-list {
-  padding: 0 15px;
-}
-
-.school-wrapper .menu-m .child-li {
-  height: 40px;
-  line-height: 40px;
-}
-
-.school-wrapper .menu-m .child-li a {
-  font-size: 14px;
-  color: #666;
-}
-
-.school-wrapper .menu-m .child-li.active > a {
-  font-size: 16px;
-}
-
-.school-wrapper .menu-m .menu-item {
-  height: 46px;
-  border-top: 1px dashed #ccc7c6;
-  line-height: 45px;
-}
-
-.school-wrapper .menu-m .menu-item.active > a {
-  color: #129992;
-}
-
-.school-wrapper .menu-m .menu-item a {
-  color: #666;
-}
-
-.school-wrapper .menu-m .parent-li {
+.school-wrapper .menu-m h4 {
   height: 46px;
   border-bottom: 1px solid #ccc7c6;
   line-height: 45px;
+  text-align: center;
 }
 
-.school-wrapper .menu-m .parent-li.active {
+.school-wrapper .menu-m h4.active > a {
   color: #129992;
 }
 
-.school-wrapper .menu-m .qr-code {
-  width: 200px;
-  height: 200px;
-  margin: 200px auto 30px auto;
-  background: #f7f7f7;
+.school-wrapper .menu-m h4 a {
+  font-size: 16px;
+  color: #666;
 }
 
-.school-wrapper .menu-m .qr-code p {
-  padding: 12px 0;
+.school-wrapper .menu-m .menu-list {
+  margin: 0 18px;
+}
+
+.school-wrapper .menu-m .menu-list dd {
+  border-bottom: 1px dashed #ccc7c6;
+}
+
+.school-wrapper .menu-m .menu-list dd:last-child {
+  border: none;
+}
+
+.school-wrapper .menu-m .menu-list .menu-item1 {
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}
+
+.school-wrapper .menu-m .menu-list .menu-item1 a {
+  font-size: 16px;
+  color: #666;
+}
+
+.school-wrapper .menu-m .menu-list .menu-item2 {
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
   font-size: 14px;
   color: #878787;
 }
 
-.school-wrapper .menu-m .qr-code .img {
+.school-wrapper .menu-m .menu-list .menu-item2 a {
+  font-size: 14px;
+  color: #878787;
+}
+
+.school-wrapper .menu-m .menu-list .menu-item1.active,
+.school-wrapper .menu-m .menu-list .menu-item2.active {
+  color: #129992;
+}
+
+.school-wrapper .menu-m .menu-list .menu-item1.active a,
+.school-wrapper .menu-m .menu-list .menu-item2.active a {
+  color: #129992;
+}
+
+.school-wrapper .menu-m .follow-us {
+  width: 200px;
+  height: 200px;
+  margin: 265px auto 30px auto;
+  background: #f7f7f7;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+.school-wrapper .menu-m .follow-us h5 {
+  height: 45px;
+  line-height: 45px;
+}
+
+.school-wrapper .menu-m .follow-us .cq-code {
   width: 115px;
   height: 115px;
+  overflow: hidden;
   margin: 0 auto;
   background: #fff;
+  text-align: center;
+  line-height: 115px;
+}
+
+.school-wrapper .menu-m .follow-us p {
+  height: 37px;
+  line-height: 37px;
 }
 
 .school-wrapper .cont-m {

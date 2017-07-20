@@ -14,57 +14,83 @@ html {
     float: left;
     border: 1px solid $Bd_COLOR;
     background: #fff;
-    text-align: center;
-    color: $TEXT_666;
-    font-size: 16px;
-    .menu-list {
-      padding: 0 15px;
-    }
-    .child-li {
-      height: 40px;
-      line-height: 40px;
-      a {
-        font-size: 14px;
-        color: $TEXT_666;
-      }
-      &.active > a{
-        font-size: 16px;
-      }
-    }
-    .menu-item {
+    h4 {
       height: 46px;
-      border-top: 1px dashed $Bd_COLOR;
+      border-bottom: 1px solid $Bd_COLOR;
       line-height: 45px;
+      text-align: center;
       &.active > a {
         color: $THEME_COLOR;
       }
       a {
+        font-size: 16px;
         color: $TEXT_666;
       }
     }
-    .parent-li {
-      height: 46px;
-      border-bottom: 1px solid $Bd_COLOR;
-      line-height: 45px;
-      &.active {
-        color: $THEME_COLOR;
+    .menu-list {
+      margin: 0 18px;
+      dd {
+        border-bottom: 1px dashed $Bd_COLOR;
+        &:last-child {
+          border: none;
+        }
       }
-    }
-    .qr-code {
-      width: 200px;
-      height: 200px;
-      margin: 200px auto 30px auto;
-      background: #f7f7f7;
-      p {
-        padding: 12px 0;
+      .menu-item1 {
+        height: 46px;
+        line-height: 46px;
+        text-align: center;
+        font-size: 16px;
+        color: $TEXT_666;
+        a {
+          font-size: 16px;
+          color: $TEXT_666;
+        }
+      }
+      .menu-item2 {
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
         font-size: 14px;
         color: $TEXT_COLO;
+        a {
+          font-size: 14px;
+          color: $TEXT_COLO;
+        }
       }
-      .img {
+      .menu-item1,
+      .menu-item2 {
+        &.active {
+          color: $THEME_COLOR;
+          & a {
+            color: $THEME_COLOR;
+          }
+        }
+      }
+    }
+    .follow-us {
+      width: 200px;
+      height: 200px;
+      margin: 265px auto 30px auto;
+      background: #f7f7f7;
+      font-size: 14px;
+      color: $TEXT_666;
+      text-align: center;
+      h5 {
+        height: 45px;
+        line-height: 45px;
+      }
+      .cq-code {
         width: 115px;
         height: 115px;
+        overflow: hidden;
         margin: 0 auto;
         background: #fff;
+        text-align: center;
+        line-height: 115px;
+      }
+      p {
+        height: 37px;
+        line-height: 37px;
       }
     }
   }
