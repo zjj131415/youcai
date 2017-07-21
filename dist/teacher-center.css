@@ -448,6 +448,15 @@ html {
           flex: 1;
 }
 
+.teacher-center-wrapper .cont-course .w70 {
+  width: 70px;
+}
+
+.teacher-center-wrapper .cont-course .w70 a {
+  font-size: 12px;
+  color: #5381df;
+}
+
 .teacher-center-wrapper .cont-course .info {
   display: -webkit-box;
   display: -webkit-flex;

@@ -347,6 +347,13 @@ html {
     .w1 {
       flex: 1;
     }
+    .w70 {
+      width: 70px;
+      a {
+        font-size: 12px;
+        color: #5381df;
+      }
+    }
     .info {
       display: flex;
       align-items: center;
