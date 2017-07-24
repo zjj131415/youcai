@@ -524,6 +524,22 @@ html {
   color: #f79402;
 }
 
+.teacher-center-wrapper .cont-resume .prompt .action {
+  display: block;
+  width: 90px;
+  height: 30px;
+  margin-top: 17px;
+  border: 1px solid #129992;
+  line-height: 28px;
+  text-align: center;
+  color: #129992;
+  font-size: 16px;
+}
+
+.teacher-center-wrapper .cont-resume .prompt .action i {
+  font-size: 18px;
+}
+
 .teacher-center-wrapper .cont-resume .images {
   margin: 0 10px;
 }
@@ -1030,4 +1046,228 @@ html {
 .teacher-center-wrapper .cont-identity-set .form-item .btn.cancel {
   border: 1px solid #ccc7c6;
   color: #666;
+}
+
+.teacher-center-wrapper .cont-add-course {
+  padding: 0 20px;
+}
+
+.teacher-center-wrapper .cont-add-course .info-box {
+  padding-bottom: 50px;
+}
+
+.teacher-center-wrapper .cont-add-course .title-box {
+  height: 18px;
+  padding-left: 10px;
+  margin: 18px 8px;
+  border-left: 3px solid #ccc7c6;
+  font-size: 20px;
+  color: #666;
+  line-height: 18px;
+}
+
+.teacher-center-wrapper .cont-add-course .block-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.teacher-center-wrapper .cont-add-course .name {
+  width: 110px;
+  height: 36px;
+  text-align: right;
+  line-height: 36px;
+}
+
+.teacher-center-wrapper .cont-add-course .txt {
+  width: 700px;
+  height: 36px;
+  padding: 5px;
+  border: 1px solid #ccc7c6;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background: transparent;
+  outline: none;
+  resize: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.teacher-center-wrapper .cont-add-course .tct {
+  width: 180px;
+}
+
+.teacher-center-wrapper .cont-add-course .textarea {
+  height: 110px;
+  cursor: default;
+}
+
+.teacher-center-wrapper .cont-add-course .tct-tit {
+  height: 36px;
+  margin-left: 46px;
+  margin-right: 15px;
+  line-height: 36px;
+}
+
+.teacher-center-wrapper .cont-add-course .price-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 36px;
+  border: 1px solid #ccc7c6;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+}
+
+.teacher-center-wrapper .cont-add-course .price-box .yuan {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  border-left: 1px solid #ccc7c6;
+}
+
+.teacher-center-wrapper .cont-add-course .price-box .tet {
+  width: 100px;
+  padding: 5px;
+  border: none;
+  border-left: 1px solid #ccc7c6;
+}
+
+.teacher-center-wrapper .cont-add-course .price-box .tit {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  border-left: 1px solid #ccc7c6;
+}
+
+.teacher-center-wrapper .cont-add-course .number {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 50px;
+}
+
+.teacher-center-wrapper .cont-add-course .number .tit {
+  height: 36px;
+  line-height: 36px;
+  width: 45px;
+}
+
+.teacher-center-wrapper .cont-add-course .number .tet {
+  width: 150px;
+  height: 36px;
+  padding: 5px;
+  border: 1px solid #ccc7c6;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background: transparent;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.teacher-center-wrapper .cont-add-course .upload {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 240px;
+  height: 135px;
+  margin-left: 20px;
+  background: #f8f8f8;
+  cursor: pointer;
+  position: relative;
+}
+
+.teacher-center-wrapper .cont-add-course .upload i {
+  font-size: 28px;
+  color: #666;
+}
+
+.teacher-center-wrapper .cont-add-course .upload p {
+  font-size: 14px;
+  color: #666;
+}
+
+.teacher-center-wrapper .cont-add-course .upload .file {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.teacher-center-wrapper .cont-add-course .upload-text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 135px;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #878787;
+}
+
+.teacher-center-wrapper .cont-add-course .submit-btn {
+  display: block;
+  width: 150px;
+  height: 36px;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background: #129992;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 14px;
+  color: #fff;
 }
