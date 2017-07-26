@@ -142,15 +142,15 @@
 <script>
 	(function () {
 		$(function () {
-			changeFile($('.form-item').find('.file'))
+			changeFile($('.form-item').find('.file'));
+			$(document).on('click', '.active-tags span > i', function () {
+				$(this).parents('span').remove();
+			});
+			$('.li-tags .tag-item').click(function () {
+				var $text = $('<span class="tag-item">'+$(this).text()+'<i class="del-icon iconfont icon-guanbi"></i></span>');
+				$('.active-tags').append($text);
+			})
 		});
-		$(document).on('click', '.active-tags span > i', function () {
-			$(this).parents('span').remove();
-		});
-        $('.li-tags .tag-item').click(function () {
-            var $text = $('<span class="tag-item">'+$(this).text()+'<i class="del-icon iconfont icon-guanbi"></i></span>');
-            $('.active-tags').append($text);
-		})
 	})();
 </script>
 </body>
