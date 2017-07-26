@@ -1103,4 +1103,149 @@ html {
       }
     }
   }
+  //board
+  .cont-board {
+    padding: 0 20px;
+    .form-data {
+      font-size: 14px;
+      color: $TEXT_666;
+      .form-item {
+        display: flex;
+        padding: 22px 0;
+        border-bottom: 1px dashed $Bd_COLOR;
+      }
+      .photo {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        .file {
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 2;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+          opacity: 0;
+        }
+      }
+      .photo-tit {
+        width: 100%;
+        height: 24px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .5);
+        line-height: 24px;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+      }
+      .desc {
+        height: 36px;
+        margin-left: 10px;
+        line-height: 36px;
+        font-size: 14px;
+        color: #5381df;
+        &.hin-bt {
+          display: flex;
+          height: auto;
+          align-items: flex-end;
+        }
+      }
+      .name {
+        width: 60px;
+        height: 36px;
+        padding-left: 5px;
+        line-height: 36px;
+      }
+      .txt {
+        width: 260px;
+        height: 36px;
+        padding: 5px;
+        outline: none;
+        border: 1px solid $Bd_COLOR;
+        border-radius: 2px;
+        background: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-size: 14px;
+        color: #1d1d1d;
+      }
+      .select {
+        width: 187px;
+        cursor: pointer;
+      }
+      .textarea {
+        width: 450px;
+        height: 120px;
+        resize: none;
+      }
+      .checks {
+        display: flex;
+        align-items: center;
+        height: 36px;
+        .__check {
+          margin-right: 20px;
+        }
+      }
+      .data-item {
+        margin-right: 30px;
+      }
+      .active-tags {
+        display: flex;
+        align-items: center;
+        width: 692px;
+        height: 36px;
+        border: 1px solid $Bd_COLOR;
+        border-radius: 2px;
+      }
+      .tag-item {
+        height: 24px;
+        padding: 0 15px;
+        margin: 0 10px;
+        border-radius: 12px;
+        border: 1px solid #129992;
+        background: #d0ebe9;
+        cursor: pointer;
+        line-height: 22px;
+        font-size: 12px;
+        color: $TEXT_666;
+        i {
+          margin-left: 5px;
+          font-size: 12px;
+        }
+      }
+      .li-tags {
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+        color: $TEXT_COLO;
+      }
+      .btn {
+        width: 150px;
+        height: 36px;
+        margin-right: 20px;
+        outline: none;
+        border: none;
+        background: transparent;
+        border-radius: 2px;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-size: 14px;
+        color: #fff;
+        &.success {
+          background: $THEME_COLOR;
+          color: #fff;
+        }
+        &.reset {
+          border: 1px solid $Bd_COLOR;
+          color: $TEXT_666;
+        }
+      }
+    }
+  }
 }
