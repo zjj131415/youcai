@@ -1196,6 +1196,7 @@ html {
       .active-tags {
         display: flex;
         align-items: center;
+        overflow: hidden;
         width: 692px;
         height: 36px;
         border: 1px solid $Bd_COLOR;

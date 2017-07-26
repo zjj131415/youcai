@@ -1576,6 +1576,7 @@ html {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
   width: 692px;
   height: 36px;
   border: 1px solid #ccc7c6;
