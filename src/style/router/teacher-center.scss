@@ -500,6 +500,245 @@ html {
         text-align: center;
       }
     }
+    .fixed-img {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, .4);
+      .upload-fixed-img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 100;
+        width: 980px;
+        height: 360px;
+        margin-left: -490px;
+        margin-top: -180px;
+        background: #fff;
+      };
+      .upload-tit {
+        height: 50px;
+        padding-left: 10px;
+        font-size: 16px;
+        line-height: 50px;
+        color: $TEXT_666;
+      }
+      .upload-box {
+        height: 260px;
+        padding: 20px 10px;
+        display: flex;
+        background: #f4f4f4;
+      }
+      .upload-box {
+        display: flex;
+      }
+      .file-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 210px;
+        height: 220px;
+        margin: 0 10px;
+        border: 1px solid $Bd_COLOR;
+        position: relative;
+        i {
+          font-size: 60px;
+          color: #aaa;
+
+        }
+        p {
+          font-size: 14px;
+          color: $TEXT_666;
+        }
+      }
+      .file {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+      }
+      .item-img {
+        width: 210px;
+        height: 220px;
+        margin: 0 10px;
+        overflow: hidden;
+        border: 1px solid $Bd_COLOR;
+        position: relative;
+        .delete-img {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: 20;
+          background: #ccc;
+          cursor: pointer;
+          font-size: 18px;
+          color: $TEXT_666;
+        }
+        input[type="text"] {
+          width:100%;
+          height: 35px;
+          font-size: 14px;
+          color: $TEXT_666;
+          padding: 0 10px;
+          background: #fff;
+          border: none;
+          outline: none;
+        }
+      }
+      .actions {
+        margin-top: 6px;
+        text-align: right;
+        button {
+          width: 56px;
+          height: 36px;
+          margin-right: 20px;
+          border-radius: 2px;
+          cursor: pointer;
+          outline: none;
+          background: transparent;
+          border: none;
+          font-size: 14px;
+          color: #fff;
+          &.save {
+            background: $THEME_COLOR;
+          }
+          &.cancel {
+            border: 1px solid $Bd_COLOR;
+            color: $TEXT_666;
+          }
+        }
+      }
+    }
+    .fixed-vid {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, .4);
+      .fixed-vid-box {
+        width: 850px;
+        height: 360px;
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -180px;
+        margin-left: -425px;
+      }
+      .fixed-vid-tit {
+        height: 40px;
+        padding: 0 10px;
+        font-size: 18px;
+        color: $TEXT_666;
+        line-height: 40px;
+      }
+      .vid-form {
+
+        margin-left: 145px;
+      }
+      .item-form {
+        margin-top: 20px;
+        display: flex;
+      }
+      .upload-box {
+        width: 150px;
+        height: 125px;
+        margin-left: 43px;
+        background: #e8e8e8;
+        position: relative;
+        .file {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+          opacity: 0;
+        }
+        .vid-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 90px;
+          font-size: 60px;
+          color: #dedede;
+        }
+        p {
+          height: 35px;
+          font-size: 14px;
+          color: #fff;
+          background: #747474;
+          line-height: 35px;
+          text-align: center;
+        }
+      }
+      .desc {
+        margin-left: 10px;
+        display: flex;
+        align-items: flex-end;
+        font-size: 12px;
+        color: $TEXT_COLO;
+      }
+      .item-name {
+        height: 36px;
+        line-height: 36px;
+        font-size: 14px;
+        color: $TEXT_666;
+      }
+      .txt {
+        width: 185px;
+        height: 36px;
+        padding: 5px;
+        border: 1px solid $Bd_COLOR;
+        outline: none;
+        background: transparent;
+        border-radius: 2px;
+        font-size: 14px;
+        color: #353535;
+      }
+      .plc {
+        margin-left: 43px;
+        font-size: 12px;
+        color: $TEXT_COLO;
+      }
+      .actions {
+        margin-top: 20px;
+        text-align: right;
+        button {
+          width: 56px;
+          height: 36px;
+          margin-right: 20px;
+          border-radius: 2px;
+          cursor: pointer;
+          outline: none;
+          background: transparent;
+          border: none;
+          font-size: 14px;
+          color: #fff;
+          &.save {
+            background: $THEME_COLOR;
+          }
+          &.cancel {
+            border: 1px solid $Bd_COLOR;
+            color: $TEXT_666;
+          }
+        }
+      }
+    }
   }
   //honor
   .cont-honor {
