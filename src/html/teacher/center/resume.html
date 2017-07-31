@@ -171,11 +171,8 @@
 <script>
     (function () {
         $(function () {
-            $('.images .action').click(function () {
+            $('.images .action, .videos .action').click(function () {
                 $(this).parents('.cont-resume').find('.fixed-img').show();
-            });
-            $('.videos .action').click(function () {
-                $(this).parents('.cont-resume').find('.fixed-vid').show();
             });
             $('.actions .cancel').click(function () {
                 $(this).parents('.fixed-img').hide();
