@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../../dist/base.css">
+    <link rel="stylesheet" href="../../../dist/student.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_kiwjxkfew6axxbt9.css">
+    <link rel="stylesheet" href="../../../dist/jquery.cxcalendar.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="../../../js/jquery.cxcalendar.js"></script>
+</head>
+<body>
+<div class="student-center-wrapper">
+    <div class="wrapper clearfix">
+        <div class="student-center-menu">
+            <div class="menu-info">
+                <div class="info-photo">
+                    <input class="file" type="file" accept="image/*,image/jpeg;capture=camera">
+                    <img width="80" height="80" src="../../images/p6.jpg" alt="">
+                </div>
+                <h3 class="info-name">追风少年</h3>
+                <a class="info-action" href="javascript:alert(1)">[修改头像]</a>
+            </div>
+            <ul class="menu-list">
+                <li class="active">
+                    <a class="menu-item" href="javascript:alert('item')">
+                        个人资料
+                        <i class="iconfont icon-right fr"></i>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="menu-item" href="javascript:alert('item')">
+                        账号管理
+                        <i class="iconfont icon-right fr"></i>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="menu-item" href="javascript:alert('item')">
+                        我的志愿
+                        <i class="iconfont icon-right fr"></i>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="menu-item" href="javascript:alert('item')">
+                        我的课程
+                        <i class="iconfont icon-right fr"></i>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="menu-item" href="javascript:alert('item')">
+                        我的收藏
+                        <i class="iconfont icon-right fr"></i>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="menu-item" href="javascript:alert('item')">
+                        荣誉认证
+                        <i class="iconfont icon-right fr"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="menu-foot">
+                <p>环球优才微信公众号</p>
+                <div class="menu-qr-code">
+                    <img width="" height="116" src="../../images/p_11.jpg" alt="">
+                </div>
+                <span>关注我们</span>
+            </div>
+        </div>
+        <div class="cont-m">
+            <div class="user-details">
+                <div class="info-head" style="background-image: url(../../images/school-banner.png)">
+                    <div class="info-photo">
+                        <img width="150" height="150" src="../../images/course_1.jpg" alt="">
+                    </div>
+                    <div class="info-details">
+                        <h4 class="info-name">赵子琪 <span class="vip">优秀学员</span></h4>
+                        <div class="info-signature">这家伙连一句话都懒得说</div>
+                        <div class="info-address"><i class="iconfont icon-dingwei"></i>重庆-沙坪坝</div>
+                    </div>
+                </div>
+                <div class="info-list">
+                    <div class="info-item">
+                        <h4 class="info-title">基本信息 <a href="javascript:void (0)">  编辑资料  </a></h4>
+                        <div class="if-detail">
+                            <span>姓名：赵子琪 </span>
+                            <span>性别：男 </span>
+                            <span>年龄：18岁 </span>
+                            <span>生日：1999/05/10 </span>
+                        </div>
+                        <div class="if-phone">
+                            <span><i class="iconfont icon-shouji"></i>500106198902106454</span>
+                            <span><i class="iconfont icon-shenfenzheng"></i>15178719100</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <h4 class="info-title">学习信息 </h4>
+                        <div class="if-learn">
+                            <div class="learn-item mt10">毕业学校：重庆巴蜀中学</div>
+                            <div class="learn-item">
+                                <div class="icon-text"><i class="iconfont icon-chengji"></i>学习成绩</div>
+                                <p><span>650</span>&nbsp;分</p>
+                            </div>
+                            <div class="learn-item">
+                                <div class="icon-text"><i class="iconfont icon-paihang"></i>学习成绩</div>
+                                <p><span>650</span>&nbsp;分</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <h4 class="info-title">个人荣誉 <a href="javascript:void (0)">  编辑资料  </a></h4>
+                        <div class="history-details">
+                            <div class="history-item">
+                                <div class="time">2016年10月</div>
+                                <p>获得“特莱米雅杯”第九届全国概念作文大赛一等奖</p>
+                                <div class="img">
+                                    <img src="../../images/p6.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="history-item">
+                                <div class="time">2016年10月</div>
+                                <p>获得“特莱米雅杯”第九届全国概念作文大赛一等奖</p>
+                                <div class="img">
+                                    <img src="../../images/p6.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    (function () {
+        $(function () {
+            $("#element_id").cxCalendar();
+            $('.upload > a').click(function () {
+                $('.upload-form').show();
+            });
+            $('.btn.cancel').click(function () {
+                $('.upload-form').hide();
+            });
+        });
+    })();
+</script>
+</body>
+</html>
