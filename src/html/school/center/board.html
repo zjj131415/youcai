@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../../../dist/base.css">
     <link rel="stylesheet" href="../../../../dist/school-center.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_hzqjq8eyvnp14i.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 <body>
 <div class="school-wrapper">
@@ -87,4 +88,15 @@
     </div>
 </div>
 </body>
+<script>
+    $(function () {
+        $.ajax({
+            url: "http://app.huanqiuyoucai.com/api/index",
+            type: 'POST',
+            success: function (data) {
+                console.log(data)
+            }
+        });
+    })
+</script>
 </html>

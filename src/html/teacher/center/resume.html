@@ -171,14 +171,60 @@
 <script>
     (function () {
         $(function () {
-            $('.images .action, .videos .action').click(function () {
-                $(this).parents('.cont-resume').find('.fixed-img').show();
+            $('.images .action').click(function () {
+                $(this).parents('.school-resume').find('.fixed-img').show();
+            });
+            $('.videos .action').click(function () {
+                $(this).parents('.school-resume').find('.fixed-vid').show();
             });
             $('.actions .cancel').click(function () {
                 $(this).parents('.fixed-img').hide();
                 $(this).parents('.fixed-vid').hide();
             })
+        });
+
+        var imgArray ;
+
+        $('.file').change(function (e) {
+            var url = window.URL || window.webkitURL || window.mozURL, files = e.target.files;
+            for (var i = 0, len = files.length; i < len; ++i) {
+                var file = files[i];
+                if (url) {
+                    src = url.createObjectURL(file);
+                } else {
+                    src = e.target.result;
+                }
+            }
+            var $dom = '<div class="item-img">\
+                            <img width="208" height="185" src='+src+' alt="">\
+                            <input type="text" placeholder="添加描述，最多13个字">\
+                            <input type="hidden" name="image" value='+e.target.files[0]+'>\
+                            <div class="delete-img iconfont icon-delete"></div>\
+                        </div>';
+            imgArray = e.target.files[0];
+            $('.upload-box').append($dom)
+            console.log(e.target.files)
+
         })
+//        $(document).on('click', '.delete-img', function() {
+//            $(this).parents('.item-img').remove();
+//        })
+
+//        $('.suvmitIMG').click(function(e){
+//            e.preventDefault();
+//            let fd = new FormData(document.forms[0]);
+//            fd.append('sss', imgArray)
+//            fd.append('sss', imgArray)
+//            let oReq = new XMLHttpRequest();
+//            oReq.open("POST", "http://youcai.com/public/index/schcenter/addphoto.html", true);
+//            oReq.onload = (rep) => {
+//                console.log(rep)
+//            };
+//            oReq.ontimeout = () => {			};
+//            oReq.send(fd);
+//
+//        })
+
     })();
 </script>
 </body>

@@ -384,18 +384,18 @@ html {
   background: #f89200;
 }
 
-.school-index .school-news {
+.school-index .school-news1 {
   margin: 0 16px;
 }
 
-.school-index .school-news .new-block {
+.school-index .school-news1 .new-block {
   width: 390px;
   padding: 0 10px;
   font-size: 14px;
   color: #666;
 }
 
-.school-index .school-news li {
+.school-index .school-news1 li {
   height: 30px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -411,7 +411,7 @@ html {
           justify-content: space-between;
 }
 
-.school-index .school-news a {
+.school-index .school-news1 a {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -419,25 +419,25 @@ html {
   color: #666;
 }
 
-.school-index .school-history {
+.school-index .school-history1 {
   padding: 0 6px;
 }
 
-.school-index .school-history .block-title {
+.school-index .school-history1 .block-title {
   margin-left: 6px;
 }
 
-.school-index .school-history .item-list {
+.school-index .school-history1 .item-list {
   padding: 0 10px;
 }
 
-.school-index .school-history .item-list li {
+.school-index .school-history1 .item-list li {
   width: 275px;
   float: left;
   margin: 10px;
 }
 
-.school-index .school-history .item-list .item-desc {
+.school-index .school-history1 .item-list .item-desc {
   height: 40px;
   background: #f2f2f5;
   overflow: hidden;
